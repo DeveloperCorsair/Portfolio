@@ -9,4 +9,8 @@ body {
 
 .txt1 {
     margin: 1%;
+    width: 45%;
+    height: 100%;
+    font-size: 130%;
+    text-align: justify;
 }
