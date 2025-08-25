@@ -1,16 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 body {
-    background-color: rgb(75, 73, 73);
+    background-color: rgb(33, 37, 41);
     font-family: 'Montserrat';
-    margin: auto;
+    margin: 1.5%;
     color: #FFF;
 }
 
 .first-p {
     margin: 1%;
-    width: 45%;
+    width: 50%;
+    justify-content: center;
+    display: flexbox;
     height: 100%;
     font-size: 16px;
-    text-align: justify;
+    text-align: center;
 }
