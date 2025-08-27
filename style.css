@@ -16,3 +16,9 @@ body {
     font-size: 16px;
     text-align: center;
 }
+
+.logo img {
+    width: auto;
+    max-height: 40px;
+    border-radius: 20%;
+}
