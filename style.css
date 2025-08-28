@@ -3,6 +3,7 @@
 main {
     margin: auto;
 }
+
 body {
     background-color: rgb(33, 37, 41);
     font-family: 'Montserrat';
@@ -12,10 +13,7 @@ body {
 
 .first-p {
     margin: 1%;
-    width: 50%;
-    justify-content: center;
-    display: flexbox;
-    height: 100%;
+    padding: 10% 20%;
     font-size: 16px;
     text-align: center;
 }
@@ -27,5 +25,5 @@ body {
 }
 
 section.logo {
-    padding: 13px 20px;   
+    padding: 13px 20px;
 }
