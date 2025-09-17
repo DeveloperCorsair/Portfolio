@@ -12,6 +12,11 @@ body {
     min-height: 100vh;
 }
 
+#navbarSupportedContent {
+    text-align: right;
+    display: flex;
+}
+
 main {
     margin: auto;
 }
@@ -19,6 +24,9 @@ main {
 .navbar {
     box-shadow: 1px 1px #d6d6d6;
     min-width: 100%;
+    text-align: right;
+    justify-content: space-between;
+    display: flex;
 }
 
 .first-p {
