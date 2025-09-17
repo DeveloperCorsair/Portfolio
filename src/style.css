@@ -1,14 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+html {
+    margin: 0;
+    font-size: 14px;
+}
+
+body {
+    background-color: #fff;
+    font-family: 'Montserrat';
+    color: #000;
+    min-height: 100vh;
+}
+
 main {
     margin: auto;
 }
 
-body {
-    background-color: rgb(33, 37, 41);
-    font-family: 'Montserrat';
-    margin: 1.5%;
-    color: #FFF;
+.navbar {
+    box-shadow: 1px 1px #d6d6d6;
+    min-width: 100%;
 }
 
 .first-p {
@@ -26,4 +36,27 @@ body {
 
 section.logo {
     padding: 13px 20px;
+}
+
+body>footer {
+    background-color: rgb(245, 245, 245);
+    position: sticky;
+    padding: 1.5%;
+    top: 100vh;
+    align-items: start;
+    text-align: center;
+    text-decoration: inherit;
+    color: black;
+}
+
+#devcor {
+    text-decoration: inherit;
+    color: black;
+}
+
+#github {
+    vertical-align: middle;
+    width: 30px;
+    box-shadow: none;
+    align-items: end;
 }
