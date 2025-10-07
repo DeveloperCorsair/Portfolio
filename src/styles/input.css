@@ -1,32 +1,8 @@
 @import "tailwindcss";
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-html {
-    margin: 0;
-    font-size: 14px;
-}
-
-body {
-    background-color: #fff;
-    font-family: 'Montserrat';
-    color: #000;
-    min-height: 100vh;
-}
-
 #navbarSupportedContent {
     text-align: right;
-    display: flex;
-}
-
-main {
-    margin: auto;
-}
-
-.navbar {
-    box-shadow: 1px 1px #d6d6d6;
-    min-width: 100%;
-    text-align: right;
-    justify-content: space-between;
     display: flex;
 }
 
@@ -59,27 +35,8 @@ section.logo {
     padding: 13px 20px;
 }
 
-.rodape {
-    background-color: rgb(230, 230, 230);
-    top: 100vh;
-    justify-content: space-between;
-    display: flex;
-    padding: 1.5%;
-    position: sticky;
-}
 
-footer {
-    align-items: start;
-    color: black;
-    text-align: center;
-    text-decoration: inherit;
-    display:inline;
-}
 
-#devcor {
-    text-decoration: inherit;
-    color: black;
-}
 
 #github {
     vertical-align: middle;
