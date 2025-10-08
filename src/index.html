@@ -6,74 +6,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/output.css">
     <link rel="stylesheet" href="./styles/input.css">
-    <link rel="icon" href="./img/ChatGPT Image 6 de out. de 2025, 22_29_24.png">
+    <link rel="icon" href="./img/logo.png">
     <title>Portfólio Henrique</title>
 </head>
 
-<body>
+<body class="font-[Montserrat]">
     <section>
-        <nav>
-            <div class="flex justify-between p-4">
-                <a href="./index.html"><img class="max-h-10 rounded-xl"
-                        src="./img/ChatGPT Image 6 de out. de 2025, 22_29_24.png" class="logo" alt="icon"></a>
-                <div class="flex gap-8">
-                    <a href="./pages/formacao.html">Fatec/Etec</a>
-                    <a href="./pages/sobre.html">Sobre mim</a>
-                    <a href="./pages/projetos.html">Projetos</a>
+        <nav class="bg-gray-100 py-2 px-4">
+            <div class="flex justify-between backdrop-blur-sm border-black-500">
+                <a href="./index.html"><img class="max-h-10 rounded-xl" src="./img/logo.png" class="logo"
+                        alt="icon"></a>
+                <div class="flex gap-2 items-center">
+                    <a class="hover:bg-gray-200 p-1 rounded-sm" href="./pages/sobre.html">Sobre mim</a>
+                    <a class="hover:bg-gray-200 p-1 rounded-sm" href="./pages/formacao.html">Cursos</a>
+                    <a class="hover:bg-gray-200 p-1 rounded-sm" href="./pages/projetos.html">Projetos</a>
                 </div>
             </div>
         </nav>
     </section>
 
     <main>
-        <section class="cards p-12">
+        <section class="flex p-8">
+            <div class="max-w-3xl text-justify">
+                <h2 class="text-2xl font-bold">Prazer, Henrique!</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem dignissimos saepe
+                    consequuntur animi unde
+                    veniam nostrum sint deleniti, consequatur adipisci. Dolor, sequi! Nam, consequuntur voluptatem.
+                    Reprehenderit quisquam sequi distinctio sed.</p>
+            </div>
+            <div class="max-w-10 ml-12 border-black rounded-sm">
+                <img src="./img/logo.png" alt="">
+            </div>
+        </section>
+
+        <section class="grid grid-cols-3 pl-12 pr-12">
             <section>
                 <div class="first-p">
-                    <p class="p-4 align-middle">
-                        Eu me chamo Henrique<br>
-                        Sou estudante de programação, cursando Desenvolvimento de Software Multiplataforma na Fatec.
-                        Estou
-                        Aprendendo cada vez mais sobre front-end e back-end, além de frameworks, banco de dados
-                        relacionais
-                        e não relacionais.
+                    <p class="p-4">
+                        Projeto Fincash
                     </p>
                 </div>
             </section>
             <section>
                 <div class="first-p">
-                    <p class="p-4 align-middle">
-                        Eu me chamo Henrique<br>
-                        Sou estudante de programação, cursando Desenvolvimento de Software Multiplataforma na Fatec.
-                        Estou
-                        Aprendendo cada vez mais sobre front-end e back-end, além de frameworks, banco de dados
-                        relacionais
-                        e não relacionais.
+                    <p class="p-4">
+                        Projeto Omnidevs.
                     </p>
                 </div>
             </section>
             <section>
                 <div class="first-p">
-                    <p class="p-4 space-y-4">
-                        Eu me chamo Henrique<br>
-                        Sou estudante de programação, cursando Desenvolvimento de Software Multiplataforma na Fatec.
-                        Estou
-                        Aprendendo cada vez mais sobre front-end e back-end, além de frameworks, banco de dados
-                        relacionais
-                        e não relacionais.
+                    <p class="p-4">
+                        Projeto cardápio.
                     </p>
                 </div>
             </section>
         </section>
-
-
     </main>
 
-    <section class="bg-gray-200 flex justify-between p-4">
-        <footer>
-            &copy;Desenvolved by <a href="https://github.com/DeveloperCorsair">Developer-Corsair
-                <img id="github" src="./img/github-mark.svg" alt="github"></a>
-        </footer>
-    </section>
+    <footer class="bg-gray-200 flex justify-between p-4 mt-16">
+        <div>
+            <span>
+                &copy;Desenvolved by <a class="hover:underline"
+                    href="https://github.com/DeveloperCorsair">Developer-Corsair
+            </span>
+        </div>
+        <span class="flex justify-between gap-4 flex-row-reverse">
+            <img class="flex" id="github" src="./img/github-mark.svg" alt="github"></a>
+        </span>
+    </footer>
 </body>
 
 </html>

@@ -1,15 +1,8 @@
 @import "tailwindcss";
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 #navbarSupportedContent {
     text-align: right;
     display: flex;
-}
-
-.cards {
-    display: flex;
-    justify-content: center;
-    min-width: 100%;
 }
 
 .first-p {
@@ -35,12 +28,7 @@ section.logo {
     padding: 13px 20px;
 }
 
-
-
-
 #github {
     vertical-align: middle;
     width: 30px;
-    box-shadow: none;
-    align-items: end;
 }
