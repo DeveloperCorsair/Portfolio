@@ -36,27 +36,32 @@
             </div>
             <div class="mx-26">
                 <!-- Não está responsiva ainda, tem que arrumar isso. -->
-                <img class="max-h-70 rounded-full h-20 w-full object-cover md:h-full md:w-48" src="./img/1henrique.jpg" alt="">
+                <img class="mask-radial-closest-side mask-radial-from-100% mask-radial-at-[50%_57%] max-h-70 h-20 w-full object-cover md:h-full md:w-48" src="./img/1henrique.jpg"
+                    alt="">
             </div>
         </section>
 
-        <section class="grid grid-cols-3 pl-12 pr-12">
+        <section class="grid grid-cols-3 pl-2 pr-2 justify-between max-h-1000">
             <section>
-                <div class="first-p">
+                <div class="first-p grid grid-rows-2">
                     <p class="p-4">
                         Projeto Fincash
                     </p>
+                    <div class="align-bottom bg-yellow-300 p-xl">
+                        <span>title</span>  
+                    </div>
                 </div>
+
             </section>
             <section>
-                <div class="first-p">
+                <div class="first-p grid grid-rows-2">
                     <p class="p-4">
                         Projeto Omnidevs.
                     </p>
                 </div>
             </section>
             <section>
-                <div class="first-p">
+                <div class="first-p grid grid-rows-2">
                     <p class="p-4">
                         Projeto cardápio.
                     </p>
@@ -65,16 +70,21 @@
         </section>
     </main>
 
-    <footer class="bg-gray-200 flex justify-between p-4 mt-16">
+    <footer class="bg-gray-200 flex justify-between p-4 mt-16 items-center">
         <div>
             <span>
                 &copy;Desenvolved by <a class="hover:underline"
-                    href="https://github.com/DeveloperCorsair">Developer-Corsair
+                    href="https://github.com/DeveloperCorsair">Developer-Corsair</a>
             </span>
         </div>
-        <span class="flex justify-between gap-4 flex-row-reverse">
-            <img class="flex" id="github" src="./img/github-mark.svg" alt="github"></a>
-        </span>
+        <div class="flex gap-4">
+            <span class="flex gap-2 flex-row-reverse">
+                <a class="hover:bg-gray-300 rounded-xl p-1" href="https://github.com/DeveloperCorsair"><img id="github" src="./img/github-mark.svg"
+                        alt="github"></a>
+                <a class="hover:bg-gray-300 rounded-xl p-1" href="https://www.linkedin.com/in/henriquemm/"><img id="github" src="./img/linkedin.png"
+                        alt="linkedin"></a>
+            </span>
+        </div>
     </footer>
 </body>
 
