@@ -29,44 +29,90 @@
         <section class="flex justify-between p-8 pt-14">
             <div class="max-w-3xl text-justify">
                 <h2 class="text-2xl font-bold">Prazer, Henrique!</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem dignissimos saepe
-                    consequuntur animi unde
-                    veniam nostrum sint deleniti, consequatur adipisci. Dolor, sequi! Nam, consequuntur voluptatem.
-                    Reprehenderit quisquam sequi distinctio sed.</p>
+                <p class="pt-2">Sou estudante de programação, cursando Desenvolvimento de Software
+                    Multiplataforma na Fatec. Estou Aprendendo cada vez mais sobre front-end e back-end, além de
+                    frameworks, banco de dados relacionais e não relacionais. Resumindo, atualmente estou.</p>
             </div>
-            <div class="mx-26">
+            <div class="mx-15">
                 <!-- Não está responsiva ainda, tem que arrumar isso. -->
-                <img class="mask-radial-closest-side mask-radial-from-100% mask-radial-at-[50%_57%] max-h-70 h-20 w-full object-cover md:h-full md:w-48" src="./img/1henrique.jpg"
-                    alt="">
+                <img class="rounded-full h-60 w-60 md:h-60 md:w-60" src="./img/1henrique.jpg" alt="foto_henrique">
             </div>
         </section>
 
-        <section class="grid grid-cols-3 pl-2 pr-2 justify-between max-h-1000">
-            <section>
-                <div class="first-p grid grid-rows-2">
-                    <p class="p-4">
-                        Projeto Fincash
-                    </p>
-                    <div class="align-bottom bg-yellow-300 p-xl">
-                        <span>title</span>  
+        <section class="grid grid-cols-2 px-6 bg-gradient-to-b from-gray-50 to-white">
+            <h2 class="text-3xl font-bold text-center mb-10 text-gray-800">
+                Hard Skills
+            </h2>
+
+            <div class="grid gap-6 md:grid-cols-3">
+                <!-- Linguagens -->
+                <div
+                    class="bg-gradient-to-br from-yellow-200 to-yellow-100 rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4 border-b border-gray-300 pb-2">
+                        Linguagens
+                    </h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center gap-2 text-gray-700 font-medium">
+                            <span class="w-2 h-2 bg-gray-600 rounded-full"></span>
+                            <a href="https://skillicons.dev">
+                                <img class="hover:scale-105 transition-transform duration-300"
+                                    src="https://skillicons.dev/icons?i=html,css,javascript,python,c,php&perline=4" />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Frameworks & Ferramentas -->
+                <div
+                    class="inline-block bg-gradient-to-br from-blue-200 to-blue-100 rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4 border-b border-gray-300 pb-2">
+                        Frameworks & Ferramentas
+                    </h3>
+                    <div class="space-y-2">
+                        <span class="flex items-center gap-2 text-gray-700 font-medium">
+                            <span class="w-2 h-2 bg-gray-600 rounded-full"></span>
+                            <a href="https://skillicons.dev">
+                                <img class="hover:scale-105 transition-transform duration-300"
+                                    src="https://skillicons.dev/icons?i=nodejs,express,react,flask,tailwind&perline=9" />
+                            </a>
+                        </span>
                     </div>
                 </div>
 
-            </section>
-            <section>
-                <div class="first-p grid grid-rows-2">
-                    <p class="p-4">
-                        Projeto Omnidevs.
-                    </p>
+                <!-- Design & Organização -->
+                <div
+                    class="bg-gradient-to-br from-pink-200 to-pink-100 rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4 border-b border-gray-300 pb-2">
+                        Versionamento & Organização
+                    </h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center gap-2 text-gray-700 font-medium">
+                            <span class="w-2 h-2 bg-gray-600 rounded-full"></span>
+                            <a href="https://skillicons.dev">
+                                <img class="hover:scale-105 transition-transform duration-300"
+                                    src="https://skillicons.dev/icons?i=git,github,figma,&perline=9" />
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-            </section>
-            <section>
-                <div class="first-p grid grid-rows-2">
-                    <p class="p-4">
-                        Projeto cardápio.
-                    </p>
+
+                <!-- Infraestrutura & Testes -->
+                <div
+                    class="bg-gradient-to-br from-green-200 to-green-100 rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 mt-10">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4 border-b border-gray-300 pb-2">
+                        Infraestrutura & Testes
+                    </h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center gap-2 text-gray-700 font-medium">
+                            <span class="w-2 h-2 bg-gray-600 rounded-full"></span>
+                            <a href="https://skillicons.dev">
+                                <img class="hover:scale-105 transition-transform duration-300"
+                                    src="https://skillicons.dev/icons?i=mongodb,mysql,postman&perline=9" />
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-            </section>
+            </div>
         </section>
     </main>
 
@@ -79,9 +125,11 @@
         </div>
         <div class="flex gap-4">
             <span class="flex gap-2 flex-row-reverse">
-                <a class="hover:bg-gray-300 rounded-xl p-1" href="https://github.com/DeveloperCorsair"><img id="github" src="./img/github-mark.svg"
+                <a class="hover:scale-105 transition-transform duration-300 p-1"
+                    href="https://github.com/DeveloperCorsair"><img id="github" src="./img/github-mark.svg"
                         alt="github"></a>
-                <a class="hover:bg-gray-300 rounded-xl p-1" href="https://www.linkedin.com/in/henriquemm/"><img id="github" src="./img/linkedin.png"
+                <a class="hover:scale-105 transition-transform duration-300 p-1"
+                    href="https://www.linkedin.com/in/henriquemm/"><img id="github" src="./img/linkedin.png"
                         alt="linkedin"></a>
             </span>
         </div>
