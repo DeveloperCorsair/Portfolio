@@ -318,6 +318,9 @@
   .h-96 {
     height: calc(var(--spacing) * 96);
   }
+  .h-full {
+    height: 100%;
+  }
   .max-h-10 {
     max-height: calc(var(--spacing) * 10);
   }
@@ -329,6 +332,9 @@
   }
   .w-30 {
     width: calc(var(--spacing) * 30);
+  }
+  .w-32 {
+    width: calc(var(--spacing) * 32);
   }
   .w-40 {
     width: calc(var(--spacing) * 40);
