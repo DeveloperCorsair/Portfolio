@@ -18,7 +18,7 @@
                         alt="icon"></a>
                 <div class="flex gap-2 items-center">
                     <a class="hover:bg-gray-200 p-1 rounded-sm" href="./pages/sobre.html">Sobre mim</a>
-                    <a class="hover:bg-gray-200 p-1 rounded-sm" href="./pages/formacao.html">Cursos</a>
+                    <a class="hover:bg-gray-200 p-1 rounded-sm" href="./pages/formacao.html">Currículo</a>
                     <a class="hover:bg-gray-200 p-1 rounded-sm" href="./pages/projetos.html">Projetos</a>
                 </div>
             </div>
@@ -32,6 +32,24 @@
                 <p class="pt-2">Sou estudante de programação, cursando Desenvolvimento de Software
                     Multiplataforma na Fatec. Estou Aprendendo cada vez mais sobre front-end e back-end, além de
                     frameworks, banco de dados relacionais e não relacionais. Resumindo, atualmente estou.</p>
+                <h2 class="text-2xl font-bold mt-4">Meus Contatos</h2>
+                <section class="pt-3 flex">
+                    <span>
+                        <a href="https://linkedin.com/in/henriquemm">
+                            <img class="w-9 hover:scale-110 transition-transform duration-100" src="./img/linkedin.png" alt="contato_linkedin">
+                        </a>
+                    </span>
+                    <span class="ml-2">
+                        <a href="https://github.com/DeveloperCorsair">
+                            <img class="w-9 hover:scale-110 transition-transform duration-100" src="./img/github.png" alt="contato_github">
+                        </a>
+                    </span>
+                    <span class="ml-2">
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=henriquemartins7t@gmail.com&su=Contato%20Pelo%20seu%20Portfólio&body=Olá%20Henrique,"target="_blank">
+                            <img class="w-9 hover:scale-110 transition-transform duration-100" src="./img/gmail.png" alt="contato_gmail">
+                        </a>
+                    </span>
+                </section>
             </div>
             <div class="mx-15">
                 <!-- Não está responsiva ainda, tem que arrumar isso. -->
@@ -39,80 +57,78 @@
             </div>
         </section>
 
-        <section class="grid grid-cols-2 px-6 bg-gradient-to-b from-gray-50 to-white">
-            <h2 class="text-3xl font-bold text-center mb-10 text-gray-800">
-                Hard Skills
-            </h2>
+        <section class="flex items-center justify-center px-6 bg-gradient-to-b">
+            <section class="align-top justify-items-center px-6 bg-gradient-to-b max-w-screen-lg mx-auto w-full">
+                <div class="align-top items-center justify-center">
+                    <h2 class="text-3xl font-bold text-center mb-10 text-gray-800">
+                        Hard Skills
+                    </h2>
 
-            <div class="grid gap-6 md:grid-cols-3">
-                <!-- Linguagens -->
-                <div
-                    class="bg-gradient-to-br from-yellow-200 to-yellow-100 rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
-                    <h3 class="text-xl font-semibold text-gray-800 mb-4 border-b border-gray-300 pb-2">
-                        Linguagens
-                    </h3>
-                    <ul class="space-y-2">
-                        <li class="flex items-center gap-2 text-gray-700 font-medium">
-                            <span class="w-2 h-2 bg-gray-600 rounded-full"></span>
-                            <a href="https://skillicons.dev">
-                                <img class="hover:scale-105 transition-transform duration-300"
-                                    src="https://skillicons.dev/icons?i=html,css,javascript,python,c,php&perline=4" />
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+                    <div class="align-top grid gap-6 md:grid-cols-4 justify-items-top">
+                        <!-- Linguagens -->
+                        <div
+                            class="bg-gradient-to-br from-orange-300 to-yellow-100 rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 text-center">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-4 border-b border-gray-300 pb-2">
+                                Linguagens
+                            </h3>
+                            <div class="space-y-2 flex justify-center">
+                                <a href="https://skillicons.dev">
+                                    <img class="w-40 mx-auto"
+                                        src="https://skillicons.dev/icons?i=html,css,javascript,python,c,php&perline=4" />
+                                </a>
+                            </div>
+                        </div>
 
-                <!-- Frameworks & Ferramentas -->
-                <div
-                    class="inline-block bg-gradient-to-br from-blue-200 to-blue-100 rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
-                    <h3 class="text-xl font-semibold text-gray-800 mb-4 border-b border-gray-300 pb-2">
-                        Frameworks & Ferramentas
-                    </h3>
-                    <div class="space-y-2">
-                        <span class="flex items-center gap-2 text-gray-700 font-medium">
-                            <span class="w-2 h-2 bg-gray-600 rounded-full"></span>
-                            <a href="https://skillicons.dev">
-                                <img class="hover:scale-105 transition-transform duration-300"
-                                    src="https://skillicons.dev/icons?i=nodejs,express,react,flask,tailwind&perline=9" />
-                            </a>
-                        </span>
+                        <!-- Frameworks & Ferramentas -->
+                        <div
+                            class="bg-gradient-to-br from-red-300 to-indigo-300 rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-4 border-b border-gray-300 pb-2">
+                                Frameworks & Ferramentas
+                            </h3>
+                            <div class="space-y-2">
+                                <span class="flex items-center gap-2 text-gray-700 font-medium">
+                                    <a href="https://skillicons.dev">
+                                        <img class="w-40 mx-auto"
+                                            src="https://skillicons.dev/icons?i=nodejs,express,react,flask,tailwind&perline=3" />
+                                    </a>
+                                </span>
+                            </div>
+                        </div>
+
+                        <!-- Design & Organização -->
+                        <div
+                            class="bg-gradient-to-br from-purple-300 to-green-200 rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-4 border-b border-gray-300 pb-2">
+                                Versionamento & Organização
+                            </h3>
+                            <div class="space-y-2">
+                                <span class="flex items-center gap-2 text-gray-700 font-medium">
+                                    <a href="https://skillicons.dev">
+                                        <img class="w-40 mx-auto"
+                                            src="https://skillicons.dev/icons?i=git,github,docker,figma" />
+                                    </a>
+                                </span>
+                            </div>
+                        </div>
+
+                        <!-- Infraestrutura & Testes -->
+                        <div
+                            class="bg-gradient-to-br from-gray-300 to-gray-100 rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 h-full">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-4 border-b border-gray-300 pb-2">
+                                Infraestrutura & Testes
+                            </h3>
+                            <div class="">
+                                <span class="flex items-center gap-2 text-gray-700 font-medium">
+                                    <a href="https://skillicons.dev">
+                                        <img class="w-40 mx-auto"
+                                            src="https://skillicons.dev/icons?i=aws,mongodb,mysql,postman" />
+                                    </a>
+                                </span>
+                            </div>
+                        </div>
                     </div>
                 </div>
-
-                <!-- Design & Organização -->
-                <div
-                    class="bg-gradient-to-br from-pink-200 to-pink-100 rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
-                    <h3 class="text-xl font-semibold text-gray-800 mb-4 border-b border-gray-300 pb-2">
-                        Versionamento & Organização
-                    </h3>
-                    <ul class="space-y-2">
-                        <li class="flex items-center gap-2 text-gray-700 font-medium">
-                            <span class="w-2 h-2 bg-gray-600 rounded-full"></span>
-                            <a href="https://skillicons.dev">
-                                <img class="hover:scale-105 transition-transform duration-300"
-                                    src="https://skillicons.dev/icons?i=git,github,figma,&perline=9" />
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-
-                <!-- Infraestrutura & Testes -->
-                <div
-                    class="bg-gradient-to-br from-green-200 to-green-100 rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 mt-10">
-                    <h3 class="text-xl font-semibold text-gray-800 mb-4 border-b border-gray-300 pb-2">
-                        Infraestrutura & Testes
-                    </h3>
-                    <ul class="space-y-2">
-                        <li class="flex items-center gap-2 text-gray-700 font-medium">
-                            <span class="w-2 h-2 bg-gray-600 rounded-full"></span>
-                            <a href="https://skillicons.dev">
-                                <img class="hover:scale-105 transition-transform duration-300"
-                                    src="https://skillicons.dev/icons?i=mongodb,mysql,postman&perline=9" />
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+            </section>
         </section>
     </main>
 
@@ -125,10 +141,10 @@
         </div>
         <div class="flex gap-4">
             <span class="flex gap-2 flex-row-reverse">
-                <a class="hover:scale-105 transition-transform duration-300 p-1"
-                    href="https://github.com/DeveloperCorsair"><img id="github" src="./img/github-mark.svg"
+                <a class="hover:scale-120 transition-transform duration-300 p-1"
+                    href="https://github.com/DeveloperCorsair"><img id="github" src="./img/github.png"
                         alt="github"></a>
-                <a class="hover:scale-105 transition-transform duration-300 p-1"
+                <a class="hover:scale-120 transition-transform duration-300 p-1"
                     href="https://www.linkedin.com/in/henriquemm/"><img id="github" src="./img/linkedin.png"
                         alt="linkedin"></a>
             </span>

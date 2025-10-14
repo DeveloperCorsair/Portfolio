@@ -4,39 +4,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/output.css">
-    <link rel="icon"
-        href="https://img.freepik.com/premium-vector/ai-technology-icon-artificial-intelligence-machine-learning-concepts-futuristic-ai-symbol_689336-880.jpg?w=2000">
-    <title>Projetos - Henrique</title>
+    <link rel="stylesheet" href="../css/output.css">
+    <link rel="stylesheet" href="../styles/input.css">
+    <link rel="icon" href="../img/logo.png">
+    <title>Projetos</title>
 </head>
 
-<body>
+<body class="font-[Montserrat]">
     <section>
-        <nav>
-            <div class="flex justify-between p-4">
-                <a href="./index.html"><img class="max-h-10 rounded-xl"
-                        src="./img/ChatGPT Image 6 de out. de 2025, 22_29_24.png" class="logo" alt="icon"></a>
-                <div class="flex gap-8">
-                    <a href="./pages/formacao.html">Fatec/Etec</a>
-                    <a href="./pages/sobre.html">Sobre mim</a>
-                    <a href="./pages/projetos.html">Projetos</a>
+        <nav class="bg-gray-100 py-2 px-4">
+            <div class="flex justify-between backdrop-blur-sm">
+                <a href="../index.html"><img class="max-h-10 rounded-xl" src="../img/logo.png" class="logo"
+                        alt="icon"></a>
+                <div class="flex gap-2 items-center">
+                    <a class="hover:bg-gray-200 p-1 rounded-sm" href="../pages/sobre.html">Sobre mim</a>
+                    <a class="hover:bg-gray-200 p-1 rounded-sm" href="../pages/formacao.html">Cursos</a>
+                    <a class="hover:bg-gray-200 p-1 rounded-sm" href="../pages/projetos.html">Projetos</a>
                 </div>
             </div>
         </nav>
     </section>
 
     <main>
+
+        <section class="flex items-center justify-center px-6 bg-gradient-to-b py-10">
+            <div class="w-full max-w-screen-xl">
+                <h2 class="text-3xl font-bold text-center mb-10 text-gray-800">Alguns dos projetos que continuam
+                    ajudando as pessoas na nossa comunidade</h2>
+
+                <div class="grid gap-6 md:grid-cols-3 justify-items-center">
+                    <!-- Projeto Fincash -->
+                    <div
+                        class="bg-gradient-to-br from-green-300 to-green-100 rounded-2xl pt-4 p-2 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 text-center">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-4 border-b border-gray-300 pb-2">Fincash</h3>
+                        <div class="flow-root flex justify-center">
+                            <a href="https://github.com/NEW-FINCASH/New-Fincash-Frontend">
+                                <img class="rounded-sm" src="../img/fincash.png" alt="fincash"></a>
+                            <span class=" block pt-4 text-justify ml-6 mr-6">Uma API WEB de
+                                gestão financeira. Que visa facilitar o controle e a organização das finanças
+                                pessoais e empresariais, proporcionando aos usuários uma maneira eficiente de gerenciar
+                                receitas, despesas, investimentos e orçamentos.
+                            </span>
+                            <!-- Botão para o Projeto Fincash -->
+                            <button type="button" class="border-1 border-green-500 bg-gradient-to-br from-green-300 to-emerald-300 mt-4 bg-gray-100 pt-1 pb-1 pl-5 pr-5 rounded-sm hover:underline hover:text-blue-500">
+                                <a href="https://github.com/NEW-FINCASH/New-Fincash-Frontend">Acesse o Projeto Aqui!</a>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Projeto OmniDevs -->
+                    <div
+                        class="bg-gradient-to-br from-blue-200 to-blue-100 rounded-2xl pt-4 p-2 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 text-center">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-4 border-b border-gray-300 pb-2">OmniDevs</h3>
+                        <div class="flow-root space-y-2 flex justify-center">
+                            <a href="https://api-censo-2022.vercel.app/"><img class="rounded-sm"
+                                    src="../img/omnidevs.png" /></a>
+                            <span class="block pt-4 pb-2 text-justify ml-6 mr-6">Um projeto dedicado ajudar
+                                a prefeitura de São José dos Campos na análise de dados sobre o censo da cidade, 
+                                trazendo gráficos intuitivos, layout minimalista e leve. 
+                                Além de mapas interativos sobre os respectivos filtros da região.
+                            </span>
+                            <button type="button" class="border-1 border-blue-500 bg-gradient-to-br from-blue-300 to-cyan-200 bg-gray-100 pt-1 pb-1 pl-5 pr-5 rounded-sm hover:underline hover:text-blue-500">
+                                <a href="https://api-censo-2022.vercel.app/">Acesse o Projeto Aqui!</a>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Projeto Cardápio -->
+                    <div
+                        class="bg-gradient-to-br from-pink-200 to-pink-100 rounded-2xl pt-4 p-2 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 text-center">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-4 border-b border-gray-300 pb-2">Tempero da Casa</h3>
+                        <div class="flow-root space-y-2 flex justify-center">
+                            <a href="https://temperodacasa.vercel.app/">
+                                <img class="rounded-sm" src="../img/cardapio.png" />
+                            </a>
+                            <span class="block pt-4 text-justify">Um site referente ao nosso restaurante, Tempero da
+                                casa.
+                                Onde você pode visualizar nossas delícias, eescolher seus pedidos atráves do cardápio digital no próprio site,.
+                                Trazendo um interface dinâmica e com cores fortes, que te fazem sentir fome e mais
+                                alegria.
+                            </span>
+                            <button type="button" class="border-1 border-pink-500 bg-gradient-to-br from-pink-300 to-purple-200 mt-4 bg-gray-100 pt-1 pb-1 pl-5 pr-5 rounded-sm hover:underline hover:text-blue-500">
+                                <a href="https://temperodacasa.vercel.app/">Acesse o Projeto Aqui!</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous">
-        </script>
-
-    <script src="../script.js"></script>
-
-    <footer>
-        &copy;Desenvolved by <a href="https://github.com/DeveloperCorsair" id="devcor">Developer-Corsair
-            <img id="github" src="../img/github-mark.svg" alt="github"></a>
+    <footer class="bg-gray-200 flex justify-between p-4 mt-16 items-center">
+        <div>
+            <span>
+                &copy;Desenvolved by <a class="hover:underline"
+                    href="https://github.com/DeveloperCorsair">Developer-Corsair</a>
+            </span>
+        </div>
+        <div class="flex gap-4">
+            <span class="flex gap-2 flex-row-reverse">
+                <a class="hover:scale-120 transition-transform duration-300 p-1"
+                    href="https://github.com/DeveloperCorsair"><img id="github" src="../img/github.png"
+                        alt="github"></a>
+                <a class="hover:scale-120 transition-transform duration-300 p-1"
+                    href="https://www.linkedin.com/in/henriquemm/"><img id="github" src="../img/linkedin.png"
+                        alt="linkedin"></a>
+            </span>
+        </div>
     </footer>
 </body>
 

@@ -4,49 +4,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/output.css">
-    <link rel="stylesheet" href="../index.html">
-    <link rel="icon"
-        href="https://img.freepik.com/premium-vector/ai-technology-icon-artificial-intelligence-machine-learning-concepts-futuristic-ai-symbol_689336-880.jpg?w=2000">
-    <title>Portfólio Henrique</title>
+    <link rel="stylesheet" href="../css/output.css">
+    <link rel="stylesheet" href="../styles/input.css">
+    <link rel="icon" href="../img/logo.png">
+    <title>Projetos</title>
 </head>
 
-<body>
+<body class="font-[Montserrat]">
     <section>
-        <nav>
-            <div class="flex justify-between p-4">
-                <a href="./index.html"><img class="max-h-10 rounded-xl"
-                        src="./img/ChatGPT Image 6 de out. de 2025, 22_29_24.png" class="logo" alt="icon"></a>
-                <div class="flex gap-8">
-                    <a href="./pages/formacao.html">Fatec/Etec</a>
-                    <a href="./pages/sobre.html">Sobre mim</a>
-                    <a href="./pages/projetos.html">Projetos</a>
+        <nav class="bg-gray-100 py-2 px-4">
+            <div class="flex justify-between backdrop-blur-sm">
+                <a href="../index.html"><img class="max-h-10 rounded-xl" src="../img/logo.png" class="logo"
+                        alt="icon"></a>
+                <div class="flex gap-2 items-center">
+                    <a class="hover:bg-gray-200 p-1 rounded-sm" href="../pages/sobre.html">Sobre mim</a>
+                    <a class="hover:bg-gray-200 p-1 rounded-sm" href="../pages/formacao.html">Cursos</a>
+                    <a class="hover:bg-gray-200 p-1 rounded-sm" href="../pages/projetos.html">Projetos</a>
                 </div>
             </div>
         </nav>
     </section>
 
     <main>
-        <div class="first-p">
-            <p>Eu me chamo Henrique</p>
-            <p>
-                Sou estudante de programação, cursando Desenvolvimento de Software Multiplataforma na Fatec. Estou
-                Aprendendo cada vez mais sobre front-end e back-end, além de frameworks, banco de dados relacionais e
-                não
-                relacionais.
-            </p>
-        </div>
+        <section class="flex justify-between p-8 pt-14">
+            <div class="max-w-3xl text-justify">
+                <h2 class="text-2xl font-bold">Prazer, Henrique!</h2>
+                <p class="pt-2">Sou estudante de programação, cursando Desenvolvimento de Software
+                    Multiplataforma na Fatec. Estou Aprendendo cada vez mais sobre front-end e back-end, além de
+                    frameworks, banco de dados relacionais e não relacionais. Resumindo, atualmente estou.</p>
+            </div>
+            <div class="mx-15">
+                <!-- Não está responsiva ainda, tem que arrumar isso. -->
+                <img class="rounded-full h-60 w-60 md:h-60 md:w-60" src="../img/1henrique.jpg" alt="foto_henrique">
+            </div>
+        </section>
     </main>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous">
-        </script>
-
-    <script src="../script.js"></script>
-
-    <footer>
-        &copy;Desenvolved by <a href="https://github.com/DeveloperCorsair" id="devcor">Developer-Corsair
-            <img id="github" src="../img/github-mark.svg" alt="github"></a>
+    <footer class="bg-gray-200 flex justify-between p-4 mt-16 items-center">
+        <div>
+            <span>
+                &copy;Desenvolved by <a class="hover:underline"
+                    href="https://github.com/DeveloperCorsair">Developer-Corsair</a>
+            </span>
+        </div>
+        <div class="flex gap-4">
+            <span class="flex gap-2 flex-row-reverse">
+                <a class="hover:scale-120 transition-transform duration-300 p-1"
+                    href="https://github.com/DeveloperCorsair"><img id="github" src="../img/github.png"
+                        alt="github"></a>
+                <a class="hover:scale-120 transition-transform duration-300 p-1"
+                    href="https://www.linkedin.com/in/henriquemm/"><img id="github" src="../img/linkedin.png"
+                        alt="linkedin"></a>
+            </span>
+        </div>
     </footer>
 </body>
 
