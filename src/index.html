@@ -5,21 +5,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/output.css">
-    <link rel="stylesheet" href="./styles/input.css">
+    <script src="./js/head.js"></script>
     <link rel="icon" href="./img/logo.png">
     <title>Portfólio Henrique</title>
 </head>
 
-<body class="font-[Montserrat]">
+<body class="font-[Montserrat] dark">
     <section>
         <nav class="bg-gray-100 py-2 px-4">
+            <!-- Navbar Logo + Other Pages + Dark Mode -->
             <div class="flex justify-between backdrop-blur-sm">
                 <a href="./index.html"><img class="max-h-10 rounded-xl" src="./img/logo.png" class="logo"
                         alt="icon"></a>
+                <!-- Seção para Outras Páginas -->
                 <div class="flex gap-2 items-center">
                     <a class="hover:bg-gray-200 p-1 rounded-sm" href="./pages/sobre.html">Sobre mim</a>
                     <a class="hover:bg-gray-200 p-1 rounded-sm" href="./pages/formacao.html">Currículo</a>
                     <a class="hover:bg-gray-200 p-1 rounded-sm" href="./pages/projetos.html">Projetos</a>
+                    <!-- Botão de Dark Mode -->
+                    <button id="theme-toggle" type="button"
+                        class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5">
+                        <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+                        </svg>
+                        <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                                fill-rule="evenodd" clip-rule="evenodd">
+                            </path>
+                        </svg>
+                    </button>
                 </div>
             </div>
         </nav>
@@ -36,17 +53,21 @@
                 <section class="pt-3 flex">
                     <span>
                         <a href="https://linkedin.com/in/henriquemm">
-                            <img class="w-9 hover:scale-110 transition-transform duration-100" src="./img/linkedin.png" alt="contato_linkedin">
+                            <img class="w-9 hover:scale-110 transition-transform duration-100" src="./img/linkedin.png"
+                                alt="contato_linkedin">
                         </a>
                     </span>
                     <span class="ml-2">
                         <a href="https://github.com/DeveloperCorsair">
-                            <img class="w-9 hover:scale-110 transition-transform duration-100" src="./img/github.png" alt="contato_github">
+                            <img class="w-9 hover:scale-110 transition-transform duration-100" src="./img/github.png"
+                                alt="contato_github">
                         </a>
                     </span>
                     <span class="ml-2">
-                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=henriquemartins7t@gmail.com&su=Contato%20Pelo%20seu%20Portfólio&body=Olá%20Henrique,"target="_blank">
-                            <img class="w-9 hover:scale-110 transition-transform duration-100" src="./img/gmail.png" alt="contato_gmail">
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=henriquemartins7t@gmail.com&su=Contato%20Pelo%20seu%20Portfólio&body=Olá%20Henrique,"
+                            target="_blank">
+                            <img class="w-9 hover:scale-110 transition-transform duration-100" src="./img/gmail.png"
+                                alt="contato_gmail">
                         </a>
                     </span>
                 </section>
@@ -132,6 +153,7 @@
         </section>
     </main>
 
+
     <footer class="bg-gray-200 flex justify-between p-4 mt-16 items-center">
         <div>
             <span>
@@ -142,14 +164,15 @@
         <div class="flex gap-4">
             <span class="flex gap-2 flex-row-reverse">
                 <a class="hover:scale-120 transition-transform duration-300 p-1"
-                    href="https://github.com/DeveloperCorsair"><img id="github" src="./img/github.png"
-                        alt="github"></a>
+                    href="https://github.com/DeveloperCorsair"><img id="github" src="./img/github.png" alt="github"></a>
                 <a class="hover:scale-120 transition-transform duration-300 p-1"
                     href="https://www.linkedin.com/in/henriquemm/"><img id="github" src="./img/linkedin.png"
                         alt="linkedin"></a>
             </span>
         </div>
     </footer>
+    <script src="./js/script.js"></script>
+    <script src="./node_modules/flowbite/dist/flowbite.min.js"></script>
 </body>
 
 </html>
