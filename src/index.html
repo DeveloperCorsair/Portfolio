@@ -43,48 +43,56 @@
     </section>
 
     <main>
-        <section class="flex justify-between p-8 pt-14">
-            <div class="max-w-3xl text-justify">
-                <h2 class="text-2xl font-bold">Prazer, Henrique!</h2>
-                <p class="pt-2">Sou estudante de programação, cursando Desenvolvimento de Software
-                    Multiplataforma na Fatec. Estou Aprendendo cada vez mais sobre front-end e back-end, além de
-                    frameworks, banco de dados relacionais e não relacionais. Resumindo, atualmente estou.</p>
-                <h2 class="text-2xl font-bold mt-4">Meus Contatos</h2>
-                <section class="pt-3 flex">
-                    <span>
-                        <a href="https://linkedin.com/in/henriquemm">
-                            <img class="w-9 hover:scale-110 transition-transform duration-100" src="./img/linkedin.png"
-                                alt="contato_linkedin">
-                        </a>
-                    </span>
-                    <span class="ml-2">
-                        <a href="https://github.com/DeveloperCorsair">
-                            <img class="w-9 hover:scale-110 transition-transform duration-100" src="./img/github.png"
-                                alt="contato_github">
-                        </a>
-                    </span>
-                    <span class="ml-2">
-                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=henriquemartins7t@gmail.com&su=Contato%20Pelo%20seu%20Portfólio&body=Olá%20Henrique,"
-                            target="_blank">
-                            <img class="w-9 hover:scale-110 transition-transform duration-100" src="./img/gmail.png"
-                                alt="contato_gmail">
-                        </a>
-                    </span>
-                </section>
+        <section class="grid grid-cols-1 md:grid-cols-4 gap-6 p-8 pt-14 items-center">
+            <!-- Texto de Boas-vindas -->
+            <!-- Foto Henrique -->
+            <div class="flex justify-center md:justify-end order-1 md:order-2">
+                <img class="w-40 h-40 sm:w-48 sm:h-48 md:w-56 md:h-56 rounded-full object-cover aspect-square shadow-md"
+                    src="./img/1henrique.jpg" alt="foto_henrique">
             </div>
-            <div class="mx-15">
-                <!-- Não está responsiva ainda, tem que arrumar isso. -->
-                <img class="rounded-full h-60 w-60 md:h-60 md:w-60" src="./img/1henrique.jpg" alt="foto_henrique">
+
+            <div class="md:col-span-3 text-justify order-2 md:order-1">
+                <h2 class="text-2xl font-bold">Prazer, Henrique!</h2>
+                <p class="pt-2">
+                    Sou estudante de programação, cursando Desenvolvimento de Software Multiplataforma na Fatec.
+                    Estou aprendendo cada vez mais sobre front-end e back-end, além de frameworks, banco de dados
+                    relacionais e não relacionais. Resumindo, atualmente estou.
+                </p>
+
+                <!-- Meus contatos -->
+                <h2 class="text-2xl font-bold mt-4">Meus Contatos</h2>
+
+                <div class="pt-3 flex space-x-3">
+                    <!-- Linkedin -->
+                    <a href="https://linkedin.com/in/henriquemm" target="_blank">
+                        <img class="w-9 hover:scale-110 transition-transform duration-150" src="./img/linkedin.png"
+                            alt="contato_linkedin">
+                    </a>
+
+                    <!-- Github -->
+                    <a href="https://github.com/DeveloperCorsair" target="_blank">
+                        <img class="w-9 hover:scale-110 transition-transform duration-150" src="./img/github.png"
+                            alt="contato_github">
+                    </a>
+
+                    <!-- Gmail -->
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=henriquemartins7t@gmail.com&su=Contato%20Pelo%20seu%20Portfólio&body=Olá%20Henrique,"
+                        target="_blank">
+                        <img class="w-9 hover:scale-110 transition-transform duration-150" src="./img/gmail.png"
+                            alt="contato_gmail">
+                    </a>
+                </div>
             </div>
         </section>
 
         <section class="flex items-center justify-center px-6 bg-gradient-to-b">
             <section class="align-top justify-items-center px-6 bg-gradient-to-b max-w-screen-lg mx-auto w-full">
+                <!-- Hard Skills -->
                 <div class="align-top items-center justify-center">
                     <h2 class="text-3xl font-bold text-center mb-10 text-gray-800">
                         Hard Skills
                     </h2>
-
+                    <!-- Cards -->
                     <div class="align-top grid gap-6 md:grid-cols-4 justify-items-top">
                         <!-- Linguagens -->
                         <div
