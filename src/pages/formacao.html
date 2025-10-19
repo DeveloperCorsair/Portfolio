@@ -11,205 +11,245 @@
 </head>
 
 <body class="font-[Montserrat] dark">
-    <section>
-        <nav class="bg-gray-100 py-2 px-4">
-            <div class="flex justify-between backdrop-blur-sm">
-                <a href="../index.html"><img class="max-h-10 rounded-xl" src="../img/logo.png" class="logo"
-                        alt="icon"></a>
-                <div class="flex gap-2 items-center">
-                    <a class="hover:bg-gray-200 p-1 rounded-sm" href="../pages/sobre.html">Sobre mim</a>
-                    <a class="hover:bg-gray-200 p-1 rounded-sm" href="../pages/formacao.html">Currículo</a>
-                    <a class="hover:bg-gray-200 p-1 rounded-sm" href="../pages/projetos.html">Projetos</a>
-                </div>
+    <!-- Header -->
+    <header class="fixed top-0 left-0 w-full bg-gray-100/80 backdrop-blur-md shadow-sm z-50">
+        <nav class="flex justify-between items-center px-6 py-3">
+            <a href="../index.html"><img class="max-h-10 rounded-xl" src="../img/logo.png" alt="icon"></a>
+            <div class="flex gap-2 items-center">
+                <a class="text-gray-700 hover:text-violet-600 hover:bg-gray-200 px-3 py-1 rounded-md transition-colors duration-200"
+                    href="../pages/sobre.html">Sobre mim</a>
+                <a class="text-gray-700 hover:text-violet-600 hover:bg-gray-200 px-3 py-1 rounded-md transition-colors duration-200"
+                    href="../pages/formacao.html">Currículo</a>
+                <a class="text-gray-700 hover:text-violet-600 hover:bg-gray-200 px-3 py-1 rounded-md transition-colors duration-200"
+                    href="../pages/projetos.html">Projetos</a>
             </div>
         </nav>
-    </section>
+    </header>
 
-    <main>
-        <section class="p-8 w-full">
-            <!-- Seção Principal -->
-            <section class="h-full">
-                <div class="grid grid-cols-4 gap-y-4 gap-x-10">
-                    <!-- Seção Fatec & Contatos-->
-                    <div class="col-span-3 space-y-6">
-                        <!-- Seção Fatec -->
-                        <div>
-                            <div class="flex items-center">
-                                <h2 class="text-2xl font-semibold text-gray-800 mb-2">Formação Acadêmica</h2>
-                                <img class="ml-3 w-8 opacity-80" src="../img/computador.png" alt="imagem_computador">
-                            </div>
-                            <p class="text-md italic text-gray-600">
-                                Faculdade de Tecnologia <span class="float-right">Ago. 2025 – jul. 2028</span>
-                            </p>
-                            <p class="text-sm italic text-gray-600 mb-2">
-                                Tecnólogo em Desenvolvimento de Software Multiplataforma
-                            </p>
-                            <ul class="list-disc list-inside text-gray-700 space-y-1">
-                                <li>Limpeza manual no computador, remoção de arquivos obsoletos e troca de hardware,
-                                    aumentando a performance.</li>
-                                <li>Aplicação do método Kaizen, otimizando o cadastro de usuários no sistema interno.
-                                </li>
-                                <li>Padronização de digitalização e arquivamento de notas fiscais, evitando perdas de
-                                    documentos.</li>
-                            </ul>
-                        </div>
+    <main class="pt-16 p-6 w-full space-y-10 md:space-y-10">
+        <!-- Seção Principal -->
+        <section class="grid grid-cols-1 md:grid-cols-4 gap-6 md:gap-10 items-stretch h-full w-full">
+            <!-- Fatec + Etec -->
+            <div class="col-span-3 flex flex-col gap-6 order-2 md:order-1">
+                <!-- Fatec -->
+                <div
+                    class="border-b border-gray-300 p-6 rounded-2xl shadow-md bg-white flex flex-col justify-between h-full">
+                    <div class="flex items-center mb-2">
+                        <h2 class="text-2xl font-semibold text-gray-800">Formação Acadêmica</h2>
+                        <img class="ml-3 w-8 opacity-80" src="../img/graduation.png" alt="imagem_computador">
                     </div>
-                    <!-- Contatos -->
-                    <div class="col-span-1">
-                        <h2 class="text-xl font-semibold text-gray-800 mb-4">Meus Contatos</h2>
-                        <div class="flex flex-wrap gap-2">
-                            <!-- WhatsApp -->
-                            <a href="https://wa.me/5512991319058?text=Olá%20Henrique!%20Acabei%20de%20Olhar%20seu%20Portfólio%20e%20gostaria%20de%20conversar%20contigo!"
-                                target="_blank">
-                                <img class="w-9 hover:scale-110 transition-transform duration-150"
-                                    src="../img/whatsapp.png" alt="WhatsApp">
-                            </a>
-                            <!-- Gmail -->
-                            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=henriquemartins7t@gmail.com&su=Contato%20Pelo%20seu%20Portfólio&body=Olá%20Henrique,"
-                                target="_blank">
-                                <img class="w-9 hover:scale-110 transition-transform duration-150"
-                                    src="../img/gmail.png" alt="Gmail">
-                            </a>
-                            <!-- LinkedIn -->
-                            <a href="https://linkedin.com/in/henriquemm" target="_blank">
-                                <img class="w-9 hover:scale-110 transition-transform duration-150"
-                                    src="../img/linkedin.png" alt="LinkedIn">
-                            </a>
-                            <!-- GitHub -->
-                            <a href="https://github.com/DeveloperCorsair" target="_blank">
-                                <img class="w-9 hover:scale-110 transition-transform duration-150"
-                                    src="../img/github.png" alt="GitHub">
-                            </a>
-                        </div>
-                    </div>
+                    <p class="text-md italic text-gray-600">
+                        Faculdade de Tecnologia <span class="float-right">Ago. 2025 – Jul. 2028</span>
+                    </p>
+                    <p class="text-sm italic text-gray-600 mb-2">
+                        Tecnólogo em Desenvolvimento de Software Multiplataforma
+                    </p>
+                    <ul class="list-disc list-inside text-gray-700 space-y-1">
+                        <li>Limpeza manual no computador, remoção de arquivos obsoletos e troca de hardware,
+                            aumentando a performance.</li>
+                        <li>Aplicação do método Kaizen, otimizando o cadastro de usuários no sistema interno.
+                        </li>
+                        <li>Padronização de digitalização e arquivamento de notas fiscais, evitando perdas de
+                            documentos.</li>
+                    </ul>
                 </div>
-            </section>
-            <!-- Seção Etec & Linguagens -->
-            <section class="grid grid-cols-4 gap-y-4 gap-x-10 mt-4">
-                <div class="col-span-3 space-y-6">
-                    <!-- Seção Etec -->
-                    <div class="col-span-3 border-b border-gray-300 pb-6">
-                        <p class="text-md italic text-gray-600">
-                            Escola técnica Estadual <span class="float-right">Jan. 2023 – jul. 2025</span>
-                        </p>
-                        <p class="text-sm italic text-gray-600 mb-2">
-                            Técnico em Desenvolvimento de Sistemas
-                        </p>
-                        <ul class="list-disc list-inside text-gray-700 space-y-1">
-                            <li>Limpeza manual no computador, remoção de arquivos obsoletos e troca de hardware,
-                                aumentando a performance.</li>
-                            <li>Aplicação do método Kaizen, otimizando o cadastro de usuários no sistema
-                                interno.
-                            </li>
-                            <li>Padronização de digitalização e arquivamento de notas fiscais, evitando perdas
-                                de
-                                documentos.</li>
-                        </ul>
-                    </div>
-                    <!-- Linguagens -->
-                    <div
-                        class="col-span-1 md:w-full md:h-full bg-gradient-to-br from-orange-300 to-yellow-100 rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 text-center">
-                        <h3 class="text-xl font-semibold text-gray-800 mb-4 border-b border-gray-300 pb-2">
-                            Linguagens
-                        </h3>
-                        <div class="space-y-2 flex justify-center">
-                            <a href="https://skillicons.dev">
-                                <img class="w-40 mx-auto sm:w-full sm:h-full"
-                                    src="https://skillicons.dev/icons?i=html,css,javascript,python,c,php&perline=3" />
-                            </a>
-                        </div>
+
+                <!-- Etec -->
+                <div
+                    class="border-b border-gray-300 p-6 rounded-2xl shadow-md bg-white flex flex-col justify-between h-full">
+                    <p class="text-md italic text-gray-600">
+                        Escola Técnica Estadual
+                        <span class="float-right">Jan. 2023 – Jul. 2025</span>
+                    </p>
+                    <p class="text-sm italic text-gray-600 mb-2">
+                        Técnico em Desenvolvimento de Sistemas
+                    </p>
+                    <ul class="list-disc list-inside text-gray-700 space-y-1">
+                        <li>Limpeza manual no computador, remoção de arquivos obsoletos e troca de hardware,
+                            aumentando a performance.</li>
+                        <li>Aplicação do método Kaizen, otimizando o cadastro de usuários no sistema interno.
+                        </li>
+                        <li>Padronização de digitalização e arquivamento de notas fiscais, evitando perdas de
+                            documentos.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Contatos + Linguagens -->
+            <div class="col-span-1 flex flex-col gap-6 order-1 md:order-2">
+                <!-- Contatos -->
+                <div
+                    class="align-middle border-b border-gray-300 p-6 rounded-2xl shadow-md bg-white flex flex-col justify-between h-full ">
+                    <h2 class="text-xl font-semibold text-gray-800 mb-4 text-center">Meus Contatos</h2>
+                    <!-- Ícones -->
+                    <div class="flex flex-wrap gap-3 justify-center items-center flex-grow">
+                        <a href="https://wa.me/5512991319058?text=Olá%20Henrique!%20Acabei%20de%20Olhar%20seu%20Portfólio%20e%20gostaria%20de%20conversar%20contigo!"
+                            target="_blank">
+                            <img class="w-9 hover:scale-110 transition-transform duration-150" src="../img/whatsapp.png"
+                                alt="WhatsApp">
+                        </a>
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=henriquemartins7t@gmail.com&su=Contato%20Pelo%20seu%20Portfólio&body=Olá%20Henrique,"
+                            target="_blank">
+                            <img class="w-9 hover:scale-110 transition-transform duration-150" src="../img/gmail.png"
+                                alt="Gmail">
+                        </a>
+                        <a href="https://linkedin.com/in/henriquemm" target="_blank">
+                            <img class="w-9 hover:scale-110 transition-transform duration-150" src="../img/linkedin.png"
+                                alt="LinkedIn">
+                        </a>
+                        <a href="https://github.com/DeveloperCorsair" target="_blank">
+                            <img class="w-9 hover:scale-110 transition-transform duration-150" src="../img/github.png"
+                                alt="GitHub">
+                        </a>
                     </div>
                 </div>
 
-
-            </section>
-            <!-- Profissional -->
-            <div class="w-full h-full space-y-6">
-                <!-- Experiência + Linguagens -->
-                <div class="grid grid-cols-4 gap-10">
-                    <!-- Experiência Profissional - Cragea -->
-                    <div class="col-span-3 border-b border-gray-300 pb-6 pt-6">
-                        <div class="flex items-center mb-2">
-                            <h2 class="text-2xl font-semibold text-gray-800">Auxiliar Administrativo</h2>
-                            <img class="ml-3 w-8 opacity-80" src="../img/computador.png" alt="imagem_computador">
-                        </div>
-                        <p class="text-sm italic text-gray-600 mb-2">
-                            Cragea <span class="float-right">Mar. 2024 – Presente</span>
-                        </p>
-                        <ul class="list-disc list-inside text-gray-700 space-y-1">
-                            <li>Limpeza manual no computador, remoção de arquivos obsoletos e troca de hardware,
-                                aumentando a performance.</li>
-                            <li>Aplicação do método Kaizen, otimizando o cadastro de usuários no sistema interno.</li>
-                            <li>Padronização de digitalização e arquivamento de notas fiscais, evitando perdas de
-                                documentos.</li>
-                        </ul>
-                    </div>
-
-                    <!-- Hard Skills -->
-                    <!-- Linguagens -->
-                    <div
-                        class="md:w-full md:h-full bg-gradient-to-br from-orange-300 to-yellow-100 rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 text-center">
-                        <h3 class="text-xl font-semibold text-gray-800 mb-4 border-b border-gray-300 pb-2">
-                            Linguagens
-                        </h3>
-                        <div class="space-y-2 flex justify-center">
-                            <a href="https://skillicons.dev">
-                                <img class="w-40 mx-auto sm:w-full sm:h-full"
-                                    src="https://skillicons.dev/icons?i=html,css,javascript,python,c,php&perline=3" />
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Experiência Embraer + Frameworks -->
-                <div class="grid grid-cols-4 gap-x-10 sm:mt-60 md:mt-2">
-                    <!-- Experiência Profissional - Embraer -->
-                    <div class="col-span-3">
-                        <div class="flex items-center mb-2">
-                            <h2 class="text-2xl font-semibold text-gray-800">Operador Logística</h2>
-                            <img class="ml-3 w-7 opacity-80" src="../img/voar.png" alt="imagem_avião">
-                        </div>
-                        <p class="text-sm italic text-gray-600 mb-2">
-                            Embraer S/A <span class="float-right">Jan. 2023 – Dez. 2023</span>
-                        </p>
-                        <ul class="list-disc list-inside text-gray-700 space-y-1">
-                            <li>Abastecimento de materiais na linha de produção, garantindo fluxo contínuo.</li>
-                            <li>Entrega segura com transpaletes, reduzindo riscos de avarias.</li>
-                            <li>Conferência e separação de peças com ferramentas especializadas.</li>
-                            <li>Organização de componentes conforme padrões técnicos.</li>
-                            <li>Utilização do sistema SAP para controle de estoque e materiais.</li>
-                        </ul>
-                    </div>
-                    <!-- Hard Skills -->
-                    <!-- Frameworks & Ferramentas -->
-                    <div
-                        class="bg-gradient-to-br from-red-300 to-indigo-300 rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
-                        <h3 class="text-xl font-semibold text-gray-800 mb-4 border-b border-gray-300 pb-2">
-                            Frameworks & Ferramentas
-                        </h3>
-                        <div class="space-y-2">
-                            <span class="flex items-center gap-2 text-gray-700 font-medium">
-                                <a href="https://skillicons.dev">
-                                    <img class="w-40 mx-auto"
-                                        src="https://skillicons.dev/icons?i=nodejs,express,react,flask,tailwind&perline=3" />
-                                </a>
-                            </span>
-                        </div>
+                <!-- Linguagens -->
+                <div
+                    class="bg-gradient-to-br from-orange-300 to-yellow-100 rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 text-center flex flex-col justify-between h-full">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4 border-b border-gray-300 pb-2">
+                        Front-end & Back-end
+                    </h3>
+                    <div class="flex justify-center">
+                        <a href="./">
+                            <img class="w-40 mx-auto sm:w-full sm:h-auto"
+                                src="https://skillicons.dev/icons?i=html,css,javascript,python,c,java&perline=3"
+                                alt="Linguagens" />
+                        </a>
                     </div>
                 </div>
             </div>
-            <!-- Download do Currículo -->
-            <section>
-                <div class="col-span-1 sm:mt-60 md:mt-2">
-                    <h2 class="text-xl font-semibold text-gray-800 mb-4">Faça o Download do Currículo</h2>
-                    <a class="inline-flex bg-violet-600 hover:bg-violet-700 text-white text-sm px-4 py-2 gap-2 rounded-md transition-colors duration-200 shadow-sm"
-                        href="../docs/Currículo Henrique Moreira 2025.pdf" download="curriculo_henrique">
-                        <img class="w-4" src="../img/download.png" alt="imagem_download"> Download
+        </section>
+
+        <!-- Cursos -->
+        <section class="grid grid-cols-1 md:grid-cols-4 gap-6 md:gap-10 items-stretch">
+            <!-- Cursos -->
+            <div
+                class="col-span-3 border-b border-gray-300 p-6 rounded-2xl shadow-md bg-white flex flex-col gap-6 h-full">
+                <!-- Seção CS50X -->
+                <section>
+                    <div class="flex items-center mb-2">
+                        <h2 class="text-2xl font-semibold text-gray-800">Cursos</h2>
+                        <img class="ml-3 w-8 opacity-80" src="../img/book.png" alt="imagem_computador">
+                    </div>
+                    <p class="text-md italic text-gray-600">
+                        CS50X
+                        <span class="float-right">Set. 2025 – Presente</span>
+                    </p>
+                    <p class="text-sm italic text-gray-600">
+                        Introdução à Ciência da Computação (Ead)
+                    </p>
+                </section>
+
+                <!-- Seção Cyber -->
+                <section>
+                    <p class="text-md italic text-gray-600">
+                        Google
+                        <span class="float-right">Set. 2025 – Presente</span>
+                    </p>
+                    <p class="text-sm italic text-gray-600">
+                        Fundamentos da segurança cibernética (Ead)
+                    </p>
+                </section>
+            </div>
+
+            <!-- Frameworks & Ferramentas -->
+            <div
+                class="bg-gradient-to-br from-red-300 to-indigo-300 rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 text-center flex flex-col justify-between h-full">
+                <h3 class="text-xl font-semibold text-gray-800 mb-4 border-b border-gray-300 pb-2">
+                    Frameworks & Ferramentas
+                </h3>
+                <div class="flex justify-center">
+                    <a href="./" class="flex">
+                        <img class="w-40 mx-auto sm:w-full sm:h-full"
+                            src="https://skillicons.dev/icons?i=nodejs,express,react,flask,tailwind,bootstrap&perline=3" />
                     </a>
                 </div>
-            </section>
+            </div>
+        </section>
+
+        <!-- Experiências Profissionais -->
+        <section class="grid grid-cols-1 md:grid-cols-4 gap-6 md:gap-10 items-stretch">
+            <!-- Experiência Profissional - Cragea -->
+            <div
+                class="col-span-3 border-b border-gray-300 p-6 rounded-2xl shadow-md bg-white flex flex-col justify-between h-full">
+                <div class="flex items-center mb-2">
+                    <h2 class="text-2xl font-semibold text-gray-800">Auxiliar Administrativo</h2>
+                    <img class="ml-3 w-8 opacity-80" src="../img/computador.png" alt="imagem_computador">
+                </div>
+                <p class="text-sm italic text-gray-600 mb-2">
+                    Cragea <span class="float-right">Mar. 2024 – Presente</span>
+                </p>
+                <ul class="list-disc list-inside text-gray-700 space-y-1">
+                    <li>Limpeza manual no computador, remoção de arquivos obsoletos e troca de hardware,
+                        aumentando a performance.</li>
+                    <li>Aplicação do método Kaizen, otimizando o cadastro de usuários no sistema interno.</li>
+                    <li>Padronização de digitalização e arquivamento de notas fiscais, evitando perdas de
+                        documentos.</li>
+                </ul>
+            </div>
+
+            <!-- Versionamento & Organização -->
+            <div
+                class="bg-gradient-to-br from-purple-300 to-green-200 rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 text-center flex flex-col justify-between h-full">
+                <h3 class="text-xl font-semibold text-gray-800 mb-4 border-b border-gray-300 pb-2">
+                    Versionamento & Organização
+                </h3>
+                <div class="flex justify-center">
+                    <a href="./">
+                        <img class="w-40 mx-auto sm:w-full sm:h-full"
+                            src="https://skillicons.dev/icons?i=git,github,docker,figma&perline=2" />
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experiência Embraer -->
+        <section class="grid grid-cols-1 md:grid-cols-4 gap-6 md:gap-10 items-stretch">
+            <!-- Experiência Profissional - Embraer -->
+            <div
+                class="col-span-3 border-b border-gray-300 p-6 rounded-2xl shadow-md bg-white flex flex-col justify-between h-full">
+                <div class="flex items-center mb-2">
+                    <h2 class="text-2xl font-semibold text-gray-800">Operador Logístico</h2>
+                    <img class="ml-3 w-7 opacity-80" src="../img/voar.png" alt="imagem_avião">
+                </div>
+                <p class="text-sm italic text-gray-600 mb-2">
+                    Embraer S/A <span class="float-right">Jan. 2023 – Dez. 2023</span>
+                </p>
+                <ul class="list-disc list-inside text-gray-700 space-y-1">
+                    <li>Abastecimento de materiais na linha de produção, garantindo fluxo contínuo.</li>
+                    <li>Entrega segura com transpaletes, reduzindo riscos de avarias.</li>
+                    <li>Conferência e separação de peças com ferramentas especializadas.</li>
+                    <li>Organização de componentes conforme padrões técnicos.</li>
+                    <li>Utilização do sistema SAP para controle de estoque e materiais.</li>
+                </ul>
+            </div>
+
+            <!-- Banco de Dados & Testes -->
+            <div
+                class="bg-gradient-to-br from-gray-300 to-gray-100 rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 text-center flex flex-col justify-between h-full">
+                <h3 class="text-xl font-semibold text-gray-800 mb-4 border-b border-gray-300 pb-2">
+                    Banco de Dados & Testes
+                </h3>
+                <div class="flex justify-center">
+                    <a href="./">
+                        <img class="w-40 mx-auto sm:w-full sm:h-full"
+                            src="https://skillicons.dev/icons?i=aws,mongodb,mysql,postman&perline=2" />
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Download do Currículo -->
+        <section class="text-center">
+            <h2 class="text-xl font-semibold text-gray-800 mb-4">Faça o Download do Currículo</h2>
+            <a class="inline-flex bg-violet-600 hover:bg-violet-700 text-white text-sm px-4 py-2 gap-2 rounded-md transition-colors duration-200 shadow-sm"
+                href="../docs/Currículo Henrique Moreira 2025.pdf" download="curriculo_henrique">
+                <img class="w-4" src="../img/download.png" alt="imagem_download"> Download
+            </a>
         </section>
     </main>
+
 
     <footer class="bg-gray-200 flex justify-between p-4 mt-16 items-center">
         <div>
