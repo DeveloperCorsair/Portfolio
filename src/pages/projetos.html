@@ -11,22 +11,22 @@
 </head>
 
 <body class="font-[Montserrat]">
-    <section>
-        <nav class="bg-gray-100 py-2 px-4">
-            <div class="flex justify-between backdrop-blur-sm">
-                <a href="../index.html"><img class="max-h-10 rounded-xl" src="../img/logo.png" class="logo"
-                        alt="icon"></a>
-                <div class="flex gap-2 items-center">
-                    <a class="hover:bg-gray-200 p-1 rounded-sm" href="../pages/sobre.html">Sobre mim</a>
-                    <a class="hover:bg-gray-200 p-1 rounded-sm" href="../pages/formacao.html">Currículo</a>
-                    <a class="hover:bg-gray-200 p-1 rounded-sm" href="../pages/projetos.html">Projetos</a>
-                </div>
+    <!-- Header -->
+    <header class="fixed top-0 left-0 w-full bg-gray-100/80 backdrop-blur-md shadow-sm z-50">
+        <nav class="flex justify-between items-center px-6 py-3">
+            <a href="../index.html"><img class="max-h-10 rounded-xl" src="../img/logo.png" alt="icon"></a>
+            <div class="flex gap-2 items-center">
+                <a class="text-gray-700 hover:text-violet-600 hover:bg-gray-200 px-3 py-1 rounded-md transition-colors duration-200"
+                    href="../pages/sobre.html">Sobre mim</a>
+                <a class="text-gray-700 hover:text-violet-600 hover:bg-gray-200 px-3 py-1 rounded-md transition-colors duration-200"
+                    href="../pages/formacao.html">Currículo</a>
+                <a class="text-gray-700 hover:text-violet-600 hover:bg-gray-200 px-3 py-1 rounded-md transition-colors duration-200"
+                    href="../pages/projetos.html">Projetos</a>
             </div>
         </nav>
-    </section>
+    </header>
 
-    <main>
-
+    <main class="pt-18">
         <section class="flex items-center justify-center px-6 bg-gradient-to-b py-10">
             <div class="w-full max-w-screen-xl">
                 <h2 class="text-3xl font-bold text-center mb-10 text-gray-800">Alguns dos projetos que continuam
@@ -47,7 +47,7 @@
                             </span>
                             <!-- Botão para o Projeto Fincash -->
                             <button type="button" class="border-1 border-green-500 bg-gradient-to-br from-green-300 to-emerald-300 mt-4 bg-gray-100 pt-1 pb-1 pl-5 pr-5 rounded-sm hover:underline">
-                                <a href="https://github.com/NEW-FINCASH/New-Fincash-Frontend">Acesse o Projeto Aqui!</a>
+                                <a href="https://github.com/NEW-FINCASH/New-Fincash-Frontend" class="hover:text-violet-600">Acesse o Projeto Aqui!</a>
                             </button>
                         </div>
                     </div>
@@ -57,14 +57,14 @@
                         <h3 class="text-xl font-semibold text-gray-800 mb-4 border-b border-gray-300 pb-2">OmniDevs</h3>
                         <div class="flow-root space-y-2 flex justify-center">
                             <a href="https://api-censo-2022.vercel.app/"><img class="rounded-sm"
-                                    src="../img/omnidevs.png" /></a>
+                                    src="../img/omnidevs.png" alt="omnidevs"/></a>
                             <span class="block pt-4 pb-2 text-justify ml-6 mr-6">Um projeto dedicado ajudar
                                 a prefeitura de São José dos Campos na análise de dados sobre o censo da cidade, 
                                 trazendo gráficos intuitivos, layout minimalista e leve. 
                                 Além de mapas interativos sobre os respectivos filtros da região.
                             </span>
                             <button type="button" class="border-1 border-blue-500 bg-gradient-to-br from-blue-300 to-cyan-200 bg-gray-100 pt-1 pb-1 pl-5 pr-5 rounded-sm hover:underline">
-                                <a href="https://api-censo-2022.vercel.app/">Acesse o Projeto Aqui!</a>
+                                <a href="https://api-censo-2022.vercel.app/" class="hover:text-violet-600">Acesse o Projeto Aqui!</a>
                             </button>
                         </div>
                     </div>
@@ -75,14 +75,14 @@
                         <h3 class="text-xl font-semibold text-gray-800 mb-4 border-b border-gray-300 pb-2">Tempero da Casa</h3>
                         <div class="flow-root space-y-2 flex justify-center">
                             <a href="https://temperodacasa.vercel.app/">
-                                <img class="rounded-sm" src="../img/cardapio.png" />
+                                <img class="rounded-sm" src="../img/cardapio.png" alt="cardápio"/>
                             </a>
                             <span class="block pt-4 pb-2 text-justify ml-6 mr-6">Um site do nosso restaurante, Tempero da casa.
                                 Onde você pode visualizar nossas delícias, e escolher seus pedidos atráves do cardápio digital no próprio site.
                                 Trazendo um interface dinâmica e com cores fortes para te fazer sentir fome.
                             </span>
                             <button type="button" class="border-1 border-pink-500 bg-gradient-to-br from-pink-300 to-purple-200 bg-gray-100 pt-1 pb-1 pl-5 pr-5 rounded-sm hover:underline">
-                                <a href="https://temperodacasa.vercel.app/">Acesse o Projeto Aqui!</a>
+                                <a href="https://temperodacasa.vercel.app/" class="hover:text-violet-600">Acesse o Projeto Aqui!</a>
                             </button>
                         </div>
                     </div>
@@ -94,7 +94,7 @@
     <footer class="bg-gray-200 flex justify-between p-4 mt-16 items-center">
         <div>
             <span>
-                &copy;Desenvolved by <a class="hover:underline"
+                &copy;Desenvolved by <a class="hover:underline hover:text-violet-600"
                     href="https://github.com/DeveloperCorsair">Developer-Corsair</a>
             </span>
         </div>

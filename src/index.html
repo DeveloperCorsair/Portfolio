@@ -7,174 +7,30 @@
     <link rel="stylesheet" href="./css/output.css">
     <script src="./js/head.js"></script>
     <link rel="icon" href="./img/logo.png">
-    <title>Portfólio Henrique</title>
+    <title>Home</title>
 </head>
 
-<body class="font-[Montserrat] dark">
-    <section>
-        <nav class="bg-gray-100 py-2 px-4">
-            <!-- Navbar Logo + Other Pages + Dark Mode -->
-            <div class="flex justify-between backdrop-blur-sm">
-                <a href="./index.html"><img class="max-h-10 rounded-xl" src="./img/logo.png" class="logo"
-                        alt="icon"></a>
-                <!-- Seção para Outras Páginas -->
-                <div class="flex gap-2 items-center">
-                    <a class="hover:bg-gray-200 p-1 rounded-sm" href="./pages/sobre.html">Sobre mim</a>
-                    <a class="hover:bg-gray-200 p-1 rounded-sm" href="./pages/formacao.html">Currículo</a>
-                    <a class="hover:bg-gray-200 p-1 rounded-sm" href="./pages/projetos.html">Projetos</a>
-                    <!-- Botão de Dark Mode -->
-                    <button id="theme-toggle" type="button"
-                        class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5">
-                        <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
-                        </svg>
-                        <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
-                                fill-rule="evenodd" clip-rule="evenodd">
-                            </path>
-                        </svg>
-                    </button>
+<body class="bg-black font-[Montserrat]">
+    <main class="pt-14 flex-1">
+        <section class="grid justify-center p-8 pt-14 items-center">
+            <div class="relative flex justify-center items-center mt-6">
+                <!-- Luz de fundo -->
+                <div class="absolute w-48 h-48 md:w-80 md:h-80 rounded-full bg-gradient-to-tr from-violet-200 via-white-500 to-violet-300 opacity-50 blur-3xl">
                 </div>
-            </div>
-        </nav>
-    </section>
 
-    <main>
-        <section class="grid grid-cols-1 md:grid-cols-4 gap-6 p-8 pt-14 items-center">
-            <!-- Texto de Boas-vindas -->
-            <!-- Foto Henrique -->
-            <div class="flex justify-center md:justify-end order-1 md:order-2">
-                <img class="w-40 h-40 sm:w-48 sm:h-48 md:w-56 md:h-56 rounded-full object-cover aspect-square shadow-md"
-                    src="./img/1henrique.jpg" alt="foto_henrique">
+                <!-- Foto Henrique -->
+                <img class="relative w-40 h-40 sm:w-48 sm:h-48 md:w-80 md:h-80 rounded-full object-cover shadow-md"
+                    src="./img/braco.jpg" alt="foto_henrique">
             </div>
 
-            <div class="md:col-span-3 text-justify order-2 md:order-1">
-                <h2 class="text-2xl font-bold">Prazer, Henrique!</h2>
-                <p class="pt-2">
-                    Sou estudante de programação, cursando Desenvolvimento de Software Multiplataforma na Fatec.
-                    Estou aprendendo cada vez mais sobre front-end e back-end, além de frameworks, banco de dados
-                    relacionais e não relacionais. Resumindo, atualmente estou.
-                </p>
-
-                <!-- Meus contatos -->
-                <h2 class="text-2xl font-bold mt-4">Meus Contatos</h2>
-
-                <div class="pt-3 flex space-x-3">
-                    <!-- Linkedin -->
-                    <a href="https://linkedin.com/in/henriquemm" target="_blank">
-                        <img class="w-9 hover:scale-110 transition-transform duration-150" src="./img/linkedin.png"
-                            alt="contato_linkedin">
-                    </a>
-
-                    <!-- Github -->
-                    <a href="https://github.com/DeveloperCorsair" target="_blank">
-                        <img class="w-9 hover:scale-110 transition-transform duration-150" src="./img/github.png"
-                            alt="contato_github">
-                    </a>
-
-                    <!-- Gmail -->
-                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=henriquemartins7t@gmail.com&su=Contato%20Pelo%20seu%20Portfólio&body=Olá%20Henrique,"
-                        target="_blank">
-                        <img class="w-9 hover:scale-110 transition-transform duration-150" src="./img/gmail.png"
-                            alt="contato_gmail">
-                    </a>
+            <!-- Botão Home -->
+            <div class='flex text-center justify-center'>
+                <div class="font-semibold text-lg mt-14 text-violet-600 bg-white p-2 w-32 rounded-full">
+                    <a href="./pages/sobre.html">Home</a>
                 </div>
             </div>
-        </section>
-
-        <section class="flex items-center justify-center px-6 bg-gradient-to-b">
-            <section class="align-top justify-items-center px-6 bg-gradient-to-b max-w-screen-lg mx-auto w-full">
-                <!-- Hard Skills -->
-                <div class="align-top items-center justify-center">
-                    <h2 class="text-3xl font-bold text-center mb-10 text-gray-800">
-                        Hard Skills
-                    </h2>
-                    <!-- Cards -->
-                    <div class="align-top grid gap-6 md:grid-cols-4 justify-items-top">
-                        <!-- Linguagens -->
-                        <div
-                            class="bg-gradient-to-br from-orange-300 to-yellow-100 rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 text-center">
-                            <h3 class="text-xl font-semibold text-gray-800 mb-4 border-b border-gray-300 pb-2">
-                                Front-end & Back-end
-                            </h3>
-                            <div class="space-y-2 flex justify-center">
-                            <a href="./">
-                                <img class="w-40 mx-auto sm:w-full sm:h-full"
-                                        src="https://skillicons.dev/icons?i=html,css,javascript,python,c,java&perline=3" />
-                                </a>
-                            </div>
-                        </div>
-
-                        <!-- Frameworks & Ferramentas -->
-                        <div class="bg-gradient-to-br from-red-300 to-indigo-300 rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 text-center">
-                            <h3 class="text-xl font-semibold text-gray-800 mb-4 border-b border-gray-300 pb-2">
-                                Frameworks & Ferramentas
-                            </h3>
-                            <div class="space-y-2 flex justify-center">
-                            <a href="./" class="flex">
-                                <img class="w-40 mx-auto sm:w-full sm:h-full"
-                                            src="https://skillicons.dev/icons?i=nodejs,express,react,flask,tailwind&perline=3" />
-                                    </a>
-                                </span>
-                            </div>
-                        </div>
-
-                        <!-- Design & Organização -->
-                        <div class="bg-gradient-to-br from-purple-300 to-green-200 rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 text-center">
-                            <h3 class="text-xl font-semibold text-gray-800 mb-4 border-b border-gray-300 pb-2">
-                                Versionamento & Organização
-                            </h3>
-                            <div class="space-y-2 flex justify-center">
-                            <a href="./">
-                                <img class="w-40 mx-auto sm:w-full sm:h-full"
-                                            src="https://skillicons.dev/icons?i=git,github,docker,figma&perline=2" />
-                                    </a>
-                                </span>
-                            </div>
-                        </div>
-
-                        <!-- Infraestrutura & Testes -->
-                        <div
-                            class="bg-gradient-to-br from-gray-300 to-gray-100 rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 text-center">
-                            <h3 class="text-xl font-semibold text-gray-800 mb-4 border-b border-gray-300 pb-2">
-                                Banco de dados & Testes
-                            </h3>
-                            <div class="space-y-2 flex justify-center">
-                            <a href="./">
-                                <img class="w-40 mx-auto sm:w-full sm:h-full"
-                                            src="https://skillicons.dev/icons?i=aws,mongodb,mysql,postman&perline=2" />
-                                    </a>
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
         </section>
     </main>
-
-    <footer class="bg-gray-200 flex justify-between p-4 mt-16 items-center">
-        <div>
-            <span>
-                &copy;Desenvolved by <a class="hover:underline"
-                    href="https://github.com/DeveloperCorsair">Developer-Corsair</a>
-            </span>
-        </div>
-        <div class="flex gap-4">
-            <span class="flex gap-2 flex-row-reverse">
-                <a class="hover:scale-120 transition-transform duration-300 p-1"
-                    href="https://github.com/DeveloperCorsair"><img id="github" src="./img/github.png" alt="github"></a>
-                <a class="hover:scale-120 transition-transform duration-300 p-1"
-                    href="https://www.linkedin.com/in/henriquemm/"><img id="github" src="./img/linkedin.png"
-                        alt="linkedin"></a>
-            </span>
-        </div>
-    </footer>
-    <script src="./js/script.js"></script>
-    <script src="./node_modules/flowbite/dist/flowbite.min.js"></script>
 </body>
 
 </html>
