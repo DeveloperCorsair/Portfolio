@@ -848,6 +848,9 @@
   .pt-20 {
     padding-top: calc(var(--spacing) * 20);
   }
+  .pt-22 {
+    padding-top: calc(var(--spacing) * 22);
+  }
   .pt-24 {
     padding-top: calc(var(--spacing) * 24);
   }
@@ -926,6 +929,9 @@
   }
   .text-gray-800 {
     color: var(--color-gray-800);
+  }
+  .text-violet-600 {
+    color: var(--color-violet-600);
   }
   .text-white {
     color: var(--color-white);
