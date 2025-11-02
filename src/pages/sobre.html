@@ -10,17 +10,17 @@
     <title>Sobre mim</title>
 </head>
 
-<body class="min-h-screen flex flex-col font-[Montserrat] bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-200">
+<body class="min-h-screen flex flex-col font-[Montserrat] bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-200">
     <!-- Header -->
-    <header class="fixed top-0 left-0 w-full bg-gray-100 dark:bg-gray-900 backdrop-blur-md shadow-sm z-50">
+    <header class="fixed top-0 left-0 w-full bg-gray-100 dark:bg-gray-800 backdrop-blur-md shadow-sm z-50">
         <nav class="flex justify-between items-center px-6 py-3">
             <!-- Navbar Logo + Other Pages + Dark Mode -->
             <a href="../index.html"><img class="max-h-10 rounded-xl" src="../img/logo.png" class="logo" alt="icon"></a>
             <!-- Seção para Outras Páginas -->
             <div class="flex gap-2 items-center">
-                <a class="text-gray-700 dark:text-gray-300 hover:text-violet-600 hover:bg-gray-200 dark:hover:bg-gray-800 px-3 py-1 rounded-md transition-colors duration-200"
+                <a class="text-gray-700 dark:text-gray-200 hover:text-violet-600 hover:bg-gray-200 dark:hover:bg-gray-700 px-3 py-1 rounded-md transition-colors duration-200"
                     href="../pages/sobre.html">Sobre mim</a>
-                <a class="text-gray-700 dark:text-gray-300 hover:text-violet-600 hover:bg-gray-200 dark:hover:bg-gray-800 px-3 py-1 rounded-md transition-colors duration-200"
+                <a class="text-gray-700 dark:text-gray-200 hover:text-violet-600 hover:bg-gray-200 dark:hover:bg-gray-700 px-3 py-1 rounded-md transition-colors duration-200"
                     href="../pages/formacao.html">Currículo</a>
                 <!-- Botão de Dark Mode -->
                 <button id="theme-toggle" type="button"
@@ -44,7 +44,7 @@
     <main class="pt-14 flex-1">
         <section class="grid grid-cols-1 gap-6 p-8 pt-22 items-center">
             <!-- Foto Henrique -->
-            <div class="flex justify-center order-1 md:order-2 hover:from-violet-500">
+            <div class="flex justify-center order-1 md:order-2 hover:from-violet-500 ">
                 <img class="w-40 h-40 sm:w-48 sm:h-48 md:w-75 md:h-75 rounded-full object-cover aspect-square shadow-md hover:shadow-2xl transition-all duration-500 transform hover:scale-105"
                     src="../img/1henrique.jpg" alt="foto_henrique">
             </div>
@@ -52,7 +52,7 @@
             <!-- Texto de Boas-vindas -->
             <section class="grid grid-cols-4 order-1 md:order-2 gap-4 mt-10">
                 <div class="text-justify col-span-3">
-                    <h2 class="text-2xl text-center font-bold dark:text-gray-100">Prazer, Henrique!</h2>
+                    <h2 class="text-2xl text-center font-bold">Prazer, Henrique!</h2>
                     <p class="pt-2 dark:text-gray-300">
                         Sou estudante de programação, cursando Desenvolvimento de Software Multiplataforma na Fatec.
                         Estou aprendendo cada vez mais sobre front-end e back-end, além de frameworks, banco de dados
@@ -62,27 +62,33 @@
                 </div>
                 <!-- Meus contatos -->
                 <div class="text-center flex flex-col ">
-                    <h2 class="text-2xl font-bold dark:text-gray-100">
+                    <h2 class="text-2xl font-bold dark:text-gray-200">
                         Meus Contatos
                     </h2>
                     <!-- Ícones -->
                     <div class="pt-3 flex space-x-3 justify-center align-top">
+                        <!-- WhatsApp -->
                         <a href="https://wa.me/5512991319058?text=Olá%20Henrique!%20Acabei%20de%20Olhar%20seu%20Portfólio%20e%20gostaria%20de%20conversar%20contigo!"
                             target="_blank">
-                            <img class="w-9 hover:scale-110 transition-transform duration-150" src="../img/whatsapp.png"
+                            <img class="w-9 hover:scale-110 transition-transform duration-150 dark:filter dark:grayscale dark:invert" src="../img/whatsapp.png"
                                 alt="WhatsApp">
                         </a>
+                        <!-- Linkedin -->
                         <a href="https://linkedin.com/in/henriquemm" target="_blank">
-                            <img class="w-9 hover:scale-110 transition-transform duration-150" src="../img/linkedin.png"
+                            <img class="w-9 hover:scale-110 transition-transform duration-150 dark:filter dark:grayscale dark:invert" src="../img/linkedin.png"
                                 alt="contato_linkedin">
                         </a>
+
+                        <!-- Github -->
                         <a href="https://github.com/DeveloperCorsair" target="_blank">
-                            <img class="w-9 hover:scale-110 transition-transform duration-150" src="../img/github.png"
+                            <img class="w-9 hover:scale-110 transition-transform duration-150 dark:filter dark:grayscale dark:invert" src="../img/github.png"
                                 alt="contato_github">
                         </a>
+
+                        <!-- Gmail -->
                         <a href="https://mail.google.com/mail/?view=cm&fs=1&to=henriquemartins7t@gmail.com&su=Contato%20Pelo%20seu%20Portfólio&body=Olá%20Henrique,"
                             target="_blank">
-                            <img class="w-9 hover:scale-110 transition-transform duration-150" src="../img/gmail.png"
+                            <img class="w-9 hover:scale-110 transition-transform duration-150 dark:filter dark:grayscale dark:invert" src="../img/gmail.png"
                                 alt="contato_gmail">
                         </a>
                     </div>
@@ -90,13 +96,13 @@
             </section>
         </section>
 
-        <section class="bg-gradient-to-b from-white dark:from-gray-800 to-violet-50 dark:to-gray-900 py-16 px-6">
+        <!-- Jornada -->
+        <section class="bg-gradient-to-b from-white dark:from-gray-900 to-violet-50 dark:to-gray-800 py-16 px-6">
             <h1
-                class="text-4xl font-bold bg-gradient-to-br from-black dark:from-violet-400 to-black dark:to-violet-300 bg-clip-text text-transparent">
+                class="text-4xl font-bold bg-gradient-to-br from-violet-200 dark:from-violet-400 to-yellow-400 dark:to-yellow-500 bg-clip-text text-transparent">
                 Minha Jornada
             </h1>
 
-            <!-- Container do carrossel arrastável -->
             <div class="flex space-x-6 overflow-x-auto pb-6 snap-x snap-mandatory scroll-smooth cursor-grab active:cursor-grabbing">
                 <!-- Cards -->
                 <div class="flex-shrink-0 snap-center w-72 bg-white dark:bg-gray-800 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 p-6">
@@ -135,11 +141,11 @@
                 </div>
             </div>
 
-            <p class="text-center text-gray-500 dark:text-gray-400 mt-4 text-sm italic">⬅️ Clique e arraste para o lado ➡️</p>
+            <p class="text-center text-gray-500 dark:text-gray-400 mt-4 text-sm italic">⬅️ Arraste para o lado ➡️</p>
         </section>
 
         <!-- Projetos -->
-        <section class="flex items-center justify-center px-6 bg-gradient-to-b py-10">
+        <section class="flex items-center justify-center px-6 bg-gradient-to-b py-10 from-white dark:from-gray-900">
             <div class="w-full max-w-screen-xl">
                 <h2 class="text-3xl font-bold text-center mb-10 text-gray-800 dark:text-gray-200">Alguns dos projetos que continuam
                     ajudando as pessoas na nossa comunidade
@@ -147,46 +153,44 @@
 
                 <div class="grid gap-6 md:grid-cols-3 justify-items-center">
                     <!-- Projeto Fincash -->
-                    <div class="bg-gradient-to-br from-green-300 dark:from-green-700 to-green-100 dark:to-green-900 rounded-2xl pt-4 p-2 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 text-center">
-                        <h3 class="text-xl font-semibold text-gray-800 dark:text-gray-100 mb-4 border-b border-gray-300 dark:border-gray-600 pb-2">Fincash</h3>
+                    <div class="bg-gradient-to-br from-green-300 to-green-100 dark:from-green-600 dark:to-green-800 rounded-2xl pt-4 p-2 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 text-center">
+                        <h3 class="text-xl font-semibold text-gray-800 dark:text-gray-200 mb-4 border-b border-gray-300 dark:border-gray-700 pb-2">Fincash</h3>
                         <div class="flow-root flex justify-center">
                             <a href="https://github.com/NEW-FINCASH/New-Fincash-Frontend">
                                 <img class="rounded-sm" src="../img/fincash.png" alt="fincash"></a>
-                            <span class=" block pt-4 text-justify ml-6 mr-6 dark:text-gray-300">Uma API WEB de
+                            <span class="block pt-4 text-justify ml-6 mr-6 dark:text-gray-300">Uma API WEB de
                                 gestão financeira. Que visa facilitar o controle e a organização das finanças
                                 pessoais e empresariais, proporcionando aos usuários uma maneira eficiente de gerenciar
                                 receitas, despesas, investimentos e orçamentos.
                             </span>
                             <button type="button"
-                                class="border-1 border-green-500 bg-gradient-to-br from-green-300 dark:from-green-700 to-emerald-300 dark:to-green-900 mt-4 pt-1 pb-1 pl-5 pr-5 rounded-sm hover:underline">
+                                class="border-1 border-green-500 bg-gradient-to-br from-green-300 to-emerald-300 dark:from-green-600 dark:to-green-700 mt-4 pt-1 pb-1 pl-5 pr-5 rounded-sm hover:underline">
                                 <a href="https://github.com/NEW-FINCASH/New-Fincash-Frontend"
-                                    class="hover:text-violet-600">Acesse o Projeto Aqui!</a>
+                                    class="hover:text-violet-600 dark:hover:text-white">Acesse o Projeto Aqui!</a>
                             </button>
                         </div>
                     </div>
-
                     <!-- Projeto OmniDevs -->
-                    <div class="bg-gradient-to-br from-blue-200 dark:from-blue-800 to-blue-100 dark:to-blue-900 rounded-2xl pt-4 p-2 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 text-center">
-                        <h3 class="text-xl font-semibold text-gray-800 dark:text-gray-100 mb-4 border-b border-gray-300 dark:border-gray-600 pb-2">OmniDevs</h3>
+                    <div class="bg-gradient-to-br from-blue-200 to-blue-100 dark:from-blue-700 dark:to-blue-800 rounded-2xl pt-4 p-2 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 text-center">
+                        <h3 class="text-xl font-semibold text-gray-800 dark:text-gray-200 mb-4 border-b border-gray-300 dark:border-gray-700 pb-2">OmniDevs</h3>
                         <div class="flow-root space-y-2 flex justify-center">
-                            <a href="https://api-censo-2022.vercel.app/"><img class="rounded-sm" src="../img/omnidevs.png"
-                                    alt="OmniDevs" /></a>
+                            <a href="https://api-censo-2022.vercel.app/"><img class="rounded-sm"
+                                    src="../img/omnidevs.png" alt="OmniDevs" /></a>
                             <span class="block pt-4 pb-2 text-justify ml-6 mr-6 dark:text-gray-300">Um projeto dedicado ajudar
                                 a prefeitura de São José dos Campos na análise de dados sobre o censo da cidade,
                                 trazendo gráficos intuitivos, layout minimalista e leve.
                                 Além de mapas interativos sobre os respectivos filtros da região.
                             </span>
                             <button type="button"
-                                class="border-1 border-blue-500 bg-gradient-to-br from-blue-300 dark:from-blue-700 to-cyan-200 dark:to-blue-900 pt-1 pb-1 pl-5 pr-5 rounded-sm hover:underline">
-                                <a href="https://api-censo-2022.vercel.app/" class="hover:text-violet-600">Acesse o
+                                class="border-1 border-blue-500 bg-gradient-to-br from-blue-300 to-cyan-200 dark:from-blue-600 dark:to-cyan-700 pt-1 pb-1 pl-5 pr-5 rounded-sm hover:underline">
+                                <a href="https://api-censo-2022.vercel.app/" class="hover:text-violet-600 dark:hover:text-white">Acesse o
                                     Projeto Aqui!</a>
                             </button>
                         </div>
                     </div>
-
                     <!-- Projeto Cardápio -->
-                    <div class="bg-gradient-to-br from-pink-200 dark:from-pink-700 to-pink-100 dark:to-pink-900 rounded-2xl pt-4 p-2 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 text-center">
-                        <h3 class="text-xl font-semibold text-gray-800 dark:text-gray-100 mb-4 border-b border-gray-300 dark:border-gray-600 pb-2">Tempero da
+                    <div class="bg-gradient-to-br from-pink-200 to-pink-100 dark:from-pink-700 dark:to-pink-800 rounded-2xl pt-4 p-2 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 text-center">
+                        <h3 class="text-xl font-semibold text-gray-800 dark:text-gray-200 mb-4 border-b border-gray-300 dark:border-gray-700 pb-2">Tempero da
                             Casa</h3>
                         <div class="flow-root space-y-2 flex justify-center">
                             <a href="https://temperodacasa.vercel.app/">
@@ -199,8 +203,8 @@
                                 Trazendo um interface dinâmica e com cores fortes para te fazer sentir fome.
                             </span>
                             <button type="button"
-                                class="border-1 border-pink-500 bg-gradient-to-br from-pink-300 dark:from-pink-700 to-purple-200 dark:to-purple-900 pt-1 pb-1 pl-5 pr-5 rounded-sm hover:underline">
-                                <a href="https://temperodacasa.vercel.app/" class="hover:text-violet-600">Acesse o
+                                class="border-1 border-pink-500 bg-gradient-to-br from-pink-300 to-purple-200 dark:from-pink-600 dark:to-purple-700 pt-1 pb-1 pl-5 pr-5 rounded-sm hover:underline">
+                                <a href="https://temperodacasa.vercel.app/" class="hover:text-violet-600 dark:hover:text-white">Acesse o
                                     Projeto Aqui!</a>
                             </button>
                         </div>
@@ -210,21 +214,22 @@
         </section>
     </main>
 
-    <footer class="bg-gray-200 dark:bg-gray-800 flex justify-between p-4 h-auto items-center py-6 mt-4">
+    <!-- Footer -->
+    <footer class="bg-gray-200 dark:bg-gray-800 flex justify-between p-4 h-auto items-center py-6 mt-4 text-gray-800 dark:text-gray-200">
         <div>
             <span>
-                &copy;Desenvolved by <a class="hover:underline hover:text-violet-600 dark:text-gray-300"
+                &copy;Desenvolved by <a class="hover:underline hover:text-violet-600"
                     href="https://github.com/DeveloperCorsair">Developer-Corsair</a>
             </span>
         </div>
         <div class="flex gap-4">
             <span class="flex gap-2 flex-row-reverse">
-                <a class="hover:scale-120 transition-transform duration-300 p-1" href="https://github.com/DeveloperCorsair">
-                    <img id="github" src="../img/github.png" alt="github">
-                </a>
-                <a class="hover:scale-120 transition-transform duration-300 p-1" href="https://www.linkedin.com/in/henriquemm/">
-                    <img id="github" src="../img/linkedin.png" alt="linkedin">
-                </a>
+                <a class="hover:scale-120 transition-transform duration-300 p-1 dark:filter dark:grayscale dark:invert"
+                    href="https://github.com/DeveloperCorsair"><img id="github" src="../img/github.png"
+                        alt="github"></a>
+                <a class="hover:scale-120 transition-transform duration-300 p-1 dark:filter dark:grayscale dark:invert"
+                    href="https://www.linkedin.com/in/henriquemm/"><img id="github" src="../img/linkedin.png"
+                        alt="linkedin"></a>
             </span>
         </div>
     </footer>
