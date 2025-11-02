@@ -1,8 +1,7 @@
 @import "tailwindcss";
 @import "flowbite/src/themes/default";
-@plugin "flowbite/plugin";
-@source "../node_modules/flowbite";
 @custom-variant dark (&:where(.dark, .dark *));
+
 
 #navbarSupportedContent {
     text-align: right;
@@ -20,7 +19,7 @@
     text-align: center;
     max-width: 300px;
     min-height: 250px;
-}e
+}
 
 .logo img {
     width: auto;
