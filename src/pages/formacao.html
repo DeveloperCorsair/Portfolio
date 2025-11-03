@@ -6,43 +6,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/output.css">
     <link rel="stylesheet" href="../styles/input.css">
+    <script src="../js/head.js"></script>
     <link rel="icon" href="../img/logo.png">
     <title>Currículo</title>
 </head>
 
-<body class="font-[Montserrat] dark">
+<body class="font-[Montserrat] bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-200">
     <!-- Header -->
-    <header class="fixed top-0 left-0 w-full bg-gray-100/80 backdrop-blur-md shadow-sm z-50">
+    <header class="fixed top-0 left-0 w-full bg-gray-100/80 dark:bg-gray-800/80 backdrop-blur-md shadow-sm z-50">
         <nav class="flex justify-between items-center px-6 py-3">
             <a href="../index.html"><img class="max-h-10 rounded-xl" src="../img/logo.png" alt="icon"></a>
             <div class="flex gap-2 items-center">
-                <a class="text-gray-700 hover:text-violet-600 hover:bg-gray-200 px-3 py-1 rounded-md transition-colors duration-200"
+                <a class="text-gray-700 dark:text-gray-200 hover:text-violet-600 hover:bg-gray-200 dark:hover:bg-gray-700 px-3 py-1 rounded-md transition-colors duration-200"
                     href="../pages/sobre.html">Sobre mim</a>
-                <a class="text-gray-700 hover:text-violet-600 hover:bg-gray-200 px-3 py-1 rounded-md transition-colors duration-200"
+                <a class="text-gray-700 dark:text-gray-200 hover:text-violet-600 hover:bg-gray-200 dark:hover:bg-gray-700 px-3 py-1 rounded-md transition-colors duration-200"
                     href="../pages/formacao.html">Currículo</a>
+                <!-- Botão de Dark Mode -->
+                <button id="theme-toggle" type="button"
+                    class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 hover:text-violet-600 rounded-lg text-sm p-2.5">
+                    <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+                    </svg>
+                    <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                            fill-rule="evenodd" clip-rule="evenodd">
+                        </path>
+                    </svg>
+                </button>
             </div>
         </nav>
     </header>
 
     <main class="pt-22 p-6 w-full space-y-10 md:space-y-10">
         <!-- Seção Principal -->
-        <section class="grid grid-cols-1 md:grid-cols-4 gap-6 md:gap-10 items-stretch h-full w-full">
+        <section class="grid grid-cols-1 md:grid-cols-4 grid-rows-2 gap-6 md:gap-10 items-stretch h-full w-full">
             <!-- Fatec + Etec -->
-            <div class="col-span-3 flex flex-col gap-6 order-2 md:order-1">
+            <div class="col-span-3 row-span-2 grid grid-rows-subgrid gap-10 order-2 md:order-1">
                 <!-- Fatec -->
                 <div
-                    class="border-b border-gray-300 p-6 rounded-2xl shadow-md bg-white flex flex-col justify-between h-full">
+                    class="border-b border-gray-300 dark:border dark:border-gray-300 dark:bg-gray-800 p-6 rounded-2xl shadow-md bg-white flex flex-col justify-between h-full">
                     <div class="flex items-center mb-2">
-                        <h2 class="text-2xl font-semibold text-gray-800">Formação Acadêmica</h2>
-                        <img class="ml-3 w-8 opacity-80" src="../img/graduation.png" alt="imagem_computador">
+                        <h2 class="text-2xl font-semibold text-gray-800 dark:text-white">Formação Acadêmica</h2>
+                        <!-- Imagem -->
+                        <img class="ml-3 w-8 opacity-80 dark:filter dark:grayscale dark:invert" src="../img/graduation.png" alt="imagem_computador">
                     </div>
-                    <p class="text-md italic text-gray-600">
+                    <p class="text-md italic text-gray-600 dark:text-white">
                         Faculdade de Tecnologia <span class="float-right">Ago. 2025 – Jul. 2028</span>
                     </p>
-                    <p class="text-sm italic text-gray-600 mb-2">
+                    <p class="text-sm italic text-gray-600 mb-2 dark:text-white">
                         Tecnólogo em Desenvolvimento de Software Multiplataforma
                     </p>
-                    <ul class="list-disc list-inside text-gray-700 space-y-1">
+                    <ul class="list-disc list-inside text-gray-700 space-y-1 dark:text-white">
                         <li>Limpeza manual no computador, remoção de arquivos obsoletos e troca de hardware,
                             aumentando a performance.</li>
                         <li>Aplicação do método Kaizen, otimizando o cadastro de usuários no sistema interno.
@@ -54,15 +71,15 @@
 
                 <!-- Etec -->
                 <div
-                    class="border-b border-gray-300 p-6 rounded-2xl shadow-md bg-white flex flex-col justify-between h-full">
-                    <p class="text-md italic text-gray-600">
+                    class="border-b border-gray-300 dark:border dark:border-gray-300 dark:bg-gray-800 p-6 rounded-2xl shadow-md bg-white flex flex-col justify-between h-full">
+                    <p class="text-md italic text-gray-600 dark:text-white">
                         Escola Técnica Estadual
                         <span class="float-right">Jan. 2023 – Jul. 2025</span>
                     </p>
-                    <p class="text-sm italic text-gray-600 mb-2">
+                    <p class="text-sm italic text-gray-600 mb-2 dark:text-white">
                         Técnico em Desenvolvimento de Sistemas
                     </p>
-                    <ul class="list-disc list-inside text-gray-700 space-y-1">
+                    <ul class="list-disc list-inside text-gray-700 space-y-1 dark:text-white">
                         <li>Limpeza manual no computador, remoção de arquivos obsoletos e troca de hardware,
                             aumentando a performance.</li>
                         <li>Aplicação do método Kaizen, otimizando o cadastro de usuários no sistema interno.
@@ -74,29 +91,29 @@
             </div>
 
             <!-- Contatos + Linguagens -->
-            <div class="col-span-1 flex flex-col gap-6 order-1 md:order-2">
+            <div class="col-span-1 row-span-2 grid grid-rows-subgrid gap-6 order-1 md:order-2">
                 <!-- Contatos -->
                 <div
-                    class="align-middle border-b border-gray-300 p-6 rounded-2xl shadow-md bg-white flex flex-col justify-between h-full ">
-                    <h2 class="text-xl font-semibold text-gray-800 mb-4 text-center">Meus Contatos</h2>
+                    class="align-middle border-b border-gray-300 dark:border dark:border-gray-300 p-6 rounded-2xl shadow-md dark:shadow-gray-600 dark:hover:shadow-lg bg-white dark:bg-gray-800 flex flex-col justify-between h-full transition-all duration-300 transform hover:-translate-y-1">
+                    <h2 class="text-xl font-semibold border-b border-gray-300 pb-2 text-gray-800 dark:text-white mb-4 text-center">Meus Contatos</h2>
                     <!-- Ícones -->
                     <div class="flex flex-wrap gap-3 justify-center items-center flex-grow">
                         <a href="https://wa.me/5512991319058?text=Olá%20Henrique!%20Acabei%20de%20Olhar%20seu%20Portfólio%20e%20gostaria%20de%20conversar%20contigo!"
                             target="_blank">
-                            <img class="w-9 hover:scale-110 transition-transform duration-150" src="../img/whatsapp.png"
+                            <img class="w-9 hover:scale-110 transition-transform duration-150 dark:filter dark:grayscale dark:invert" src="../img/whatsapp.png"
                                 alt="WhatsApp">
                         </a>
                         <a href="https://mail.google.com/mail/?view=cm&fs=1&to=henriquemartins7t@gmail.com&su=Contato%20Pelo%20seu%20Portfólio&body=Olá%20Henrique,"
                             target="_blank">
-                            <img class="w-9 hover:scale-110 transition-transform duration-150" src="../img/gmail.png"
+                            <img class="w-9 hover:scale-110 transition-transform duration-150 dark:filter dark:grayscale dark:invert" src="../img/gmail.png"
                                 alt="Gmail">
                         </a>
                         <a href="https://linkedin.com/in/henriquemm" target="_blank">
-                            <img class="w-9 hover:scale-110 transition-transform duration-150" src="../img/linkedin.png"
+                            <img class="w-9 hover:scale-110 transition-transform duration-150 dark:filter dark:grayscale dark:invert" src="../img/linkedin.png"
                                 alt="LinkedIn">
                         </a>
                         <a href="https://github.com/DeveloperCorsair" target="_blank">
-                            <img class="w-9 hover:scale-110 transition-transform duration-150" src="../img/github.png"
+                            <img class="w-9 hover:scale-110 transition-transform duration-150 dark:filter dark:grayscale dark:invert" src="../img/github.png"
                                 alt="GitHub">
                         </a>
                     </div>
@@ -104,8 +121,8 @@
 
                 <!-- Linguagens -->
                 <div
-                    class="bg-gradient-to-br from-orange-300 to-yellow-100 rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 text-center flex flex-col justify-between h-full">
-                    <h3 class="text-xl font-semibold text-gray-800 mb-4 border-b border-gray-300 pb-2">
+                    class="bg-gradient-to-br from-orange-300 to-yellow-100 dark:bg-gradient-to-br dark:from-orange-700 dark:to-yellow-300 rounded-2xl p-6 shadow-md hover:shadow-xl dark:shadow-gray-500 dark:hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 text-center flex flex-col justify-between h-full">
+                    <h3 class="text-xl font-semibold text-gray-800 dark:text-white mb-4 border-b border-gray-300 pb-2">
                         Front-end & Back-end
                     </h3>
                     <div class="flex justify-center">
@@ -123,29 +140,30 @@
         <section class="grid grid-cols-1 md:grid-cols-4 gap-6 md:gap-10 items-stretch">
             <!-- Cursos -->
             <div
-                class="col-span-3 border-b border-gray-300 p-6 rounded-2xl shadow-md bg-white flex flex-col gap-6 h-full">
+                class="col-span-3 border-b border-gray-300 dark:border dark:border-gray-300 dark:bg-gray-800 p-6 rounded-2xl shadow-md bg-white flex flex-col gap-6 h-full">
                 <!-- Seção CS50X -->
                 <section>
                     <div class="flex items-center mb-2">
-                        <h2 class="text-2xl font-semibold text-gray-800">Cursos</h2>
-                        <img class="ml-3 w-8 opacity-80" src="../img/book.png" alt="imagem_computador">
+                        <h2 class="text-2xl font-semibold text-gray-800 dark:text-white">Cursos</h2>
+                        <!-- Imagem -->
+                        <img class="ml-3 w-8 opacity-80 dark:filter dark:grayscale dark:invert" src="../img/book.png" alt="imagem_computador">
                     </div>
-                    <p class="text-md italic text-gray-600">
+                    <p class="text-md italic text-gray-600 dark:text-white">
                         CS50X
                         <span class="float-right">Set. 2025 – Presente</span>
                     </p>
-                    <p class="text-sm italic text-gray-600">
+                    <p class="text-sm italic text-gray-600 dark:text-white">
                         Introdução à Ciência da Computação (Ead)
                     </p>
                 </section>
 
                 <!-- Seção Cyber -->
                 <section>
-                    <p class="text-md italic text-gray-600">
+                    <p class="text-md italic text-gray-600 dark:text-white">
                         Google
                         <span class="float-right">Set. 2025 – Presente</span>
                     </p>
-                    <p class="text-sm italic text-gray-600">
+                    <p class="text-sm italic text-gray-600 dark:text-white">
                         Fundamentos da segurança cibernética (Ead)
                     </p>
                 </section>
@@ -153,8 +171,8 @@
 
             <!-- Frameworks & Ferramentas -->
             <div
-                class="bg-gradient-to-br from-red-300 to-indigo-300 rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 text-center flex flex-col justify-between h-full">
-                <h3 class="text-xl font-semibold text-gray-800 mb-4 border-b border-gray-300 pb-2">
+                class="bg-gradient-to-br from-red-300 to-indigo-300 dark:bg-gradient-to-br dark:from-red-600 dark:to-indigo-800 rounded-2xl p-6 shadow-md hover:shadow-xl dark:shadow-gray-500 dark:hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 text-center flex flex-col justify-between h-full">
+                <h3 class="text-xl font-semibold text-gray-800 dark:text-white mb-4 border-b border-gray-300 pb-2">
                     Frameworks & Ferramentas
                 </h3>
                 <div class="flex justify-center">
@@ -170,15 +188,16 @@
         <section class="grid grid-cols-1 md:grid-cols-4 gap-6 md:gap-10 items-stretch">
             <!-- Experiência Profissional - Cragea -->
             <div
-                class="col-span-3 border-b border-gray-300 p-6 rounded-2xl shadow-md bg-white flex flex-col justify-between h-full">
+                class="col-span-3 border-b border-gray-300 dark:border dark:border-gray-300 dark:bg-gray-800 p-6 rounded-2xl shadow-md bg-white flex flex-col justify-between h-full">
                 <div class="flex items-center mb-2">
-                    <h2 class="text-2xl font-semibold text-gray-800">Auxiliar Administrativo</h2>
-                    <img class="ml-3 w-8 opacity-80" src="../img/computador.png" alt="imagem_computador">
+                    <h2 class="text-2xl font-semibold text-gray-800 dark:text-white">Auxiliar Administrativo</h2>
+                    <!-- Imagem -->
+                    <img class="ml-3 w-8 opacity-80 dark:filter dark:grayscale dark:invert" src="../img/computador.png" alt="imagem_computador">
                 </div>
-                <p class="text-sm italic text-gray-600 mb-2">
+                <p class="text-sm italic text-gray-600 mb-2 dark:text-white">
                     Cragea <span class="float-right">Mar. 2024 – Presente</span>
                 </p>
-                <ul class="list-disc list-inside text-gray-700 space-y-1">
+                <ul class="list-disc list-inside text-gray-700 space-y-1 dark:text-white">
                     <li>Limpeza manual no computador, remoção de arquivos obsoletos e troca de hardware,
                         aumentando a performance.</li>
                     <li>Aplicação do método Kaizen, otimizando o cadastro de usuários no sistema interno.</li>
@@ -189,8 +208,8 @@
 
             <!-- Versionamento & Organização -->
             <div
-                class="bg-gradient-to-br from-purple-300 to-green-200 rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 text-center flex flex-col justify-between h-full">
-                <h3 class="text-xl font-semibold text-gray-800 mb-4 border-b border-gray-300 pb-2">
+                class="bg-gradient-to-br from-purple-300 to-green-200 dark:bg-gradient-to-br dark:from-purple-600 dark:to-green-500 rounded-2xl p-6 shadow-md hover:shadow-xl dark:shadow-gray-500 dark:hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 text-center flex flex-col justify-between h-full">
+                <h3 class="text-xl font-semibold text-gray-800 dark:text-white mb-4 border-b border-gray-300 pb-2">
                     Versionamento & Organização
                 </h3>
                 <div class="flex justify-center">
@@ -206,15 +225,16 @@
         <section class="grid grid-cols-1 md:grid-cols-4 gap-6 md:gap-10 items-stretch">
             <!-- Experiência Profissional - Embraer -->
             <div
-                class="col-span-3 border-b border-gray-300 p-6 rounded-2xl shadow-md bg-white flex flex-col justify-between h-full">
+                class="col-span-3 border-b border-gray-300 dark:border dark:border-gray-300 dark:bg-gray-800 p-6 rounded-2xl shadow-md bg-white flex flex-col justify-between h-full">
                 <div class="flex items-center mb-2">
-                    <h2 class="text-2xl font-semibold text-gray-800">Operador Logístico</h2>
-                    <img class="ml-3 w-7 opacity-80" src="../img/voar.png" alt="imagem_avião">
+                    <h2 class="text-2xl font-semibold text-gray-800 dark:text-white">Operador Logístico</h2>
+                    <!-- Imagem -->
+                    <img class="ml-3 w-7 opacity-80 dark:filter dark:grayscale dark:invert" src="../img/voar.png" alt="imagem_avião">
                 </div>
-                <p class="text-sm italic text-gray-600 mb-2">
+                <p class="text-sm italic text-gray-600 mb-2 dark:text-white">
                     Embraer S/A <span class="float-right">Jan. 2023 – Dez. 2023</span>
                 </p>
-                <ul class="list-disc list-inside text-gray-700 space-y-1">
+                <ul class="list-disc list-inside text-gray-700 space-y-1 dark:text-white">
                     <li>Abastecimento de materiais na linha de produção, garantindo fluxo contínuo.</li>
                     <li>Entrega segura com transpaletes, reduzindo riscos de avarias.</li>
                     <li>Conferência e separação de peças com ferramentas especializadas.</li>
@@ -225,8 +245,8 @@
 
             <!-- Banco de Dados & Testes -->
             <div
-                class="bg-gradient-to-br from-gray-300 to-gray-100 rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 text-center flex flex-col justify-between h-full">
-                <h3 class="text-xl font-semibold text-gray-800 mb-4 border-b border-gray-300 pb-2">
+                class="bg-gradient-to-br from-gray-300 to-gray-100 dark:bg-gradient-to-br dark:from-gray-400 dark:to-gray-700 rounded-2xl p-6 shadow-md hover:shadow-xl dark:shadow-gray-500 dark:hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 text-center flex flex-col justify-between h-full">
+                <h3 class="text-xl font-semibold text-gray-800 dark:text-white mb-4 border-b border-gray-300 pb-2">
                     Banco de Dados & Testes
                 </h3>
                 <div class="flex justify-center">
@@ -240,7 +260,7 @@
 
         <!-- Download do Currículo -->
         <section class="text-center">
-            <h2 class="text-xl font-semibold text-gray-800 mb-4">Faça o Download do Currículo</h2>
+            <h2 class="text-xl font-semibold text-gray-800 mb-4 dark:text-white">Faça o Download do Currículo</h2>
             <a class="inline-flex bg-violet-600 hover:bg-violet-700 text-white text-sm px-4 py-2 gap-2 rounded-md transition-colors duration-200 shadow-sm"
                 href="../docs/Currículo Henrique Moreira 2025.pdf" download="curriculo_henrique">
                 <img class="w-4" src="../img/download.png" alt="imagem_download"> Download
@@ -249,7 +269,9 @@
     </main>
 
 
-    <footer class="bg-gray-200 flex justify-between p-4 mt-16 items-center">
+    <!-- Footer -->
+    <footer
+        class="bg-gray-200 dark:bg-gray-800 flex justify-between p-4 h-auto items-center py-6 mt-4 text-gray-800 dark:text-gray-200">
         <div>
             <span>
                 &copy;Desenvolved by <a class="hover:underline hover:text-violet-600"
@@ -258,16 +280,17 @@
         </div>
         <div class="flex gap-4">
             <span class="flex gap-2 flex-row-reverse">
-                <a class="hover:scale-120 transition-transform duration-300 p-1"
+                <a class="hover:scale-120 transition-transform duration-300 p-1 dark:filter dark:grayscale dark:invert"
                     href="https://github.com/DeveloperCorsair"><img id="github" src="../img/github.png"
                         alt="github"></a>
-                <a class="hover:scale-120 transition-transform duration-300 p-1"
+                <a class="hover:scale-120 transition-transform duration-300 p-1 dark:filter dark:grayscale dark:invert"
                     href="https://www.linkedin.com/in/henriquemm/"><img id="github" src="../img/linkedin.png"
                         alt="linkedin"></a>
             </span>
         </div>
     </footer>
-    <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+    <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
+    <script src="../js/script.js"></script>
 </body>
 
 </html>

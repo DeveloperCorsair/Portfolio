@@ -12,7 +12,7 @@
 
 <body class="min-h-screen flex flex-col font-[Montserrat] bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-200">
     <!-- Header -->
-    <header class="fixed top-0 left-0 w-full bg-gray-100 dark:bg-gray-800 backdrop-blur-md shadow-sm z-50">
+    <header class="fixed top-0 left-0 w-full bg-gray-100/80 dark:bg-gray-800/80 backdrop-blur-md shadow-sm z-50">
         <nav class="flex justify-between items-center px-6 py-3">
             <!-- Navbar Logo + Other Pages + Dark Mode -->
             <a href="../index.html"><img class="max-h-10 rounded-xl" src="../img/logo.png" class="logo" alt="icon"></a>
@@ -41,8 +41,9 @@
         </nav>
     </header>
 
+    <!-- Conteúdo Principal -->
     <main class="pt-14 flex-1">
-        <section class="grid grid-cols-1 gap-6 py-20 px-6 p-8 items-center">
+        <section class="grid grid-cols-1 gap-6 py-6 md:py-10 px-6 p-8 items-center">
             <!-- Foto Henrique -->
             <div class="flex justify-center order-1 md:order-2 hover:from-violet-500 ">
                 <img class="w-40 h-40 sm:w-48 sm:h-48 md:w-75 md:h-75 rounded-full object-cover aspect-square shadow-md hover:shadow-2xl transition-all duration-500 transform hover:scale-105"
@@ -50,7 +51,7 @@
             </div>
 
             <!-- Texto de Boas-vindas -->
-            <section class="grid grid-cols-4 order-1 md:order-2 gap-4 mt-10">
+            <section class="md:grid md:grid-cols-4 order-1 md:order-2 gap-4 mt-10">
                 <div class="text-justify col-span-3">
                     <h2 class="text-2xl text-center font-bold">Prazer, Henrique!</h2>
                     <p class="pt-2 dark:text-gray-300">
@@ -63,12 +64,12 @@
                 <!-- Meus contatos -->
                 <div class="flex flex-col">
                     <!-- Texto Contato -->
-                    <div class="text-right items-end">
+                    <div class="text-center pt-6 md:pt-0 md:text-right md:items-end">
                         <h2 class="text-2xl font-bold dark:text-gray-200">Meus Contatos</h2>
                     </div>
 
                     <!-- Ícones -->
-                    <div class="pt-3 flex space-x-3 justify-end align-top">
+                    <div class="pt-3 flex space-x-3 justify-center md:justify-end align-top">
                         <!-- WhatsApp -->
                         <a href="https://wa.me/5512991319058?text=Olá%20Henrique!%20Acabei%20de%20Olhar%20seu%20Portfólio%20e%20gostaria%20de%20conversar%20contigo!"
                             target="_blank">
@@ -101,7 +102,7 @@
         <!-- Jornada -->
         <section class="bg-gradient-to-b from-white dark:from-gray-900 to-violet-50 dark:to-gray-800 py-16 px-6">
             <h1
-                class="text-4xl font-bold bg-gradient-to-br from-black dark:from-violet-400 to-black dark:to-violet-300 bg-clip-text text-transparent">
+                class="sm:text-red text-4xl font-bold bg-gradient-to-br from-black dark:from-violet-400 to-black dark:to-violet-300 bg-clip-text text-transparent">
                 Minha Jornada
             </h1>
 
@@ -230,8 +231,8 @@
                         class="bg-gradient-to-br from-pink-200 to-pink-100 dark:from-pink-700 dark:to-pink-800 rounded-2xl pt-4 p-2 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 text-center">
                         <h3
                             class="text-xl font-semibold text-gray-800 dark:text-gray-200 mb-4 border-b border-gray-300 dark:border-gray-700 pb-2">
-                            Tempero da
-                            Casa</h3>
+                            Tempero da Casa
+                        </h3>
                         <div class="flow-root space-y-2 flex justify-center">
                             <a href="https://temperodacasa.vercel.app/">
                                 <img class="rounded-sm" src="../img/cardapio.png" alt="cardápio" />
