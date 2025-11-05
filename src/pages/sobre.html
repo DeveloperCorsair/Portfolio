@@ -16,7 +16,8 @@
         <nav class="flex justify-between items-center px-6 py-3">
             <!-- Navbar Logo + Other Pages + Dark Mode -->
             <div class="hover:animate-spin">
-                <a href="../index.html"><img class="max-h-10 rounded-xl" src="../img/logo.png" class="logo" alt="icon"></a>
+                <a href="../index.html"><img class="max-h-10 rounded-xl" src="../img/logo.png" class="logo"
+                        alt="icon"></a>
             </div>
             <!-- Seção para Outras Páginas -->
             <div class="flex gap-2 items-center">
@@ -31,8 +32,8 @@
                         xmlns="http://www.w3.org/2000/svg">
                         <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
                     </svg>
-                    <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
-                        xmlns="http://www.w3.org/2000/svg">
+                    <svg id="theme-toggle-light-icon" class="hidden w-5 h-5 hover:animate-spin" fill="currentColor"
+                        viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
                             fill-rule="evenodd" clip-rule="evenodd">
@@ -167,95 +168,100 @@
 
         <!-- Projetos -->
         <section class="flex items-center justify-center bg-gradient-to-b py-16 px-6 from-white dark:from-gray-900">
-            <div class="w-full max-w-screen-xl">
-                <h2 class="text-3xl font-bold text-center mb-10 text-gray-800 dark:text-gray-200">Alguns dos projetos
-                    que continuam ajudando as pessoas na nossa comunidade
-                </h2>
+            <div class="grid gap-8 md:grid-cols-3 justify-items-center">
+                <!-- Projeto Fincash -->
+                <div class="relative bg-gradient-to-br from-green-200/70 to-emerald-100/70 dark:from-green-700/40 dark:to-emerald-800/30 backdrop-blur-lg rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 w-full max-w-sm text-center">
+                    <h3 class="text-2xl font-semibold text-gray-800 dark:text-gray-100 mb-4 border-b border-gray-400/40 pb-2">
+                        Fincash
+                    </h3>
 
-                <div class="grid gap-6 md:grid-cols-3 justify-items-center">
-                    <!-- Projeto Fincash -->
-                    <div
-                        class="bg-gradient-to-br from-green-300 to-green-100 dark:from-green-600 dark:to-green-800 rounded-2xl pt-4 p-2 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 text-center">
-                        <h3
-                            class="text-xl font-semibold text-gray-800 dark:text-gray-200 mb-4 border-b border-black dark:border-white pb-2">
-                            Fincash</h3>
-                        <div class="flow-root flex justify-center">
-                            <a href="https://github.com/NEW-FINCASH/New-Fincash-Frontend">
-                                <img class="rounded-sm" src="../img/fincash.png" alt="fincash">
-                            </a>
-                            <span class="block pt-4 pb-4 text-justify dark:text-gray-300">Uma API WEB de
-                                gestão financeira. Que visa facilitar o controle e a organização das finanças
-                                pessoais e empresariais, proporcionando aos usuários uma maneira eficiente de gerenciar
-                                receitas, despesas, investimentos e orçamentos.
-                            </span>
-                        </div>
-                        <div class="flex flex-row-reverse gap-6 md:gap-12">
-                            <a class="hover:scale-120 transition-transform duration-300 p-1 dark:filter dark:grayscale dark:invert"
-                                href="https://github.com/NEW-FINCASH/"><img id="github" src="../img/github.png"
-                                    alt="github">
-                            </a>
-                            <button type="button"
-                                class="border-1 border-green-500 bg-gradient-to-br from-green-300 to-emerald-300 dark:from-green-600 dark:to-green-700 pt-1 pb-1 pl-5 pr-5 rounded-sm hover:underline">
-                                <a href="https://github.com/NEW-FINCASH/New-Fincash-Frontend"
-                                    class="hover:text-violet-600 dark:hover:text-white">Acesse o Projeto Aqui!</a>
-                            </button>
-                        </div>
+                    <div class="flex flex-col items-center space-y-4">
+                        <a href="https://github.com/NEW-FINCASH/New-Fincash-Frontend" class="group">
+                            <img class="rounded-md w-full transition-transform duration-300 group-hover:scale-105"
+                                src="../img/fincash.png" alt="fincash">
+                        </a>
+                        <p class="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                            Uma API WEB de gestão financeira que visa facilitar o controle e a organização das finanças
+                            pessoais e empresariais, proporcionando uma maneira eficiente de gerenciar receitas,
+                            despesas,
+                            investimentos e orçamentos.
+                        </p>
                     </div>
 
-                    <!-- Projeto OmniDevs -->
-                    <div
-                        class="bg-gradient-to-br from-blue-200 to-blue-100 dark:from-blue-700 dark:to-blue-800 rounded-2xl pt-4 p-2 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 text-center">
-                        <h3
-                            class="text-xl font-semibold text-gray-800 dark:text-gray-200 mb-4 border-b border-black dark:border-white pb-2">
-                            OmniDevs</h3>
-                        <div class="flow-root space-y-2 flex justify-center">
-                            <a href="https://api-censo-2022.vercel.app/"><img class="rounded-sm"
-                                    src="../img/omnidevs.png" alt="OmniDevs" /></a>
-                            <span class="block pt-4 pb-2 text-justify min-h-32 dark:text-gray-300">Um projeto dedicado
-                                ajudar
-                                a prefeitura de São José dos Campos na análise de dados sobre o censo da cidade,
-                                trazendo gráficos intuitivos, layout minimalista e leve.
-                                Além de mapas interativos sobre os respectivos filtros da região.
-                            </span>
-                            <div class="flex flex-row-reverse gap-6 md:gap-12">
-                                <a class="hover:scale-120 transition-transform duration-300 p-1 dark:filter dark:grayscale dark:invert"
-                                    href="https://github.com/OmniDevsOficial/API-Censo-2022"><img id="github"
-                                        src="../img/github.png" alt="github"></a>
-                                <button type="button"
-                                    class="border-1 border-blue-500 bg-gradient-to-br from-blue-300 to-cyan-200 dark:from-blue-600 dark:to-cyan-700 pt-1 pb-1 pl-5 pr-5 rounded-sm hover:underline">
-                                    <a href="https://api-censo-2022.vercel.app/"
-                                        class="hover:text-violet-600 dark:hover:text-white">Acesse o Projeto Aqui!</a>
-                                </button>
-                            </div>
-                        </div>
+                    <div class="flex justify-between items-center mt-6">
+                        <a href="https://github.com/NEW-FINCASH/"
+                            class="inline-flex gap-2 items-center font-medium bg-gradient-to-r from-green-400 to-emerald-400 dark:from-green-600 dark:to-emerald-700 dark:text-white rounded-xl px-3 py-1.5 hover:scale-110 transition-all duration-200 ease-in-out">
+                            <img src="../img/github.png" alt="github" class="w-7 dark:filter dark:invert">
+                            <span>Github</span>
+                        </a>
+                        <a href="https://github.com/NEW-FINCASH/New-Fincash-Frontend"
+                            class="bg-gradient-to-r from-green-400 to-emerald-400 dark:from-green-600 dark:to-emerald-700 dark:text-white font-medium px-4 py-2 rounded-xl shadow-md hover:shadow-lg hover:brightness-110 transition-all duration-200 ease-in-out">
+                            Acesse o Projeto
+                        </a>
                     </div>
-                    <!-- Projeto Cardápio -->
-                    <div
-                        class="bg-gradient-to-br from-pink-200 to-pink-100 dark:from-pink-700 dark:to-pink-800 rounded-2xl pt-4 p-2 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 text-center">
-                        <h3
-                            class="text-xl font-semibold text-gray-800 dark:text-gray-200 mb-4 border-b border-black dark:border-white pb-2">
-                            Tempero da Casa
-                        </h3>
-                        <div class="flow-root space-y-2 flex justify-center">
-                            <a href="https://temperodacasa.vercel.app/">
-                                <img class="rounded-sm" src="../img/cardapio.png" alt="cardápio" />
-                            </a>
-                            <span class="block pt-4 pb-2 text-justify dark:text-gray-300">Um site onde você pode
-                                visualizar nossas delícias, e escolher seus pedidos atráves do cardápio
-                                digital no próprio site.
-                                Trazendo um interface dinâmica e com cores fortes para te fazer sentir fome.
-                            </span>
-                            <div class="flex flex-row-reverse gap-6 md:gap-12">
-                                <a class="hover:scale-120 transition-transform duration-300 p-1 dark:filter dark:grayscale dark:invert"
-                                    href="https://github.com/DeveloperCorsair/Cardapio"><img id="github"
-                                        src="../img/github.png" alt="github"></a>
-                                <button type="button"
-                                    class="border-1 border-pink-500 bg-gradient-to-br from-pink-300 to-purple-200 dark:from-pink-600 dark:to-purple-700 pt-1 pb-1 pl-5 pr-5 rounded-sm hover:underline">
-                                    <a href="https://temperodacasa.vercel.app/"
-                                        class="hover:text-violet-600 dark:hover:text-white">Acesse o Projeto Aqui!</a>
-                                </button>
-                            </div>
-                        </div>
+                </div>
+
+                <!-- Projeto OmniDevs -->
+                <div class="relative bg-gradient-to-br from-blue-200/70 to-cyan-100/70 dark:from-blue-800/40 dark:to-cyan-800/30 backdrop-blur-lg rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 w-full max-w-sm text-center">
+                    <h3 class="text-2xl font-semibold text-gray-800 dark:text-gray-100 mb-4 border-b border-gray-400/40 pb-2">
+                        OmniDevs
+                    </h3>
+
+                    <div class="flex flex-col items-center space-y-4">
+                        <a href="https://api-censo-2022.vercel.app/" class="group">
+                            <img class="rounded-md w-full transition-transform duration-300 group-hover:scale-105"
+                                src="../img/omnidevs.png" alt="OmniDevs">
+                        </a>
+                        <p class="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                            Projeto criado para ajudar a prefeitura de São José dos Campos na análise de dados do censo
+                            da cidade,
+                            com gráficos intuitivos, layout minimalista e mapas interativos que tornam os dados fáceis
+                            de compreender.
+                        </p>
+                    </div>
+
+                    <div class="flex justify-between items-center mt-6">
+                        <a href="https://github.com/OmniDevsOficial/API-Censo-2022"
+                            class="inline-flex gap-2 items-center font-medium bg-gradient-to-r from-blue-400 to-cyan-400 dark:from-blue-600 dark:to-cyan-700 dark:text-white hover:scale-110 rounded-xl px-4 py-1.5 transition-all duration-200 ease-in-out">
+                            <img src="../img/github.png" alt="github" class="w-7 dark:filter dark:invert">
+                            <span>Github</span>
+                        </a>
+                        <a href="https://api-censo-2022.vercel.app/"
+                            class="bg-gradient-to-r from-blue-400 to-cyan-400 dark:from-blue-600 dark:to-cyan-700 dark:text-white font-medium px-4 py-2 rounded-xl shadow-md hover:shadow-lg hover:brightness-110 transition-all duration-200 ease-in-out">
+                            Acesse o Projeto
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Projeto Tempero da Casa -->
+                <div class="relative bg-gradient-to-br from-pink-200/70 to-purple-100/70 dark:from-pink-800/40 dark:to-purple-800/30 backdrop-blur-lg rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 w-full max-w-sm text-center">
+                    <h3 class="text-2xl font-semibold text-gray-800 dark:text-gray-100 mb-4 border-b border-gray-400/40 pb-2">
+                        Tempero da Casa
+                    </h3>
+
+                    <div class="flex flex-col items-center space-y-4">
+                        <a href="https://temperodacasa.vercel.app/" class="group">
+                            <img class="rounded-md w-full transition-transform duration-300 group-hover:scale-105"
+                                src="../img/cardapio.png" alt="cardápio">
+                        </a>
+                        <p class="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                            Um site de cardápio digital onde o usuário pode visualizar nossos pratos e fazer pedidos
+                            online.
+                            Com interface vibrante e visual dinâmico, o design desperta o apetite e melhora a
+                            experiência.
+                        </p>
+                    </div>
+
+                    <div class="flex justify-between items-center mt-6">
+                        <a href="https://github.com/DeveloperCorsair/Cardapio"
+                            class="inline-flex gap-2 items-center font-medium bg-gradient-to-r from-pink-400 to-purple-400 dark:from-pink-600 dark:to-purple-700 dark:text-white px-4 py-1.5 rounded-xl hover:scale-110 transition-all duration-200 ease-in-out">
+                            <img src="../img/github.png" alt="github" class="w-7 dark:filter dark:invert">
+                            <span>Github</span>
+                        </a>
+                        <a href="https://temperodacasa.vercel.app/"
+                            class="bg-gradient-to-r from-pink-400 to-purple-400 dark:from-pink-600 dark:to-purple-700 dark:text-white font-medium px-4 py-2 rounded-xl shadow-md hover:shadow-lg hover:brightness-110 transition-all duration-200 ease-in-out">
+                            Acesse o Projeto
+                        </a>
                     </div>
                 </div>
             </div>
