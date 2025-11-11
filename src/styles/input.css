@@ -2,7 +2,6 @@
 @import "flowbite/src/themes/default";
 @custom-variant dark (&:where(.dark, .dark *));
 
-
 #navbarSupportedContent {
     text-align: right;
     display: flex;
