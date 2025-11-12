@@ -7,10 +7,9 @@ Um Portifólio sobre mim, Henrique (DevCorsair). Contando um pouco sobre meus pr
 cd PORTIFOLIO
 ```
 
-### Caso queira modificar alguma coisa no Tailwind entre na pasta source e execute-o
+### Caso queira modificar alguma coisa build o arquivo para executar Tailwind
 ```
-cd src
-npm run dev
+npm run build
 ```
 <!--
 ## Dependências do projeto

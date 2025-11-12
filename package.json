@@ -6,6 +6,10 @@
     "tailwindcss": "^4.1.14"
   },
   "scripts": {
-    "dev": "npx @tailwindcss/cli -i ./src/styles/input.css -o ./src/css/output.css --watch -y"
+    "build": "npx @tailwindcss/cli -i ./src/styles/input.css -o ./src/css/output.css --watch -y",
+    "start": "npx serve ."
+  },
+  "devDependencies": {
+    "serve": "^14.2.5"
   }
 }
