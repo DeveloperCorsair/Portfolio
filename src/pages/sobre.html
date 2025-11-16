@@ -46,17 +46,17 @@
     <main class="pt-18 flex-1">
         <section class="grid grid-cols-1 gap-6 py-6 md:py-10 px-6 p-8 items-center">
             <!-- Foto Henrique -->
-            <div class="grid grid-cols-4 flex items-start hover:from-violet-500 mx-2">
-                <div class="col-span-3">
-                    <h1 class="text-4xl font-bold mb-8">Henrique Moreira</h1>
-                    <span>
+            <div class="grid grid-cols-1 md:grid-cols-4 items-start hover:from-violet-500 mx-2">
+                <div class="col-span-1 md:col-span-3 order-2 md:order-1">
+                    <h1 class="text-4xl text-center font-bold my-5 md:mb-8 md:my-0">Henrique Moreira</h1>
+                    <span class="flex text-justify md:pr-10">
                         Sou estudante de programação, cursando Desenvolvimento de Software Multiplataforma na Fatec.
                         Estou aprendendo cada vez mais sobre front-end e back-end, além de frameworks, banco de dados
                         relacionais e não relacionais. Apesar da tragetória ser àrdua, todos os dias continuo me
                         desenvolvendo e praticando cada vez mais para alcançar meus objetivos.
                     </span>
 
-                    <div class="flex flex-col items-start mt-4">
+                    <div class="ordem-1 flex flex-col items-center md:items-start mt-4">
                         <!-- Texto Contato -->
                         <div class="pt-6 md:pt-0 md:text-right md:items-center">
                             <h2 class="text-4xl font-bold dark:text-gray-200">Meus Contatos</h2>
@@ -92,11 +92,10 @@
                     </div>
                 </div>
                 <!-- Imagem -->
-                <div>
+                <div class="flex justify-center order-1">
                     <img class="h-40 sm:w-48 sm:h-48 md:w-75 md:h-75 rounded-full object-cover aspect-square shadow-md hover:shadow-2xl transition-all duration-500 transform hover:scale-105"
                         src="../img/1henrique.jpg" alt="foto_henrique">
                 </div>
-
             </div>
 
             <!-- Jornada -->
@@ -169,12 +168,12 @@
 
             <!-- Projetos -->
             <section
-                class="flex flex-col justify-between flex items-center justify-center bg-gradient-to-b py-16 px-6 from-white dark:from-gray-900">
+                class="grid grid-column-1 bg-gradient-to-b from-white dark:from-gray-900 w-full">
                 <!-- Texto Projetos -->
-                <div class="text-center pt-6 md:pt-0 md:text-right md:items-center mb-10">
+                <div class="text-center md:py-5 md:text-center md:items-center">
                     <h2 class="text-4xl font-bold dark:text-gray-200">Projetos</h2>
                 </div>
-                <div class="grid gap-8 md:grid-cols-3 justify-items-center">
+                <div class="grid md:grid-cols-3 w-full gap-8">
                     <!-- Projeto Fincash -->
                     <div
                         class="relative bg-gradient-to-br from-green-200/70 to-emerald-100/70 dark:from-green-700/40 dark:to-emerald-800/30 backdrop-blur-lg rounded-2xl p-3 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 w-full max-w-sm text-center">
