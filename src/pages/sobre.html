@@ -29,7 +29,7 @@
                 <!-- Botão de Dark Mode -->
                 <button id="theme-toggle" type="button"
                     class="text-gray-500 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-gray-700 hover:text-violet-600 rounded-lg text-sm p-2.5">
-                    <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                    <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5 hover:animate-spin" fill="currentColor" viewBox="0 0 20 20"
                         xmlns="http://www.w3.org/2000/svg">
                         <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
                     </svg>
@@ -103,7 +103,7 @@
                 </div>
                 <!-- Foto Henrique -->
                 <div class="flex justify-center order-1">
-                    <img class="w-48 h-48 rounded-full sm:object-cover sm:aspect-square md:w-100 md:h-100 md:rounded-sm shadow-md hover:shadow-2xl transition-all duration-500 transform hover:scale-105"
+                    <img class="w-48 h-48 rounded-full object-cover aspect-square md:w-100 md:h-100 md:rounded-sm shadow-md dark:shadow-gray-600 dark:hover:shadow-lg transition-all duration-500 transform hover:scale-105"
                         src="../img/geral/1henrique.jpg" alt="foto_henrique">
                 </div>
             </div>
@@ -116,8 +116,7 @@
                     Minha Jornada
                 </h1>
 
-                <div
-                    class="flex space-x-6 overflow-x-auto pb-6 snap-x snap-mandatory scroll-smooth cursor-grab active:cursor-grabbing">
+                <div class="flex space-x-6 overflow-x-auto pb-6 snap-x snap-mandatory scroll-smooth cursor-grab active:cursor-grabbing">
                     <!-- Cards -->
                     <!-- Embraer -->
                     <div
@@ -130,7 +129,7 @@
                     </div>
                     <!-- Etec -->
                     <div
-                        class="flex-shrink-0 snap-center w-72 bg-white dark:bg-gray-800 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 p-6">
+                    class="flex-shrink-0 snap-center w-72 bg-white dark:bg-gray-800 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 p-6">
                         <h3 class="text-xl font-semibold text-violet-600 dark:text-violet-400">2023 - Etec São José dos
                             Campos 🔮</h3>
                         <p class="text-gray-600 dark:text-gray-300 mt-3 text-sm">
@@ -178,138 +177,125 @@
             </section>
 
             <!-- Projetos -->
-            <section class="grid grid-column-1 bg-gradient-to-b from-[#fdf9ee] dark:from-gray-900 w-full">
+            <section class="bg-gradient-to-b from-[#fdf9ee] dark:from-gray-900">
                 <!-- Texto Projetos -->
                 <div class="text-center py-5 md:text-center md:items-center">
                     <h2 class="text-4xl font-bold dark:text-gray-200">Projetos</h2>
                 </div>
-                <div class="grid md:grid-cols-3 justify-between w-full gap-8">
+                <div class="grid md:grid-cols-3 justify-between gap-8">
                     <!-- Projeto Fincash -->
                     <div
-                        class="relative bg-gradient-to-br from-green-200/70 to-emerald-100/70 dark:from-green-700/40 dark:to-emerald-800/30 backdrop-blur-lg rounded-2xl p-3 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 w-full max-w-md text-center">
-
-                        <div class="flex flex-col items-center space-y-4">
+                        class="flex flex-col justify-between bg-gradient-to-br from-green-700/80 to-emerald-500/70 dark:from-green-700/40 dark:to-emerald-800/30 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 text-center">
+                        <div>
                             <a href="https://github.com/NEW-FINCASH/New-Fincash-Frontend" class="group">
-                                <img class="rounded-md w-full transition-transform duration-300 group-hover:scale-102"
-                                    src="../img/geral/fincash.png" alt="fincash">
+                                <img class="rounded-t-md" src="../img/geral/fincash.png" alt="fincash">
                             </a>
-                            <div class="mb-2">
-                                <h3 class="text-2xl font-semibold text-gray-800 dark:text-gray-100 mb-2">
+                        </div>
+                        <div class="p-2 md:pt-0">
+                            <div>
+                                <h3 class="text-2xl font-semibold text-gray-800 dark:text-gray-100 my-2">
                                     Fincash
                                 </h3>
-                                <p class="text-justify text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+                                <!-- <p class="text-justify text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
                                     API web de gestão financeira que visa facilitar o controle e a organização das
                                     finanças
                                     pessoais. Responsável pelo back-end, criação de transações, testes e
                                     integração com o banco de dados.
-                                </p>
+                                </p> -->
                             </div>
 
-                            <!-- vai ser usado quando for implantado o carrossel
-                            Uma API WEB de gestão financeira que visa facilitar o controle e a organização das finanças pessoais 
-                            e empresariais. Atuei como desenvolver back-end na criação de transações monetárias e 
-                            testes da aplicação. Além de interagir e administrar o banco de dados. -->
-                        </div>
-
-                        <div class="flex justify-between items-center">
-                            <a href="https://github.com/NEW-FINCASH/New-Fincash-Frontend"
-                                class="inline-flex gap-2 items-center font-medium bg-gradient-to-r from-green-400 to-emerald-400 dark:from-green-600 dark:to-emerald-700 dark:text-white rounded-xl px-3 py-1.5 hover:brightness-110 transition-all duration-200 ease-in-out">
-                                <img src="../img/geral/github.png" alt="github" class="w-7 dark:filter dark:invert">
-                                <span>Github</span>
-                            </a>
-                            <a href="https://newfincash.vercel.app/"
-                                class="bg-gradient-to-r from-green-400 to-emerald-400 dark:from-green-600 dark:to-emerald-700 dark:text-white font-medium px-4 py-2 rounded-xl shadow-md hover:shadow-lg hover:brightness-110 transition-all duration-200 ease-in-out">
-                                Acesse o Projeto
-                            </a>
-                            <!-- Mandar para branch feature -->
-                            <!-- <a href="./sobre.html"
-                                class="bg-gradient-to-r from-green-400 to-emerald-400 dark:from-green-600 dark:to-emerald-700 dark:text-white font-medium px-4 py-2 rounded-xl shadow-md hover:shadow-lg hover:brightness-110 transition-all duration-200 ease-in-out">
-                                <i class="fi fi-rr-info">i</i>
-                            </a> -->
+                            <div class="flex justify-between items-center">
+                                <a href="https://github.com/NEW-FINCASH/New-Fincash-Frontend"
+                                    class="inline-flex gap-2 items-center font-medium bg-gradient-to-r from-green-400 to-emerald-400 dark:from-green-600 dark:to-emerald-700 dark:text-white rounded-xl px-3 py-1.5 hover:brightness-110 transition-all duration-200 ease-in-out">
+                                    <img src="../img/geral/github.png" alt="github" class="w-7 dark:filter dark:invert">
+                                    <span>Github</span>
+                                </a>
+                                <a href="https://newfincash.vercel.app/"
+                                    class="bg-gradient-to-r from-green-400 to-emerald-400 dark:from-green-600 dark:to-emerald-700 dark:text-white font-medium px-4 py-2 rounded-xl shadow-md hover:shadow-lg hover:brightness-110 transition-all duration-200 ease-in-out">
+                                    Acesse o Projeto
+                                </a>
+                                <a href="./sobre.html"
+                                    class="bg-gradient-to-r from-green-400 to-emerald-400 dark:from-green-600 dark:to-emerald-700 dark:text-white font-medium px-4 py-2 rounded-xl shadow-md hover:shadow-lg hover:brightness-110 transition-all duration-200 ease-in-out">
+                                    <i class="fi fi-rr-info">i</i>
+                                </a>
+                            </div>
                         </div>
                     </div>
 
                     <!-- Projeto OmniDevs -->
                     <div
-                        class="flex flex-col justify-between relative bg-gradient-to-br from-blue-200/70 to-cyan-100/70 dark:from-blue-800/40 dark:to-cyan-800/30 backdrop-blur-lg rounded-2xl p-3 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 w-full max-w-md text-center">
-                        <div class="flex flex-col items-center space-y-4">
+                        class="flex flex-col justify-between bg-gradient-to-br from-blue-700/60 to-cyan-600/70 dark:from-blue-800/40 dark:to-cyan-800/30 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 text-center">
+                        <div>
                             <a href="https://api-censo-2022.vercel.app/" class="group">
-                                <img class="rounded-md w-full transition-transform duration-300 group-hover:scale-102"
-                                    src="../img/geral/omnidevs.png" alt="OmniDevs">
+                                <img class="rounded-t-md" src="../img/geral/omnidevs.png" alt="OmniDevs">
                             </a>
+                        </div>
+                        <div class="p-2 md:pt-0">
                             <div>
-                                <h3 class="text-2xl font-semibold text-gray-800 dark:text-gray-100 mb-2">
+                                <h3 class="text-2xl font-semibold text-gray-800 dark:text-gray-100 my-2">
                                     OmniDevs
                                 </h3>
-                                <p class="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
-                                    Projeto criado para auxiliar a prefeitura de São José dos Campos na análise de dados
-                                    do censo, com gráficos interativos. Atuei no planejamento, wireframe e
-                                    desenvolvimento dos gráficos.
-                                </p>
+                                <!-- <p class="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                                        Projeto criado para auxiliar a prefeitura de São José dos Campos na análise de dados
+                                        do censo, com gráficos interativos. Atuei no planejamento, wireframe e
+                                        desenvolvimento dos gráficos.
+                                    </p> -->
                             </div>
 
-                            <!-- vai ser usado quando for implantado o carrossel 
-                             não tem jeito, vai ter que resumir também
-                            Projeto desenvolvido para auxiliar a prefeitura de São José dos Campos na análise de dados
-                            do censo, com gráficos interativos e layout intuitivo. Atuei no planejamento e criação do
-                            wireframe e no desenvolvimento dos gráficos no back-end.-->
-                        </div>
-
-                        <div class="flex justify-between items-center">
-                            <a href="https://github.com/OmniDevsOficial/API-Censo-2022"
-                                class="inline-flex gap-2 items-center font-medium bg-gradient-to-r from-blue-400 to-cyan-400 dark:from-blue-600 dark:to-cyan-700 dark:text-white hover:brightness-110 rounded-xl px-4 py-1.5 transition-all duration-200 ease-in-out">
-                                <img src="../img/geral/github.png" alt="github" class="w-7 dark:filter dark:invert">
-                                <span>Github</span>
-                            </a>
-                            <a href="https://api-censo-2022.vercel.app/"
-                                class="bg-gradient-to-r from-blue-400 to-cyan-400 dark:from-blue-600 dark:to-cyan-700 dark:text-white font-medium px-4 py-2 rounded-xl shadow-md hover:shadow-lg hover:brightness-110 transition-all duration-200 ease-in-out">
-                                Acesse o Projeto
-                            </a>
-                            <!-- Mandar para branch feature -->
-                            <!-- <a href="./sobre.html"
-                                class="bg-gradient-to-r from-blue-400 to-cyan-400 dark:from-blue-600 dark:to-cyan-700 dark:text-white font-medium px-4 py-2 rounded-xl shadow-md hover:shadow-lg hover:brightness-110 transition-all duration-200 ease-in-out">
-                                <i class="fi fi-rr-info">i</i>
-                            </a>-->
+                            <div class="flex justify-between items-center">
+                                <a href="https://github.com/OmniDevsOficial/API-Censo-2022"
+                                    class="inline-flex gap-2 items-center font-medium bg-gradient-to-r from-blue-400 to-cyan-400 dark:from-blue-600 dark:to-cyan-700 dark:text-white hover:brightness-110 rounded-xl px-4 py-1.5 transition-all duration-200 ease-in-out">
+                                    <img src="../img/geral/github.png" alt="github" class="w-7 dark:filter dark:invert">
+                                    <span>Github</span>
+                                </a>
+                                <a href="https://api-censo-2022.vercel.app/"
+                                    class="bg-gradient-to-r from-blue-400 to-cyan-400 dark:from-blue-600 dark:to-cyan-700 dark:text-white font-medium px-4 py-2 rounded-xl shadow-md hover:shadow-lg hover:brightness-110 transition-all duration-200 ease-in-out">
+                                    Acesse o Projeto
+                                </a>
+                                <a href="./sobre.html"
+                                    class="bg-gradient-to-r from-blue-400 to-cyan-400 dark:from-blue-600 dark:to-cyan-700 dark:text-white font-medium px-4 py-2 rounded-xl shadow-md hover:shadow-lg hover:brightness-110 transition-all duration-200 ease-in-out">
+                                    <i class="fi fi-rr-info">i</i>
+                                </a>
+                            </div>
                         </div>
                     </div>
 
                     <!-- Projeto Tempero da Casa -->
                     <div
-                        class="flex flex-col justify-between relative bg-gradient-to-br from-pink-200/70 to-purple-100/70 dark:from-pink-800/40 dark:to-purple-800/30 backdrop-blur-lg rounded-2xl p-3 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 w-full max-w-md text-center">
-
-                        <div class="flex flex-col items-center space-y-4 mb-2">
+                        class="flex flex-col justify-between bg-gradient-to-br from-pink-600/70 to-pink-400/70 dark:from-pink-800/40 dark:to-purple-800/30 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 text-center">
+                        <div>
                             <a href="https://temperodacasa.vercel.app/" class="group">
-                                <img class="rounded-md w-full transition-transform duration-300 group-hover:scale-102"
-                                    src="../img/geral/cardapio.png" alt="cardápio">
+                                <img class="rounded-t-md" src="../img/geral/cardapio.png" alt="cardápio">
                             </a>
                         </div>
 
-                        <div>
-                            <h3 class="text-2xl font-semibold text-gray-800 dark:text-gray-100 mb-4">
-                                Tempero da Casa
-                            </h3>
-                            <p class="text-justify text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+                        <div class="p-2 md:pt-0">
+                            <div>
+                                <h3 class="text-2xl font-semibold text-gray-800 dark:text-gray-100 my-2">
+                                    Tempero da Casa
+                                </h3>
+                                <!-- <p class="text-justify text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
                                 Um site de cardápio digital onde o usuário pode visualizar nossos pratos e fazer pedidos
                                 online. Participei como front-end, fazendo a estrutura das páginas e estilizando o
                                 cardápio.
-                            </p>
-                        </div>
+                            </p> -->
+                            </div>
 
-                        <div class="flex justify-between items-center">
-                            <a href="https://github.com/DeveloperCorsair/Cardapio"
-                                class="inline-flex gap-2 items-center font-medium bg-gradient-to-r from-pink-400 to-purple-400 dark:from-pink-600 dark:to-purple-700 dark:text-white px-4 py-1.5 rounded-xl hover:brightness-110 transition-all duration-200 ease-in-out">
-                                <img src="../img/geral/github.png" alt="github" class="w-7 dark:filter dark:invert">
-                                <span>Github</span>
-                            </a>
-                            <a href="https://temperodacasa.vercel.app/"
-                                class="bg-gradient-to-r from-pink-400 to-purple-400 dark:from-pink-600 dark:to-purple-700 dark:text-white font-medium px-4 py-2 rounded-xl shadow-md hover:shadow-lg hover:brightness-110 transition-all duration-200 ease-in-out">
-                                Acesse o Projeto
-                            </a>
-                            <!-- Mandar para branch feature -->
-                            <!-- <a href="./sobre.html"
-                                class="bg-gradient-to-r from-pink-400 to-purple-400 dark:from-pink-600 dark:to-purple-700 dark:text-white font-medium px-4 py-2 rounded-xl shadow-md hover:shadow-lg hover:brightness-110 transition-all duration-200 ease-in-out">
-                                <i class="fi fi-rr-info">i</i>
-                            </a> -->
+                            <div class="flex justify-between items-center">
+                                <a href="https://github.com/DeveloperCorsair/Cardapio"
+                                    class="inline-flex gap-2 items-center font-medium bg-gradient-to-r from-pink-400 to-purple-400 dark:from-pink-600 dark:to-purple-700 dark:text-white px-4 py-1.5 rounded-xl hover:brightness-110 transition-all duration-200 ease-in-out">
+                                    <img src="../img/geral/github.png" alt="github" class="w-7 dark:filter dark:invert">
+                                    <span>Github</span>
+                                </a>
+                                <a href="https://temperodacasa.vercel.app/"
+                                    class="bg-gradient-to-r from-pink-400 to-purple-400 dark:from-pink-600 dark:to-purple-700 dark:text-white font-medium px-4 py-2 rounded-xl shadow-md hover:shadow-lg hover:brightness-110 transition-all duration-200 ease-in-out">
+                                    Acesse o Projeto
+                                </a>
+                                <a href="./sobre.html"
+                                    class="bg-gradient-to-r from-pink-400 to-purple-400 dark:from-pink-600 dark:to-purple-700 dark:text-white font-medium px-4 py-2 rounded-xl shadow-md hover:shadow-lg hover:brightness-110 transition-all duration-200 ease-in-out">
+                                    <i class="fi fi-rr-info">i</i>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -358,10 +344,11 @@
     </main>
 
     <!-- Footer -->
-    <footer class="bg-gray-200 text-gray-800 dark:text-gray-200 dark:bg-gray-800 flex justify-between p-4 py-6 items-center">
+    <footer
+        class="bg-gray-200 text-gray-800 dark:text-gray-200 dark:bg-gray-800 flex justify-between p-4 py-6 items-center">
         <div>
             <span class="text-sm md:text-[16px]">
-                &copy;Desenvolved by 
+                &copy;Desenvolved by
                 <a class="hover:underline hover:text-violet-600"
                     href="https://github.com/DeveloperCorsair">Developer-Corsair
                 </a>
@@ -370,8 +357,7 @@
         <div>
             <span class="flex flex-row-reverse gap-4">
                 <a class="w-[30px] hover:scale-120 transition-transform duration-300 dark:filter dark:grayscale dark:invert"
-                    href="https://github.com/DeveloperCorsair"><img src="../img/geral/github.png"
-                        alt="github"></a>
+                    href="https://github.com/DeveloperCorsair"><img src="../img/geral/github.png" alt="github"></a>
                 <a class="w-[30px] hover:scale-120 transition-transform duration-300 dark:filter dark:grayscale dark:invert"
                     href="https://www.linkedin.com/in/henriquemm/"><img src="../img/geral/linkedin.png"
                         alt="linkedin"></a>
