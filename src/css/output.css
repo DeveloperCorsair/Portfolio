@@ -1600,7 +1600,7 @@
     }
   }
 }
-dialog {
+:not(dialog) dialog {
   margin: 0;
 }
 dialog[open] {

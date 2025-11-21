@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="icon" href="../img/geral/logo.png">
     <link rel="stylesheet" href="../styles/input.css">
     <link rel="stylesheet" href="../css/output.css">
@@ -186,7 +189,8 @@
                 </div>
                 <div class="grid md:grid-cols-3 justify-between gap-8">
                     <!-- Projeto Fincash -->
-                    <div class="flex flex-col justify-between bg-gradient-to-br from-green-700/80 to-emerald-500/70 dark:from-green-700/40 dark:to-emerald-800/30 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 text-center">
+                    <div
+                        class="flex flex-col justify-between bg-gradient-to-br from-green-700/80 to-emerald-500/70 dark:from-green-700/40 dark:to-emerald-800/30 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 text-center">
                         <!-- Imagem Finscash -->
                         <div>
                             <a href="https://github.com/NEW-FINCASH/New-Fincash-Frontend" class="group">
@@ -219,15 +223,39 @@
                                 </a>
                                 <!-- Modal -->
                                 <div>
-                                    <button class="abrir-modal fi fi-rr-info italic" data-modal="modal-1">
+                                    <button class="abrir-modal" data-modal="modal-1">
                                         <span
-                                            class="bg-gradient-to-r from-green-400 to-emerald-400 dark:from-green-600 dark:to-emerald-700 dark:text-white font-medium px-4 py-2 rounded-xl shadow-md hover:shadow-lg hover:brightness-110 transition-all duration-200 ease-in-out">
-                                            i</span>
+                                            class="bg-gradient-to-r from-green-400 to-emerald-400
+                                              dark:from-green-600 dark:to-emerald-700 dark:text-white
+                                              font-medium px-4 py-2 rounded-xl shadow-md 
+                                              hover:shadow-lg hover:brightness-110 transition-all duration-200 ease-in-out">
+                                        </span>
                                     </button>
                                     <dialog id="modal-1">
                                         <button class="fechar-modal" data-modal="modal-1">
-                                            X
+                                            <i class="fa-solid fa-xmark"></i>
                                         </button>
+                                            <div class="modal-header">
+                                                <h1>Fincash</h1>
+                                                <span>2024</span>
+                                            </div>
+                                            <img class="modal-imagem" src="#" alt="">
+                                            <div class="modal-body">
+                                                <p>
+                                                    API web de gestão financeira que visa facilitar 
+                                                    o controle e a organização das finanças pessoais. 
+                                                </p>
+                                                <p>
+                                                    Atuei no back-end criando e gerenciando as rotas de requisição, feitas com Express.js,
+                                                    realizando testes na aplicação visando corrigir erros e ajustar velocidade na requisição entre rotas. 
+                                                    Além de trazer segurança para o site com JWT, Cookies e CORS.
+                                                    Também realizei a integração do back-end com o banco de dados (MongoDB),
+                                                    definição da estrutura dos dados a serem armazenados no banco de dados e
+                                                    otimização de consultas, que são ajustes realizados para melhorar o desempenho das consultas
+                                                    e reduzir o tempo de resposta do servidor.
+                                                </p>
+                                                <span class="modal-badges"></span>
+                                            </div>
                                     </dialog>
                                 </div>
                             </div>

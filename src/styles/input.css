@@ -2,6 +2,8 @@
 @import "flowbite/src/themes/default";
 @custom-variant dark (&:where(.dark, .dark *));
 
+
+:not(dialog)
 dialog {
     margin: 0;
 };
