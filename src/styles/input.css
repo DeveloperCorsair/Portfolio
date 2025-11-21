@@ -1,3 +1,25 @@
 @import "tailwindcss";
 @import "flowbite/src/themes/default";
 @custom-variant dark (&:where(.dark, .dark *));
+
+dialog {
+    margin: 0;
+};
+
+dialog[open] {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: min(70%, 600px);
+  border: none;
+  border-radius: 8px;
+  padding: 1rem;
+}
+dialog::backdrop {
+  background: rgba(0,0,0,0.4);
+}
+
+.fechar-modal {
+    text-decoration: none;
+}

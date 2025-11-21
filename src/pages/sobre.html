@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../img/geral/logo.png">
+    <link rel="stylesheet" href="../styles/input.css">
     <link rel="stylesheet" href="../css/output.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
@@ -29,8 +30,8 @@
                 <!-- Botão de Dark Mode -->
                 <button id="theme-toggle" type="button"
                     class="text-gray-500 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-gray-700 hover:text-violet-600 rounded-lg text-sm p-2.5">
-                    <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5 hover:animate-spin" fill="currentColor" viewBox="0 0 20 20"
-                        xmlns="http://www.w3.org/2000/svg">
+                    <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5 hover:animate-spin" fill="currentColor"
+                        viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                         <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
                     </svg>
                     <svg id="theme-toggle-light-icon" class="hidden w-5 h-5 hover:animate-spin" fill="currentColor"
@@ -116,7 +117,8 @@
                     Minha Jornada
                 </h1>
 
-                <div class="flex space-x-6 overflow-x-auto pb-6 snap-x snap-mandatory scroll-smooth cursor-grab active:cursor-grabbing">
+                <div
+                    class="flex space-x-6 overflow-x-auto pb-6 snap-x snap-mandatory scroll-smooth cursor-grab active:cursor-grabbing">
                     <!-- Cards -->
                     <!-- Embraer -->
                     <div
@@ -129,7 +131,7 @@
                     </div>
                     <!-- Etec -->
                     <div
-                    class="flex-shrink-0 snap-center w-72 bg-white dark:bg-gray-800 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 p-6">
+                        class="flex-shrink-0 snap-center w-72 bg-white dark:bg-gray-800 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 p-6">
                         <h3 class="text-xl font-semibold text-violet-600 dark:text-violet-400">2023 - Etec São José dos
                             Campos 🔮</h3>
                         <p class="text-gray-600 dark:text-gray-300 mt-3 text-sm">
@@ -184,8 +186,8 @@
                 </div>
                 <div class="grid md:grid-cols-3 justify-between gap-8">
                     <!-- Projeto Fincash -->
-                    <div
-                        class="flex flex-col justify-between bg-gradient-to-br from-green-700/80 to-emerald-500/70 dark:from-green-700/40 dark:to-emerald-800/30 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 text-center">
+                    <div class="flex flex-col justify-between bg-gradient-to-br from-green-700/80 to-emerald-500/70 dark:from-green-700/40 dark:to-emerald-800/30 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 text-center">
+                        <!-- Imagem Finscash -->
                         <div>
                             <a href="https://github.com/NEW-FINCASH/New-Fincash-Frontend" class="group">
                                 <img class="rounded-t-md" src="../img/geral/fincash.png" alt="fincash">
@@ -204,6 +206,7 @@
                                 </p> -->
                             </div>
 
+                            <!-- Botões -->
                             <div class="flex justify-between items-center">
                                 <a href="https://github.com/NEW-FINCASH/New-Fincash-Frontend"
                                     class="inline-flex gap-2 items-center font-medium bg-gradient-to-r from-green-400 to-emerald-400 dark:from-green-600 dark:to-emerald-700 dark:text-white rounded-xl px-3 py-1.5 hover:brightness-110 transition-all duration-200 ease-in-out">
@@ -214,10 +217,19 @@
                                     class="bg-gradient-to-r from-green-400 to-emerald-400 dark:from-green-600 dark:to-emerald-700 dark:text-white font-medium px-4 py-2 rounded-xl shadow-md hover:shadow-lg hover:brightness-110 transition-all duration-200 ease-in-out">
                                     Acesse o Projeto
                                 </a>
-                                <a href="./sobre.html"
-                                    class="bg-gradient-to-r from-green-400 to-emerald-400 dark:from-green-600 dark:to-emerald-700 dark:text-white font-medium px-4 py-2 rounded-xl shadow-md hover:shadow-lg hover:brightness-110 transition-all duration-200 ease-in-out">
-                                    <i class="fi fi-rr-info">i</i>
-                                </a>
+                                <!-- Modal -->
+                                <div>
+                                    <button class="abrir-modal fi fi-rr-info italic" data-modal="modal-1">
+                                        <span
+                                            class="bg-gradient-to-r from-green-400 to-emerald-400 dark:from-green-600 dark:to-emerald-700 dark:text-white font-medium px-4 py-2 rounded-xl shadow-md hover:shadow-lg hover:brightness-110 transition-all duration-200 ease-in-out">
+                                            i</span>
+                                    </button>
+                                    <dialog id="modal-1">
+                                        <button class="fechar-modal" data-modal="modal-1">
+                                            X
+                                        </button>
+                                    </dialog>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -225,6 +237,7 @@
                     <!-- Projeto OmniDevs -->
                     <div
                         class="flex flex-col justify-between bg-gradient-to-br from-blue-700/60 to-cyan-600/70 dark:from-blue-800/40 dark:to-cyan-800/30 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 text-center">
+                        <!-- Imagem Omni -->
                         <div>
                             <a href="https://api-censo-2022.vercel.app/" class="group">
                                 <img class="rounded-t-md" src="../img/geral/omnidevs.png" alt="OmniDevs">
@@ -242,6 +255,7 @@
                                     </p> -->
                             </div>
 
+                            <!-- Botões -->
                             <div class="flex justify-between items-center">
                                 <a href="https://github.com/OmniDevsOficial/API-Censo-2022"
                                     class="inline-flex gap-2 items-center font-medium bg-gradient-to-r from-blue-400 to-cyan-400 dark:from-blue-600 dark:to-cyan-700 dark:text-white hover:brightness-110 rounded-xl px-4 py-1.5 transition-all duration-200 ease-in-out">
@@ -252,10 +266,19 @@
                                     class="bg-gradient-to-r from-blue-400 to-cyan-400 dark:from-blue-600 dark:to-cyan-700 dark:text-white font-medium px-4 py-2 rounded-xl shadow-md hover:shadow-lg hover:brightness-110 transition-all duration-200 ease-in-out">
                                     Acesse o Projeto
                                 </a>
-                                <a href="./sobre.html"
-                                    class="bg-gradient-to-r from-blue-400 to-cyan-400 dark:from-blue-600 dark:to-cyan-700 dark:text-white font-medium px-4 py-2 rounded-xl shadow-md hover:shadow-lg hover:brightness-110 transition-all duration-200 ease-in-out">
-                                    <i class="fi fi-rr-info">i</i>
-                                </a>
+                                <!-- Modal -->
+                                <div>
+                                    <button class="abrir-modal fi fi-rr-info italic" data-modal="modal-2">
+                                        <span
+                                            class="bg-gradient-to-r from-blue-400 to-cyan-400 dark:from-blue-600 dark:to-cyan-700 dark:text-white font-medium px-4 py-2 rounded-xl shadow-md hover:shadow-lg hover:brightness-110 transition-all duration-200 ease-in-out">
+                                            i</span>
+                                    </button>
+                                    <dialog id="modal-2">
+                                        <button class="fechar-modal" data-modal="modal-2">
+                                            a
+                                        </button>
+                                    </dialog>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -263,6 +286,7 @@
                     <!-- Projeto Tempero da Casa -->
                     <div
                         class="flex flex-col justify-between bg-gradient-to-br from-pink-600/70 to-pink-400/70 dark:from-pink-800/40 dark:to-purple-800/30 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 text-center">
+                        <!-- Imagem Restaurante -->
                         <div>
                             <a href="https://temperodacasa.vercel.app/" class="group">
                                 <img class="rounded-t-md" src="../img/geral/cardapio.png" alt="cardápio">
@@ -281,6 +305,7 @@
                             </p> -->
                             </div>
 
+                            <!-- Botões -->
                             <div class="flex justify-between items-center">
                                 <a href="https://github.com/DeveloperCorsair/Cardapio"
                                     class="inline-flex gap-2 items-center font-medium bg-gradient-to-r from-pink-400 to-purple-400 dark:from-pink-600 dark:to-purple-700 dark:text-white px-4 py-1.5 rounded-xl hover:brightness-110 transition-all duration-200 ease-in-out">
@@ -291,10 +316,19 @@
                                     class="bg-gradient-to-r from-pink-400 to-purple-400 dark:from-pink-600 dark:to-purple-700 dark:text-white font-medium px-4 py-2 rounded-xl shadow-md hover:shadow-lg hover:brightness-110 transition-all duration-200 ease-in-out">
                                     Acesse o Projeto
                                 </a>
-                                <a href="./sobre.html"
-                                    class="bg-gradient-to-r from-pink-400 to-purple-400 dark:from-pink-600 dark:to-purple-700 dark:text-white font-medium px-4 py-2 rounded-xl shadow-md hover:shadow-lg hover:brightness-110 transition-all duration-200 ease-in-out">
-                                    <i class="fi fi-rr-info">i</i>
-                                </a>
+                                <!-- Modal -->
+                                <div>
+                                    <button class="abrir-modal fi fi-rr-info italic" data-modal="modal-3">
+                                        <span
+                                            class="bg-gradient-to-r from-pink-400 to-purple-400 dark:from-pink-600 dark:to-purple-700 dark:text-white font-medium px-4 py-2 rounded-xl shadow-md hover:shadow-lg hover:brightness-110 transition-all duration-200 ease-in-out">
+                                            i</span>
+                                    </button>
+                                    <dialog id="modal-3">
+                                        <button class="fechar-modal" data-modal="modal-3">
+                                            b
+                                        </button>
+                                    </dialog>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -366,6 +400,7 @@
     </footer>
     <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
     <script src="../js/script.js"></script>
+    <script src="../js/modal.js"></script>
 </body>
 
 </html>
