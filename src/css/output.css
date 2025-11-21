@@ -1600,7 +1600,7 @@
     }
   }
 }
-:not(dialog) dialog {
+dialog {
   margin: 0;
 }
 dialog[open] {
@@ -1616,8 +1616,82 @@ dialog[open] {
 dialog::backdrop {
   background: rgba(0,0,0,0.4);
 }
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: gray;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+.modais {
+  background-color: #fdf9ee;
+}
 .fechar-modal {
-  text-decoration: none;
+  cursor: pointer;
+}
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+}
+.modal-header > h1 {
+  font-size: 28px;
+  font-weight: 600;
+}
+.modal-imagem {
+  border: solid lightgray 2px;
+  border-radius: 16px;
+  margin: 20px 0 20px 0;
+}
+.modal-body {
+  text-align: justify;
+  display: grid;
+  gap: 2px;
+}
+.modal-body > h2 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  border-bottom: solid lightgray 2px;
+}
+.modal-body > p {
+  margin-bottom: 10px;
+}
+.subtitulos {
+  margin-bottom: 10px;
+}
+.modal-badges > h2 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  border-bottom: solid lightgray 2px;
+}
+.modal-badges img {
+  margin: 10px 0 24px 0;
+}
+.modal-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.modal-footer > a {
+  align-items: center;
+  font-weight: 500;
+  margin-left: 3px;
+}
+#modal-footer-fincash {
+  color: rgb(7, 87, 7);
+}
+#modal-footer-omni {
+  color: rgb(60, 140, 214);
+}
+#modal-footer-casa {
+  color: rgb(221, 70, 214);
+}
+.modal-footer a:hover {
+  align-items: center;
+  text-decoration: underline;
 }
 @property --tw-rotate-x {
   syntax: "*";

@@ -18,4 +18,17 @@ fechar.forEach (button => {
 
         modal.close();
     });
+    
 });
+
+const sair = document.querySelectorAll('.modais');  
+
+sair.forEach (dialog => {
+    dialog.addEventListener ('click', (i) => {
+
+        if (i.target === dialog) {
+            dialog.close();
+        }
+    });
+});
+    

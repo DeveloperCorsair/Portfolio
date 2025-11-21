@@ -16,8 +16,8 @@
     <title>Sobre mim</title>
 </head>
 
-<body
-    class="min-h-screen flex flex-col font-[Montserrat] bg-[#fdf9ee] dark:bg-gray-900 text-gray-800 dark:text-gray-200">
+<body class="min-h-screen flex flex-col font-[Montserrat] bg-[#fdf9ee] dark:bg-gray-900 text-gray-800 dark:text-gray-200">
+
     <!-- Header -->
     <header class="fixed top-0 left-0 w-full bg-[#fdf9ee] dark:bg-gray-800/80 backdrop-blur-md shadow-sm z-50">
         <nav class="flex justify-between items-center px-6 py-3">
@@ -28,11 +28,14 @@
             </div>
             <!-- Seção para Outras Páginas -->
             <div class="flex gap-2 items-center">
-                <a class="text-gray-700 dark:text-gray-200 hover:text-violet-600 hover:bg-gray-200 dark:hover:bg-gray-700 px-3 py-1 rounded-md transition-colors duration-200"
-                    href="../pages/formacao.html">Currículo</a>
+                <a class="text-gray-700 hover:text-violet-600 hover:bg-gray-200 dark:text-gray-200 dark:hover:bg-gray-700 px-3 py-1 rounded-md transition-colors duration-200"
+                    href="../pages/formacao.html">
+                    Currículo
+                </a>
+
                 <!-- Botão de Dark Mode -->
                 <button id="theme-toggle" type="button"
-                    class="text-gray-500 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-gray-700 hover:text-violet-600 rounded-lg text-sm p-2.5">
+                    class="text-gray-500 hover:bg-gray-200 rounded-lg text-sm p-2.5 dark:text-gray-400 dark:hover:bg-gray-700 hover:text-violet-600">
                     <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5 hover:animate-spin" fill="currentColor"
                         viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                         <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
@@ -81,26 +84,29 @@
                             <!-- WhatsApp -->
                             <a href="https://wa.me/5512991319058?text=Olá%20Henrique!%20Acabei%20de%20Olhar%20seu%20Portfólio%20e%20gostaria%20de%20conversar%20contigo!"
                                 target="_blank">
-                                <img class="w-9 hover:scale-110 transition-transform duration-150 dark:filter dark:grayscale dark:invert"
-                                    src="../img/geral/whatsapp.png" alt="WhatsApp">
+                                <img class="w-9 hover:scale-110 transition-transform duration-150 
+                                dark:filter dark:grayscale dark:invert" src="../img/geral/whatsapp.png" alt="WhatsApp">
                             </a>
                             <!-- Linkedin -->
                             <a href="https://linkedin.com/in/henriquemm" target="_blank">
-                                <img class="w-9 hover:scale-110 transition-transform duration-150 dark:filter dark:grayscale dark:invert"
-                                    src="../img/geral/linkedin.png" alt="contato_linkedin">
+                                <img class="w-9 hover:scale-110 transition-transform duration-150 
+                                dark:filter dark:grayscale dark:invert" src="../img/geral/linkedin.png"
+                                    alt="contato_linkedin">
                             </a>
 
                             <!-- Github -->
                             <a href="https://github.com/DeveloperCorsair" target="_blank">
-                                <img class="w-9 hover:scale-110 transition-transform duration-150 dark:filter dark:grayscale dark:invert"
-                                    src="../img/geral/github.png" alt="contato_github">
+                                <img class="w-9 hover:scale-110 transition-transform duration-150 
+                                dark:filter dark:grayscale dark:invert" src="../img/geral/github.png"
+                                    alt="contato_github">
                             </a>
 
                             <!-- Gmail -->
                             <a href="https://mail.google.com/mail/?view=cm&fs=1&to=henriquemartins7t@gmail.com&su=Contato%20Pelo%20seu%20Portfólio&body=Olá%20Henrique,"
                                 target="_blank">
-                                <img class="w-9 hover:scale-110 transition-transform duration-150 dark:filter dark:grayscale dark:invert"
-                                    src="../img/geral/gmail.png" alt="contato_gmail">
+                                <img class="w-9 hover:scale-110 transition-transform duration-150 
+                                dark:filter dark:grayscale dark:invert" src="../img/geral/gmail.png"
+                                    alt="contato_gmail">
                             </a>
                         </div>
                     </div>
@@ -113,71 +119,60 @@
             </div>
 
             <!-- Jornada -->
-            <section
-                class="bg-gradient-to-b from-[#fdf9ee] via-[#efe8cc] to-[#fdf9ee] dark:bg-gradient-to-b dark:from-gray-900 dark:via-gray-800 dark:to-gray-700 py-14 px-6">
-                <h1
-                    class="mb-4 text-center text-4xl font-bold bg-gradient-to-br from-black dark:from-violet-400 to-black dark:to-violet-300 bg-clip-text text-transparent">
+            <section class="bg-gradient-to-b from-[#fdf9ee] via-[#efe8cc] to-[#fdf9ee] dark:bg-gradient-to-b dark:from-gray-900 dark:via-gray-800 dark:to-gray-700 py-14 px-6">
+                <h1 class="mb-4 text-center text-4xl font-bold bg-gradient-to-br from-black dark:from-violet-400 to-black dark:to-violet-300 bg-clip-text text-transparent">
                     Minha Jornada
                 </h1>
 
-                <div
-                    class="flex space-x-6 overflow-x-auto pb-6 snap-x snap-mandatory scroll-smooth cursor-grab active:cursor-grabbing">
+                <div class="flex space-x-6 overflow-x-auto pb-6 snap-x snap-mandatory scroll-smooth cursor-grab active:cursor-grabbing">
                     <!-- Cards -->
                     <!-- Embraer -->
-                    <div
-                        class="flex-shrink-0 snap-center w-72 bg-white dark:bg-gray-800 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 p-6">
-                        <h3 class="text-xl font-semibold text-violet-600 dark:text-violet-400">2023 - Jovem Aprendiz na
-                            Embraer ✈️</h3>
+                    <div class="flex-shrink-0 snap-center w-72 bg-white dark:bg-gray-800 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 p-6">
+                        <h3 class="text-xl font-semibold text-violet-600 dark:text-violet-400">
+                            2023 - Jovem Aprendiz na Embraer ✈️</h3>
                         <p class="text-gray-600 dark:text-gray-300 mt-3 text-sm">
                             Primeiro contato com o ambiente corporativo. Aprendi sobre trabalho em equipe e disciplina.
                         </p>
                     </div>
                     <!-- Etec -->
-                    <div
-                        class="flex-shrink-0 snap-center w-72 bg-white dark:bg-gray-800 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 p-6">
-                        <h3 class="text-xl font-semibold text-violet-600 dark:text-violet-400">2023 - Etec São José dos
-                            Campos 🔮</h3>
+                    <div class="flex-shrink-0 snap-center w-72 bg-white dark:bg-gray-800 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 p-6">
+                        <h3 class="text-xl font-semibold text-violet-600 dark:text-violet-400">
+                            2023 - Etec São José dos Campos 🔮</h3>
                         <p class="text-gray-600 dark:text-gray-300 mt-3 text-sm">
                             Em busca de conhecimento sobre tecnologia e programação, comecei o curso de Desenvolvimento
-                            de
-                            Sistemas.
+                            de Sistemas.
                         </p>
                     </div>
                     <!-- Fincash -->
-                    <div
-                        class="flex-shrink-0 snap-center w-72 bg-white dark:bg-gray-800 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 p-6">
-                        <h3 class="text-xl font-semibold text-violet-600 dark:text-violet-400">2024 - Jornada de
-                            trabalho na
-                            Cragea 💻</h3>
+                    <div class="flex-shrink-0 snap-center w-72 bg-white dark:bg-gray-800 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 p-6">
+                        <h3 class="text-xl font-semibold text-violet-600 dark:text-violet-400">
+                            2024 - Jornada de trabalho na Cragea 💻</h3>
                         <p class="text-gray-600 dark:text-gray-300 mt-3 text-sm">
                             Agora mais maduro e dentro de um ambiente mais harmônico, consigo desenvolver minha
                             espiritualidade e adaptar a tudo.
                         </p>
                     </div>
                     <!-- Fatec -->
-                    <div
-                        class="flex-shrink-0 snap-center w-72 bg-white dark:bg-gray-800 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 p-6">
-                        <h3 class="text-xl font-semibold text-violet-600 dark:text-violet-400">2025 - Fatec São José dos
-                            Campos 🎓</h3>
+                    <div class="flex-shrink-0 snap-center w-72 bg-white dark:bg-gray-800 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 p-6">
+                        <h3 class="text-xl font-semibold text-violet-600 dark:text-violet-400">
+                            2025 - Fatec São José dos Campos 🎓</h3>
                         <p class="text-gray-600 dark:text-gray-300 mt-3 text-sm">
-                            Iniciei o curso de Desenvolvimento de Software Multiplataforma, desenvolvendo projetos e
-                            aprendendo novas tecnologias.
+                            Iniciei o curso de Desenvolvimento de Software Multiplataforma, desenvolvendo projetos e aprendendo novas tecnologias.
                         </p>
                     </div>
                     <!-- Futuro -->
-                    <div
-                        class="flex-shrink-0 snap-center w-72 bg-white dark:bg-gray-800 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 p-6">
-                        <h3 class="text-xl font-semibold text-violet-600 dark:text-violet-400">Futuro - Meus Objetivos
-                            🚀
+                    <div class="flex-shrink-0 snap-center w-72 bg-white dark:bg-gray-800 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 p-6">
+                        <h3 class="text-xl font-semibold text-violet-600 dark:text-violet-400">
+                            Futuro - Meus Objetivos 🚀
                         </h3>
                         <p class="text-gray-600 dark:text-gray-300 mt-3 text-sm">
-                            Quero continuar evoluindo profissionalmente, contribuindo com projetos que gerem impacto
-                            positivo na sociedade.
+                            Quero continuar evoluindo profissionalmente, contribuindo com projetos que gerem impacto positivo na sociedade.
                         </p>
                     </div>
                 </div>
 
-                <p class="text-center text-gray-500 dark:text-gray-400 mt-4 text-sm italic">⬅️ Arraste para o lado ➡️
+                <p class="text-center text-gray-500 dark:text-gray-400 mt-4 text-sm italic">
+                    ⬅️ Arraste para o lado ➡️
                 </p>
             </section>
 
@@ -185,29 +180,27 @@
             <section class="bg-gradient-to-b from-[#fdf9ee] dark:from-gray-900">
                 <!-- Texto Projetos -->
                 <div class="text-center py-5 md:text-center md:items-center">
-                    <h2 class="text-4xl font-bold dark:text-gray-200">Projetos</h2>
+                    <h2 class="text-4xl font-bold dark:text-gray-200">
+                        Projetos
+                    </h2>
                 </div>
+
                 <div class="grid md:grid-cols-3 justify-between gap-8">
+
                     <!-- Projeto Fincash -->
-                    <div
-                        class="flex flex-col justify-between bg-gradient-to-br from-green-700/80 to-emerald-500/70 dark:from-green-700/40 dark:to-emerald-800/30 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 text-center">
+                    <div class="flex flex-col justify-between bg-gradient-to-br from-green-700/80 to-emerald-500/70 dark:from-green-700/40 dark:to-emerald-800/30 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 text-center">
                         <!-- Imagem Finscash -->
                         <div>
                             <a href="https://github.com/NEW-FINCASH/New-Fincash-Frontend" class="group">
                                 <img class="rounded-t-md" src="../img/geral/fincash.png" alt="fincash">
                             </a>
                         </div>
+
                         <div class="p-2 md:pt-0">
                             <div>
                                 <h3 class="text-2xl font-semibold text-gray-800 dark:text-gray-100 my-2">
                                     Fincash
                                 </h3>
-                                <!-- <p class="text-justify text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
-                                    API web de gestão financeira que visa facilitar o controle e a organização das
-                                    finanças
-                                    pessoais. Responsável pelo back-end, criação de transações, testes e
-                                    integração com o banco de dados.
-                                </p> -->
                             </div>
 
                             <!-- Botões -->
@@ -215,47 +208,77 @@
                                 <a href="https://github.com/NEW-FINCASH/New-Fincash-Frontend"
                                     class="inline-flex gap-2 items-center font-medium bg-gradient-to-r from-green-400 to-emerald-400 dark:from-green-600 dark:to-emerald-700 dark:text-white rounded-xl px-3 py-1.5 hover:brightness-110 transition-all duration-200 ease-in-out">
                                     <img src="../img/geral/github.png" alt="github" class="w-7 dark:filter dark:invert">
-                                    <span>Github</span>
+                                    <span>
+                                        Github
+                                    </span>
                                 </a>
-                                <a href="https://newfincash.vercel.app/"
-                                    class="bg-gradient-to-r from-green-400 to-emerald-400 dark:from-green-600 dark:to-emerald-700 dark:text-white font-medium px-4 py-2 rounded-xl shadow-md hover:shadow-lg hover:brightness-110 transition-all duration-200 ease-in-out">
+                                <a href="https://newfincash.vercel.app/" class="bg-gradient-to-r from-green-400 to-emerald-400 dark:from-green-600 dark:to-emerald-700 dark:text-white font-medium px-4 py-2 rounded-xl shadow-md hover:shadow-lg hover:brightness-110 transition-all duration-200 ease-in-out">
                                     Acesse o Projeto
                                 </a>
+
                                 <!-- Modal -->
                                 <div>
-                                    <button class="abrir-modal" data-modal="modal-1">
-                                        <span
-                                            class="bg-gradient-to-r from-green-400 to-emerald-400
-                                              dark:from-green-600 dark:to-emerald-700 dark:text-white
-                                              font-medium px-4 py-2 rounded-xl shadow-md 
-                                              hover:shadow-lg hover:brightness-110 transition-all duration-200 ease-in-out">
+                                    <button class="abrir-modal" data-modal="modal-fincash">
+                                        <span class="bg-gradient-to-r from-green-400 to-emerald-400 dark:from-green-600 dark:to-emerald-700 dark:text-white font-medium px-4 py-2 rounded-xl shadow-md hover:shadow-lg hover:brightness-110 transition-all duration-200 ease-in-out">
+                                            <i class="fa-solid fa-info"></i>
                                         </span>
                                     </button>
-                                    <dialog id="modal-1">
-                                        <button class="fechar-modal" data-modal="modal-1">
-                                            <i class="fa-solid fa-xmark"></i>
-                                        </button>
-                                            <div class="modal-header">
-                                                <h1>Fincash</h1>
-                                                <span>2024</span>
-                                            </div>
-                                            <img class="modal-imagem" src="#" alt="">
-                                            <div class="modal-body">
-                                                <p>
-                                                    API web de gestão financeira que visa facilitar 
-                                                    o controle e a organização das finanças pessoais. 
-                                                </p>
-                                                <p>
-                                                    Atuei no back-end criando e gerenciando as rotas de requisição, feitas com Express.js,
-                                                    realizando testes na aplicação visando corrigir erros e ajustar velocidade na requisição entre rotas. 
-                                                    Além de trazer segurança para o site com JWT, Cookies e CORS.
-                                                    Também realizei a integração do back-end com o banco de dados (MongoDB),
-                                                    definição da estrutura dos dados a serem armazenados no banco de dados e
-                                                    otimização de consultas, que são ajustes realizados para melhorar o desempenho das consultas
-                                                    e reduzir o tempo de resposta do servidor.
-                                                </p>
-                                                <span class="modal-badges"></span>
-                                            </div>
+
+                                    <dialog class="modais" id="modal-fincash" data-fora="sair-modal">
+                                        <div class="modal-header">
+                                            <span>2024</span>
+                                            <h1>Fincash</h1>
+                                            <button class="fechar-modal" data-modal="modal-fincash">
+                                                <i class="fa-solid fa-xmark"></i>
+                                            </button>
+                                        </div>
+
+                                        <img class="modal-imagem" src="../img/prints/modal-fincash.png"
+                                            alt="imagem-fincash">
+
+                                        <div class="modal-body">
+                                            <h2 class="subtitulos">
+                                                O que é o Fincash?
+                                            </h2>
+                                            <p>
+                                                Uma API web de gestão financeira que visa facilitar
+                                                o controle e a organização das finanças pessoais.
+                                            </p>
+
+                                            <h2 class="subtitulos">
+                                                Minha participação
+                                            </h2>
+                                            <p>
+                                                Atuei no back-end criando e gerenciando rotas de requisição, feitas
+                                                com Express.js.
+                                                Realizando testes na aplicação visando corrigir erros e ajustar
+                                                velocidade
+                                                na requisição entre rotas.
+                                                <br>
+                                                Além de trazer segurança para o site com JWT, Cookies e CORS.
+                                                Também realizei a integração do back-end com o banco de dados (MongoDB).
+                                                <br>
+                                                E a definição da estrutura dos dados a serem armazenados no banco de
+                                                dados e a
+                                                otimização de consultas, que são ajustes realizados para melhorar o
+                                                desempenho das consultas e reduzir o tempo de resposta do servidor.
+                                            </p>
+                                            <span class="modal-badges">
+                                                <h2>
+                                                    Tecnologias Utilizadas
+                                                </h2>
+                                                <img src="https://skillicons.dev/icons?i=react,html,css,tailwind,vite,figma,vercel,nodejs,javascript,typescript,expressjs,mongodb,git,github&perline=7"
+                                                    alt="Tecnologias" />
+                                            </span>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <h2>
+                                                Acesse nosso site:
+                                            </h2>
+                                            <a href="https://newfincash.vercel.app/" id="modal-footer-fincash">
+                                                New Fincash
+                                            </a>
+                                        </div>
                                     </dialog>
                                 </div>
                             </div>
@@ -263,8 +286,7 @@
                     </div>
 
                     <!-- Projeto OmniDevs -->
-                    <div
-                        class="flex flex-col justify-between bg-gradient-to-br from-blue-700/60 to-cyan-600/70 dark:from-blue-800/40 dark:to-cyan-800/30 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 text-center">
+                    <div class="flex flex-col justify-between bg-gradient-to-br from-blue-700/60 to-cyan-600/70 dark:from-blue-800/40 dark:to-cyan-800/30 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 text-center">
                         <!-- Imagem Omni -->
                         <div>
                             <a href="https://api-censo-2022.vercel.app/" class="group">
@@ -276,11 +298,6 @@
                                 <h3 class="text-2xl font-semibold text-gray-800 dark:text-gray-100 my-2">
                                     OmniDevs
                                 </h3>
-                                <!-- <p class="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
-                                        Projeto criado para auxiliar a prefeitura de São José dos Campos na análise de dados
-                                        do censo, com gráficos interativos. Atuei no planejamento, wireframe e
-                                        desenvolvimento dos gráficos.
-                                    </p> -->
                             </div>
 
                             <!-- Botões -->
@@ -288,23 +305,68 @@
                                 <a href="https://github.com/OmniDevsOficial/API-Censo-2022"
                                     class="inline-flex gap-2 items-center font-medium bg-gradient-to-r from-blue-400 to-cyan-400 dark:from-blue-600 dark:to-cyan-700 dark:text-white hover:brightness-110 rounded-xl px-4 py-1.5 transition-all duration-200 ease-in-out">
                                     <img src="../img/geral/github.png" alt="github" class="w-7 dark:filter dark:invert">
-                                    <span>Github</span>
+                                    <span>
+                                        Github
+                                    </span>
                                 </a>
-                                <a href="https://api-censo-2022.vercel.app/"
-                                    class="bg-gradient-to-r from-blue-400 to-cyan-400 dark:from-blue-600 dark:to-cyan-700 dark:text-white font-medium px-4 py-2 rounded-xl shadow-md hover:shadow-lg hover:brightness-110 transition-all duration-200 ease-in-out">
+                                <a href="https://api-censo-2022.vercel.app/" class="bg-gradient-to-r from-blue-400 to-cyan-400 dark:from-blue-600 dark:to-cyan-700 dark:text-white font-medium px-4 py-2 rounded-xl shadow-md hover:shadow-lg hover:brightness-110 transition-all duration-200 ease-in-out">
                                     Acesse o Projeto
                                 </a>
                                 <!-- Modal -->
                                 <div>
-                                    <button class="abrir-modal fi fi-rr-info italic" data-modal="modal-2">
-                                        <span
-                                            class="bg-gradient-to-r from-blue-400 to-cyan-400 dark:from-blue-600 dark:to-cyan-700 dark:text-white font-medium px-4 py-2 rounded-xl shadow-md hover:shadow-lg hover:brightness-110 transition-all duration-200 ease-in-out">
-                                            i</span>
+                                    <button class="abrir-modal" data-modal="modal-omni">
+                                        <span class="bg-gradient-to-r from-blue-400 to-cyan-400 dark:from-blue-600 dark:to-cyan-700 dark:text-white font-medium px-4 py-2 rounded-xl shadow-md hover:shadow-lg hover:brightness-110 transition-all duration-200 ease-in-out">
+                                            <i class="fa-solid fa-info"></i>
+                                        </span>
                                     </button>
-                                    <dialog id="modal-2">
-                                        <button class="fechar-modal" data-modal="modal-2">
-                                            a
-                                        </button>
+                                    <dialog class="modais" id="modal-omni" data-fora="sair-modal">
+                                        <div class="modal-header">
+                                            <span>2025</span>
+                                            <h1>OmniDevs</h1>
+                                            <button class="fechar-modal" data-modal="modal-omni">
+                                                <i class="fa-solid fa-xmark"></i>
+                                            </button>
+                                        </div>
+
+                                        <img class="modal-imagem" src="../img/prints/modal-omni.png" alt="imagem-omni">
+
+                                        <div class="modal-body">
+                                            <h2 class="subtitulos">
+                                                O que é o projeto OmniDevs?
+                                            </h2>
+                                            <p>
+                                                A pedido da secretária de planejamento urbano, a equipe omnidevs fez uma
+                                                análise e raspagem, deixando todas informações em formas de gráficos
+                                                interativos. Além de sugestões que podem agregar valor ao munícipio.
+                                            </p>
+
+                                            <h2 class="subtitulos">
+                                                Minha participação
+                                            </h2>
+                                            <p>
+                                                Participei do back-end no estudo e análise dos dados da cidade, após
+                                                resgatar todas as informações de valor, iniciei o desenvolvimento dos
+                                                gráficos
+                                                interativos (usando colab) e fiz a integração deles no front-end.
+                                                Também atuei no planejamento do wireframe (Figma), e na criação da
+                                                página gráficos, usando html, css, tailwind e flask.
+                                            </p>
+                                            <span class="modal-badges">
+                                                <h2>
+                                                    Tecnologias Utilizadas
+                                                </h2>
+                                                <img src="https://skillicons.dev/icons?i=html,css,js,tailwind,bootstrap,figma,python,flask,mysql,git,github,vercel&perline=6"
+                                                    alt="Tecnologias" />
+                                            </span>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <h2>
+                                                Acesse nosso site:
+                                            </h2>
+                                            <a href="https://api-censo-2022.vercel.app/" id="modal-footer-omni">
+                                                OmniDevs
+                                            </a>
+                                        </div>
                                     </dialog>
                                 </div>
                             </div>
@@ -312,8 +374,7 @@
                     </div>
 
                     <!-- Projeto Tempero da Casa -->
-                    <div
-                        class="flex flex-col justify-between bg-gradient-to-br from-pink-600/70 to-pink-400/70 dark:from-pink-800/40 dark:to-purple-800/30 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 text-center">
+                    <div class="flex flex-col justify-between bg-gradient-to-br from-pink-600/70 to-pink-400/70 dark:from-pink-800/40 dark:to-purple-800/30 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 text-center">
                         <!-- Imagem Restaurante -->
                         <div>
                             <a href="https://temperodacasa.vercel.app/" class="group">
@@ -326,11 +387,6 @@
                                 <h3 class="text-2xl font-semibold text-gray-800 dark:text-gray-100 my-2">
                                     Tempero da Casa
                                 </h3>
-                                <!-- <p class="text-justify text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
-                                Um site de cardápio digital onde o usuário pode visualizar nossos pratos e fazer pedidos
-                                online. Participei como front-end, fazendo a estrutura das páginas e estilizando o
-                                cardápio.
-                            </p> -->
                             </div>
 
                             <!-- Botões -->
@@ -338,23 +394,69 @@
                                 <a href="https://github.com/DeveloperCorsair/Cardapio"
                                     class="inline-flex gap-2 items-center font-medium bg-gradient-to-r from-pink-400 to-purple-400 dark:from-pink-600 dark:to-purple-700 dark:text-white px-4 py-1.5 rounded-xl hover:brightness-110 transition-all duration-200 ease-in-out">
                                     <img src="../img/geral/github.png" alt="github" class="w-7 dark:filter dark:invert">
-                                    <span>Github</span>
+                                    <span>
+                                        Github
+                                    </span>
                                 </a>
                                 <a href="https://temperodacasa.vercel.app/"
                                     class="bg-gradient-to-r from-pink-400 to-purple-400 dark:from-pink-600 dark:to-purple-700 dark:text-white font-medium px-4 py-2 rounded-xl shadow-md hover:shadow-lg hover:brightness-110 transition-all duration-200 ease-in-out">
                                     Acesse o Projeto
                                 </a>
+
                                 <!-- Modal -->
                                 <div>
-                                    <button class="abrir-modal fi fi-rr-info italic" data-modal="modal-3">
+                                    <button class="abrir-modal" data-modal="modal-casa">
                                         <span
                                             class="bg-gradient-to-r from-pink-400 to-purple-400 dark:from-pink-600 dark:to-purple-700 dark:text-white font-medium px-4 py-2 rounded-xl shadow-md hover:shadow-lg hover:brightness-110 transition-all duration-200 ease-in-out">
-                                            i</span>
+                                            <i class="fa-solid fa-info"></i>
+                                        </span>
                                     </button>
-                                    <dialog id="modal-3">
-                                        <button class="fechar-modal" data-modal="modal-3">
-                                            b
-                                        </button>
+                                    <dialog class="modais" id="modal-casa" data-fora="sair-modal">
+                                        <div class="modal-header">
+                                            <span>2025</span>
+                                            <h1>Tempero da Casa</h1>
+                                            <button class="fechar-modal" data-modal="modal-casa">
+                                                <i class="fa-solid fa-xmark"></i>
+                                            </button>
+                                        </div>
+
+                                        <img class="modal-imagem" src="../img/prints/modal-casa.png" alt="imagem-casa">
+
+                                        <div class="modal-body">
+                                            <h2 class="subtitulos">
+                                                Tempero da casa?
+                                            </h2>
+                                            <p>
+                                                Sim, criamos esse site para um Restaurante (ficticío), chamado Tempero
+                                                da casa. Aqui você pode ver quem somos, nossa e cultura e valores. Além
+                                                de dar uma olhada em nosso cardápio para pedir sua refeição.
+                                            </p>
+
+                                            <h2 class="subtitulos">
+                                                Minha participação
+                                            </h2>
+                                            <p>
+                                                Desenvolvi a página do cardápio, trazendo um ar mais minimalista e
+                                                intuitivo para o usuário, também deixando um layout responsivo, podendo
+                                                ser visualizado em qualquer tela. Quis poder criá-la para poder colocar
+                                                os meus estudos de tailwind em prática.
+                                            </p>
+                                            <span class="modal-badges">
+                                                <h2>
+                                                    Tecnologias Utilizadas
+                                                </h2>
+                                                <img src="https://skillicons.dev/icons?i=html,css,tailwind,bootstrap,git,github,vercel"
+                                                    alt="Tecnologias" />
+                                            </span>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <h2>
+                                                Acesse nosso site:
+                                            </h2>
+                                            <a href="https://api-censo-2022.vercel.app/" id="modal-footer-casa">
+                                                Tempero da casa
+                                            </a>
+                                        </div>
                                     </dialog>
                                 </div>
                             </div>
@@ -369,63 +471,72 @@
                     <h1 class="text-center text-3xl md:text-4xl font-bold mb-4">
                         Que tal uma conversa?
                     </h1>
+
                     <!-- Contatos -->
                     <section class="grid grid-cols-3 md:flex items-start gap-x-2">
                         <!-- WhatsApp -->
-                        <div
-                            class="inline-block items-center text-center bg-[#25D366] px-2 rounded-sm hover:scale-105 transition-transform duration-300">
+                        <div class="inline-block items-center text-center bg-[#25D366] px-2 rounded-sm hover:scale-105 transition-transform duration-300">
                             <a href="https://wa.me/5512991319058?text=Olá%20Henrique!%20Acabei%20de%20Olhar%20seu%20Portfólio%20e%20gostaria%20de%20conversar%20contigo!"
                                 class="flex justify-center items-center">
                                 <img class="w-8 md:w-9" src="../img/icons/w.png" alt="Logo WhatsApp">
-                                <span class="text-[12px] md:text-sm text-white font-bold">WhatsApp</span>
+                                <span class="text-[12px] md:text-sm text-white font-bold">
+                                    WhatsApp
+                                </span>
                             </a>
                         </div>
+
                         <!-- Gmail -->
-                        <div
-                            class="inline-block items-center bg-[#B5B5B5] py-[6px] md:px-4 rounded-sm hover:scale-105 transition-transform duration-300">
+                        <div class="inline-block items-center bg-[#B5B5B5] py-[6px] md:px-4 rounded-sm hover:scale-105 transition-transform duration-300">
                             <a href="https://mail.google.com/mail/?view=cm&fs=1&to=henriquemartins7t@gmail.com&su=Contato%20Pelo%20seu%20Portfólio&body=Olá%20Henrique,"
                                 class="flex md:gap-x-3 justify-center items-center">
                                 <img class="w-9 md:w-11" src="../img/icons/gmail.png" alt="Logo Gmail">
-                                <span class="text-sm text-white font-bold">Gmail</span>
+                                <span class="text-sm text-white font-bold">
+                                    Gmail
+                                </span>
                             </a>
                         </div>
+
                         <!-- Linkedin -->
-                        <div
-                            class="inline-block items-center bg-[#0A66C2] py-[2.8px] px-3 rounded-sm hover:scale-105 transition-transform duration-300">
+                        <div class="inline-block items-center bg-[#0A66C2] py-[2.8px] px-3 rounded-sm hover:scale-105 transition-transform duration-300">
                             <a href="https://www.linkedin.com/in/henriquemm/"
                                 class="flex gap-x-1 md:gap-x-2 justify-center items-center">
                                 <img class="w-7 md:w-8" src="../img/icons/linkedin.svg" alt="Logo Linkedin">
-                                <span class="text-sm text-white font-bold">Linkedin</span>
+                                <span class="text-sm text-white font-bold">
+                                    Linkedin
+                                </span>
                             </a>
                         </div>
                     </section>
-
                 </div>
             </section>
         </section>
     </main>
 
     <!-- Footer -->
-    <footer
-        class="bg-gray-200 text-gray-800 dark:text-gray-200 dark:bg-gray-800 flex justify-between p-4 py-6 items-center">
+    <footer class="bg-gray-200 text-gray-800 dark:text-gray-200 dark:bg-gray-800 flex justify-between p-4 py-6 items-center">
         <div>
             <span class="text-sm md:text-[16px]">
-                &copy;Desenvolved by
-                <a class="hover:underline hover:text-violet-600"
-                    href="https://github.com/DeveloperCorsair">Developer-Corsair
+                2025 &copy; Desenvolved by
+                <a class="hover:underline hover:text-violet-600" href="https://github.com/DeveloperCorsair">
+                    Developer-Corsair
                 </a>
             </span>
         </div>
+
         <div>
             <span class="flex flex-row-reverse gap-4">
                 <a class="w-[30px] hover:scale-120 transition-transform duration-300 dark:filter dark:grayscale dark:invert"
-                    href="https://github.com/DeveloperCorsair"><img src="../img/geral/github.png" alt="github"></a>
+                    href="https://github.com/DeveloperCorsair">
+                    <img src="../img/geral/github.png" alt="github">
+                </a>
                 <a class="w-[30px] hover:scale-120 transition-transform duration-300 dark:filter dark:grayscale dark:invert"
-                    href="https://www.linkedin.com/in/henriquemm/"><img src="../img/geral/linkedin.png"
-                        alt="linkedin"></a>
+                    href="https://www.linkedin.com/in/henriquemm/">
+                    <img src="../img/geral/linkedin.png" alt="linkedin">
+                </a>
             </span>
         </div>
     </footer>
+
     <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
     <script src="../js/script.js"></script>
     <script src="../js/modal.js"></script>
