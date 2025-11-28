@@ -19,10 +19,10 @@
 <body class="min-h-screen flex flex-col font-[Montserrat] bg-[#fdf9ee] dark:bg-gray-900 text-gray-800 dark:text-gray-200">
 
     <!-- Header -->
-    <header class="fixed top-0 left-0 w-full bg-[#fdf9ee] dark:bg-gray-800/80 backdrop-blur-md shadow-sm z-50">
+    <header class="fixed top-0 left-0 w-full bg-[#fdf9ee]/80 dark:bg-gray-800/80 backdrop-blur-md shadow-sm z-50">
         <nav class="flex justify-between items-center px-6 py-3">
             <!-- Navbar Logo + Other Pages + Dark Mode -->
-            <div class="hover:animate-spin">
+            <div class="hover:animate-bounce dark:filter dark:grayscale dark:invert">
                 <a href="../index.html"><img class="max-h-10 rounded-xl" src="../img/geral/logo.png" class="logo"
                         alt="icon"></a>
             </div>
@@ -124,7 +124,7 @@
                     Minha Jornada
                 </h1>
 
-                <div class="flex space-x-6 overflow-x-auto pb-6 snap-x snap-mandatory scroll-smooth cursor-grab active:cursor-grabbing">
+                <div class="h-scrollbar-jornada flex space-x-6 overflow-x-auto pb-6 snap-x snap-mandatory scroll-smooth cursor-grab active:cursor-grabbing">
                     <!-- Cards -->
                     <!-- Embraer -->
                     <div class="flex-shrink-0 snap-center w-72 bg-white dark:bg-gray-800 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 p-6">
@@ -225,7 +225,7 @@
                                         </span>
                                     </button>
 
-                                    <dialog class="modais" id="modal-fincash" data-fora="sair-modal">
+                                    <dialog class="modais modal-scrollbar" id="modal-fincash" data-fora="sair-modal">
                                         <div class="modal-header">
                                             <span>2024</span>
                                             <h1>Fincash</h1>
@@ -321,7 +321,7 @@
                                             <i class="fa-solid fa-info"></i>
                                         </span>
                                     </button>
-                                    <dialog class="modais" id="modal-omni" data-fora="sair-modal">
+                                    <dialog class="modais modal-scrollbar" id="modal-omni" data-fora="sair-modal">
                                         <div class="modal-header">
                                             <span>2025</span>
                                             <h1>OmniDevs</h1>
@@ -334,7 +334,7 @@
 
                                         <div class="modal-body">
                                             <h2 class="subtitulos">
-                                                O que é o projeto OmniDevs?
+                                                Projeto OmniDevs?
                                             </h2>
                                             <p>
                                                 A pedido da secretária de planejamento urbano, a equipe omnidevs fez uma
@@ -414,7 +414,7 @@
                                             <i class="fa-solid fa-info"></i>
                                         </span>
                                     </button>
-                                    <dialog class="modais" id="modal-casa" data-fora="sair-modal">
+                                    <dialog class="modais modal-scrollbar" id="modal-casa" data-fora="sair-modal">
                                         <div class="modal-header">
                                             <span>2025</span>
                                             <h1>Tempero da Casa</h1>

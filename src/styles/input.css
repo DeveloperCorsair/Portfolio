@@ -21,14 +21,30 @@ dialog::backdrop {
 }
 
 /* Barra de rolagem */
-::-webkit-scrollbar {
+body::-webkit-scrollbar {
+  width: none;
+  background-color: none;
+  border-top-left-radius: none;
+  border-bottom-left-radius: none;
+}
+
+.modal-scrollbar::-webkit-scrollbar {
   width: 10px;
 }
 
-::-webkit-scrollbar-thumb {
+.modal-scrollbar::-webkit-scrollbar-thumb {
   background-color: gray;
   border-top-right-radius: 8px;
   border-bottom-right-radius: 8px;
+}
+
+.h-scrollbar-jornada::-webkit-scrollbar {
+  height: 10px;
+}
+
+.h-scrollbar-jornada::-webkit-scrollbar-thumb {
+  background-color: oklch(54.1% 0.281 293.009);
+  border-radius: 5px;
 }
 
 /* Modal */
@@ -117,4 +133,15 @@ dialog::backdrop {
 .modal-footer a:hover {
   align-items: center;
   text-decoration: underline;
+}
+
+/* Responsividade */
+
+/* Modal */
+@media (max-width: 600px) {
+  .modais {height: 660px;}
+  .modais::-webkit-scrollbar { width: 5px;}
+  .modal-header > h1 {font-size: 1.3rem;} 
+  .modal-header > span {font-size: 0.7rem;} 
+  .modal-footer {display: block!important;} 
 }
