@@ -1,4 +1,4 @@
-const abrir = document.querySelectorAll('.abrir-modal');
+/* const abrir = document.querySelectorAll('.abrir-modal');
 
 abrir.forEach (button => {
     button.addEventListener('click', () => {
@@ -7,7 +7,7 @@ abrir.forEach (button => {
 
         modal.showModal()
     });
-});
+}); */
 
 const fechar = document.querySelectorAll('.fechar-modal');
 
@@ -31,4 +31,18 @@ sair.forEach (dialog => {
         }
     });
 });
-    
+
+delay = document.querySelectorAll('.abrir-modal')
+
+delay.forEach (button => {
+    button.addEventListener('click', function(e) {
+        e.preventDefault();
+
+        const modalId = this.getAttribute('data-modal');
+        const modal = document.getElementById(modalId);
+
+        setTimeout(() => {
+            if (modal) modal.showModal();
+        }, 10000);
+    });
+});

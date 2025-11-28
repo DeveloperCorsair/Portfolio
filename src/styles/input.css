@@ -143,5 +143,6 @@ body::-webkit-scrollbar {
   .modais::-webkit-scrollbar { width: 5px;}
   .modal-header > h1 {font-size: 1.3rem;} 
   .modal-header > span {font-size: 0.7rem;} 
-  .modal-footer {display: block!important;} 
+  .modal-footer {display: block!important;}
+  .abrir-modal > span {padding-top: 10px; padding-bottom: 11px;}
 }
