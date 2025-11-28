@@ -1,4 +1,4 @@
-/* const abrir = document.querySelectorAll('.abrir-modal');
+const abrir = document.querySelectorAll('.abrir-modal');
 
 abrir.forEach (button => {
     button.addEventListener('click', () => {
@@ -7,7 +7,7 @@ abrir.forEach (button => {
 
         modal.showModal()
     });
-}); */
+});
 
 const fechar = document.querySelectorAll('.fechar-modal');
 
@@ -43,6 +43,6 @@ delay.forEach (button => {
 
         setTimeout(() => {
             if (modal) modal.showModal();
-        }, 10000);
+        }, 1000);
     });
 });
