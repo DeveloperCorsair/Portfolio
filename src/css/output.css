@@ -1,4 +1,4 @@
-/*! tailwindcss v4.1.14 | MIT License | https://tailwindcss.com */
+/*! tailwindcss v4.1.17 | MIT License | https://tailwindcss.com */
 @layer properties;
 @layer theme, base, components, utilities;
 @layer theme {
@@ -548,9 +548,6 @@
   .bg-\[\#25D366\] {
     background-color: #25D366;
   }
-  .bg-\[\#B5B5B5\] {
-    background-color: #B5B5B5;
-  }
   .bg-\[\#fdf9ee\] {
     background-color: #fdf9ee;
   }
@@ -562,6 +559,9 @@
   }
   .bg-gray-200 {
     background-color: var(--color-gray-200);
+  }
+  .bg-gray-400 {
+    background-color: var(--color-gray-400);
   }
   .bg-violet-600 {
     background-color: var(--color-violet-600);

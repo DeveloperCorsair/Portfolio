@@ -6,7 +6,8 @@
     "tailwindcss": "^4.1.14"
   },
   "scripts": {
-    "build": "npx @tailwindcss/cli -i ./src/styles/input.css -o ./src/css/output.css --watch -y",
+    "dev": "npx @tailwindcss/cli -i ./src/styles/input.css -o ./src/css/output.css --watch",
+    "build": "npx @tailwindcss/cli -i ./src/styles/input.css -o ./src/css/output.css --minify",
     "start": "npx serve src"
   },
   "devDependencies": {
