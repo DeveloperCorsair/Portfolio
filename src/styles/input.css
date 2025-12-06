@@ -4,10 +4,14 @@
 
 /* Dry - Don't repeat yourself */
 
-/*icones contato*/
 @layer components {
+  /*icones contato*/
   .icon_link {
     @apply border border-gray-300 p-2 rounded-2xl hover:scale-110 transition-transform duration-150;
+  }
+
+  .sections-right {
+    @apply border-b border-gray-300 dark:border dark:border-gray-300 dark:bg-gray-800 p-6 rounded-2xl shadow-md bg-white;
   }
 }
 
@@ -15,7 +19,7 @@
 
 dialog {
   margin: 0;
-};
+}
 
 dialog[open] {
   position: fixed;
@@ -27,6 +31,7 @@ dialog[open] {
   border-radius: 8px;
   padding: 1rem;
 }
+
 dialog::backdrop {
   background: rgba(0,0,0,0.4);
 }
