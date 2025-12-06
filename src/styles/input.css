@@ -2,6 +2,17 @@
 @import "flowbite/src/themes/default";
 @custom-variant dark (&:where(.dark, .dark *));
 
+/* Dry - Don't repeat yourself */
+
+/*icones contato*/
+@layer components {
+  .icon_link {
+    @apply border border-gray-300 p-2 rounded-2xl hover:scale-110 transition-transform duration-150;
+  }
+}
+
+/* ============================= */
+
 dialog {
   margin: 0;
 };
