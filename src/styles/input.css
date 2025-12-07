@@ -5,6 +5,7 @@
 /* Dry - Don't repeat yourself */
 
 @layer components {
+
   /*icones contato*/
   .icon_link {
     @apply border border-gray-300 p-2 rounded-2xl hover:scale-110 transition-transform duration-150;
@@ -12,6 +13,10 @@
 
   .sections-right {
     @apply border-b border-gray-300 dark:border dark:border-gray-300 dark:bg-gray-800 p-6 rounded-2xl shadow-md bg-white;
+  }
+
+  .button-modal {
+    @apply flex flex-wrap gap-2 sm:gap-3 items-center justify-between sm:justify-between
   }
 }
 
@@ -26,15 +31,48 @@ dialog[open] {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: min(70%, 600px);
+  width: min(90%, 850px);
   border: none;
   border-radius: 8px;
-  padding: 1rem;
+  padding: 0 1rem 1rem 1rem;
 }
 
 dialog::backdrop {
-  background: rgba(0,0,0,0.4);
+  background: rgba(0, 0, 0, 0.4);
 }
+
+/* Hover da imagem nos cards */
+.image-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.75rem 0.75rem 0 0;
+}
+
+.image-container img {
+  transition: transform 0.4s ease;
+}
+
+.image-container:hover img {
+  transform: scale(1.05);
+}
+
+/* Overlay sutil no hover da imagem */
+.image-container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, transparent 60%, rgba(0, 0, 0, 0.3));
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.image-container:hover::after {
+  opacity: 1;
+}
+
 
 /* Barra de rolagem */
 body::-webkit-scrollbar {
@@ -45,13 +83,13 @@ body::-webkit-scrollbar {
 }
 
 .modal-scrollbar::-webkit-scrollbar {
-  width: 10px;
+  width: 8px;
 }
 
 .modal-scrollbar::-webkit-scrollbar-thumb {
-  background-color: gray;
-  border-top-right-radius: 8px;
-  border-bottom-right-radius: 8px;
+  background: oklch(54.1% 0.281 293.009);
+  ;
+  border-radius: 4px;
 }
 
 .h-scrollbar-jornada::-webkit-scrollbar {
@@ -74,15 +112,15 @@ body::-webkit-scrollbar {
 }
 
 .modal-header {
+  position: sticky;
+  top: 0;
+  background: #fdf9ee;
+  padding: 1.5rem;
+  border-bottom: 1px solid #e5e7eb;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 1rem;    
-}
-
-.modal-header > h1 {
-  font-size: 28px;
-  font-weight: 600;
+  z-index: 10;
 }
 
 .modal-imagem {
@@ -95,15 +133,16 @@ body::-webkit-scrollbar {
   text-align: justify;
   display: grid;
   gap: 2px;
+  padding: 1.5rem;
 }
 
-.modal-body > h2 {
+.modal-body>h2 {
   font-size: 1.2rem;
   font-weight: 600;
   border-bottom: solid lightgray 2px;
 }
 
-.modal-body > p {
+.modal-body>p {
   margin-bottom: 10px;
 }
 
@@ -112,7 +151,7 @@ body::-webkit-scrollbar {
   margin-bottom: 10px;
 }
 
-.modal-badges > h2 {
+.modal-badges>h2 {
   font-size: 1.2rem;
   font-weight: 600;
   border-bottom: solid lightgray 2px;
@@ -123,42 +162,64 @@ body::-webkit-scrollbar {
 }
 
 .modal-footer {
+  align-items: center;
+  border-top: solid lightgray 2px;
   display: flex;
   justify-content: center;
-  align-items: center;
   margin-bottom: 15px;
+  padding-top: 10px;
 }
 
-.modal-footer > a {
+.modal-footer>a {
   align-items: center;
   font-weight: 500;
   margin-left: 3px;
 }
 
 #modal-footer-fincash {
-  color: rgb(7, 87, 7);
+  color: rgb(67, 196, 67);
+  text-decoration: underline;
+  font-weight: 900;
 }
 
 #modal-footer-omni {
-  color: rgb(60, 140, 214)
-}
-#modal-footer-casa {
-  color: rgb(221, 70, 214);
+  color: rgb(60, 140, 214);
+  text-decoration: underline;
+  font-weight: 900;
 }
 
-.modal-footer a:hover {
-  align-items: center;
+#modal-footer-casa {
+  color: rgb(221, 70, 214);
   text-decoration: underline;
+  font-weight: 900;
 }
 
 /* Responsividade */
 
 /* Modal */
 @media (max-width: 600px) {
-  .modais {height: 660px;}
-  .modais::-webkit-scrollbar { width: 5px;}
-  .modal-header > h1 {font-size: 1.3rem;} 
-  .modal-header > span {font-size: 0.7rem;} 
-  .modal-footer {display: block!important;}
-  .abrir-modal > span {padding-top: 10px; padding-bottom: 11px;}
+  .modais {
+    height: 750px;
+  }
+
+  .modais::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  .modal-header>h1 {
+    font-size: 1.3rem;
+  }
+
+  .modal-header>span {
+    font-size: 0.7rem;
+  }
+
+  .modal-footer {
+    display: block !important;
+  }
+
+  .abrir-modal>span {
+    padding-top: 10px;
+    padding-bottom: 11px;
+  }
 }
