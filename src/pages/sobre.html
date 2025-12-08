@@ -54,7 +54,7 @@
     </header>
 
     <!-- Conteúdo Principal -->
-    <main class="pt-18 flex-1">
+    <main class="pt-18">
         <section class="grid grid-cols-1 gap-6 py-6 md:py-10 px-6 p-8 items-center">
             <!-- Introdução -->
             <div class="grid grid-cols-1 md:grid-cols-4 items-start hover:from-violet-500 mx-2">
@@ -535,35 +535,79 @@
             </section>
 
             <!-- Conversa -->
-            <section class="mt-12">
-                <div class="grid grid-cols-1 inline-block">
-                    <h1 class="text-center text-3xl md:text-4xl font-bold mb-4">
-                        Que tal uma conversa?
-                    </h1>
+            <section class="grid grid-cols-5 mt-12 gap-4">
+                <div class="grid grid-cols-1 col-span-2 inline-block">
+
+                    <div class="mt-2 mb-6">
+                        <h1 class="text-start text-3xl md:text-3xl font-bold mb-4">
+                            Que tal uma conversa?
+                        </h1>
+                        <span>Entre em contato pelos canais abaixo:</span>
+                    </div>
 
                     <!-- Contatos -->
-                    <section class="flex flex-wrap justify-center gap-3 max-w-2xl">
-                        <!-- WhatsApp -->
-                        <a href="https://wa.me/5512991319058?text=Olá%20Henrique!%20Acabei%20de%20Olhar%20seu%20Portfólio%20e%20gostaria%20de%20conversar%20contigo!"
-                            class="flex items-center gap-2 px-4 py-2.5 rounded-lg bg-[#25D366] hover:bg-[#20BD5A] text-white font-semibold shadow-md hover:shadow-lg hover:scale-105 transition-all duration-300 whitespace-nowrap">
-                            <img class="w-6 h-auto" src="../img/icons/w.png" alt="Logo WhatsApp">
-                            <span class="text-sm md:text-base">WhatsApp</span>
-                        </a>
+                    <section class="flex flex-wrap justify-start gap-3 max-w-2xl">
+                        <div class="grid grid-rows-3 gap-y-4">
+                            <!-- WhatsApp -->
+                            <a href="https://wa.me/5512991319058?text=Olá%20Henrique!%20Acabei%20de%20Olhar%20seu%20Portfólio%20e%20gostaria%20de%20conversar%20contigo!"
+                                class="flex items-center gap-2 px-4 py-2.5 rounded-lg bg-[#25D366] hover:bg-[#20BD5A] text-white font-semibold shadow-md hover:shadow-lg hover:scale-105 transition-all duration-300 whitespace-nowrap">
+                                <img class="w-6 h-auto" src="../img/icons/w.png" alt="Logo WhatsApp">
+                                <span class="text-sm md:text-base">WhatsApp</span>
+                            </a>
 
-                        <!-- Gmail -->
-                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=henriquemartins7t@gmail.com&su=Contato%20Pelo%20seu%20Portfólio&body=Olá%20Henrique,"
-                            class="flex items-center gap-2 px-4 py-2.5 rounded-lg bg-gray-500 hover:bg-[#D33426] text-white font-semibold shadow-md hover:shadow-lg hover:scale-105 transition-all duration-300 whitespace-nowrap">
-                            <img class="w-8 h-5" src="../img/icons/gmail.png" alt="Logo Gmail">
-                            <span class="text-sm md:text-base">Gmail</span>
-                        </a>
+                            <!-- Gmail -->
+                            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=henriquemartins7t@gmail.com&su=Contato%20Pelo%20seu%20Portfólio&body=Olá%20Henrique,"
+                                class="flex items-center gap-2 px-4 py-2.5 rounded-lg bg-gray-500 hover:bg-[#D33426] text-white font-semibold shadow-md hover:shadow-lg hover:scale-105 transition-all duration-300 whitespace-nowrap">
+                                <img class="w-8 h-5" src="../img/icons/gmail.png" alt="Logo Gmail">
+                                <span class="text-sm md:text-base">Gmail</span>
+                            </a>
 
-                        <!-- Linkedin -->
-                        <a href="https://www.linkedin.com/in/henriquemm/"
-                            class="flex items-center gap-2 px-4 py-2.5 rounded-lg bg-[#0A66C2] hover:bg-[#095196] text-white font-semibold shadow-md hover:shadow-lg hover:scale-105 transition-all duration-300 whitespace-nowrap">
-                            <img class="w-6 h-auto" src="../img/icons/linkedin.svg" alt="Logo Linkedin">
-                            <span class="text-sm md:text-base">LinkedIn</span>
-                        </a>
+                            <!-- Linkedin -->
+                            <a href="https://www.linkedin.com/in/henriquemm/"
+                                class="flex items-center gap-2 px-4 py-2.5 rounded-lg bg-[#0A66C2] hover:bg-[#095196] text-white font-semibold shadow-md hover:shadow-lg hover:scale-105 transition-all duration-300 whitespace-nowrap">
+                                <img class="w-6 h-auto" src="../img/icons/linkedin.svg" alt="Logo Linkedin">
+                                <span class="text-sm md:text-base">LinkedIn</span>
+                            </a>
+                        </div>
                     </section>
+                    <!-- Downliad currículo -->
+                    <div class="text-left mt-6">
+                        <h2 class="text-xl text-gray-800 font-semibold mb-4 dark:text-white">Faça o Download do
+                            Currículo</h2>
+                        <a class="text-white text-sm inline-flex bg-violet-600 px-7 py-3 gap-2 rounded-md transition-colors duration-200 shadow-sm hover:bg-violet-700"
+                            href="../docs/Currículo Henrique Moreira 2025.pdf" download="Currículo Henrique">
+                            <img class="w-4" src="../img/geral/download.png" alt="imagem_download"> Download
+                        </a>
+                    </div>
+                </div>
+                <!-- Card mensagem -->
+                <div class="feedback col-span-3 shadow-md shadow-gray-600 p-6">
+                    <div class="mb-4">
+                        <h1 class="text-black text-3xl font-bold">Mande uma mensagem</h1>
+                        <span class="text-[#6B7280]">Me envie uma mensagem com sugestões, oportunidades ou
+                            ideias.</span>
+                    </div>
+
+                    <form action="#" method="post" class="flex flex-col gap-4 w-full">
+                        <div>
+                            <label for="nome" class="block">Nome:</label>
+                            <input type="text" id="nome" name="nome" required class="input-feedback w-full pl-1" placeholder="Hikari Mendes">
+                        </div>
+
+                        <div>
+                            <label for="email" class="block">E-mail:</label>
+                            <input type="email" id="email" name="email" required class="input-feedback w-full pl-1" placeholder="hikari@outlook.com">
+                        </div>
+
+                        <div>
+                            <label for="mensagem" class="block">Descrição:</label>
+                            <textarea id="mensagem" name="mensagem" rows="4" class="input-feedback w-full pl-1 min-h-6" placeholder="Descreva brevemente o motivo do contato.."></textarea>
+                        </div>
+
+                        <button type="submit" class="block bg-violet-600 text-white py-2 px-4 rounded-md hover:brightness-110">
+                            Enviar
+                        </button>
+                    </form>
                 </div>
             </section>
         </section>

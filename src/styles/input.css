@@ -194,6 +194,22 @@ body::-webkit-scrollbar {
   font-weight: 900;
 }
 
+/* Feedback */
+
+.feedback {
+  background-color: #FFF;
+  border-radius: 15px;
+  padding: 10px;
+  color: #000;
+}
+
+.input-feedback {
+  background-color: #EBEBEB;
+  border: solid 1px #d9d9d9;
+  border-radius: 5px;
+}
+
+
 /* Responsividade */
 
 /* Modal */
