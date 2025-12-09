@@ -10,7 +10,7 @@ if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localS
 
 var themeToggleBtn = document.getElementById('theme-toggle');
 
-themeToggleBtn.addEventListener('click', function() {
+themeToggleBtn.addEventListener('click', function () {
 
     // toggle icons inside button
     themeToggleDarkIcon.classList.toggle('hidden');
@@ -26,7 +26,7 @@ themeToggleBtn.addEventListener('click', function() {
             localStorage.setItem('color-theme', 'light');
         }
 
-    // if NOT set via local storage previously
+        // if NOT set via local storage previously
     } else {
         if (document.documentElement.classList.contains('dark')) {
             document.documentElement.classList.remove('dark');
@@ -36,5 +36,33 @@ themeToggleBtn.addEventListener('click', function() {
             localStorage.setItem('color-theme', 'dark');
         }
     }
-    
+
+});
+
+
+/* FORMULÁRIO ABAIXO */
+
+const form = document.getElementById('container-form');
+const botao = document.getElementById('form-enviar')
+
+form.addEventListener('submit', (event) => {
+    event.preventDefault();
+
+    const textoOriginal = botao.textContent;
+
+    botao.textContent = '✔ Enviado!';
+    botao.disabled = true;
+
+    botao.classList.remove('bg-violet-600');
+    botao.classList.add('bg-green-600');
+
+    form.reset()
+
+    setTimeout(() => {
+        botao.textContent = textoOriginal;
+        botao.disabled = false;
+
+        botao.classList.remove('bg-green-600');
+        botao.classList.add('bg-violet-600');
+    }, 2000);
 });
