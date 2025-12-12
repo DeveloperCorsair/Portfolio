@@ -27,14 +27,15 @@ Um Portifólio sobre mim, Henrique (DevCorsair). Contando um pouco sobre meus pr
 
 
 ## Para Rodar o Projeto ♨️
-### Entre na pasta Portfólio
+### Entre na pasta Portfólio e depois em source
 ```
 cd PORTIFOLIO
+cd src
 ```
 
-### Caso queira modificar alguma coisa build o arquivo para executar Tailwind
+### Para executar o projeto em modo dev
 ```
-npm run build
+npm run dev
 ```
 <!--
 ## Dependências do projeto

@@ -18,6 +18,10 @@
   .button-modal {
     @apply flex flex-wrap gap-2 sm:gap-3 items-center justify-between sm:justify-between
   }
+
+  .hardskills-cards {
+    @apply h-[250px] w-[230px]
+  }
 }
 
 /* ============================= */
@@ -146,6 +150,7 @@ body::-webkit-scrollbar {
   margin-bottom: 10px;
 }
 
+
 /* h2 do modal-body */
 .subtitulos {
   margin-bottom: 10px;
@@ -193,6 +198,7 @@ body::-webkit-scrollbar {
   text-decoration: underline;
   font-weight: 900;
 }
+
 
 /* Feedback */
 
