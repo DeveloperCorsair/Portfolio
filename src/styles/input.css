@@ -22,6 +22,10 @@
   .hardskills-cards {
     @apply h-[250px] w-[230px]
   }
+
+  .size-text {
+    @apply text-[0.905rem]
+  }
 }
 
 /* ============================= */
